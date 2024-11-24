@@ -1,0 +1,176 @@
+:root {
+  color-scheme: dark;
+  --darkA: hsl(0, 0%, 21%);
+  --darkB: hsl(0, 0%, 12%);
+  --darkC: hsl(0, 0%, 5%);
+  --lightA: hsl(0, 0%, 89%);
+  --lightB: hsl(0, 0%, 65%);
+  --padA: 60px;
+  --padB: 40px;
+  --gap: 30px;
+}
+
+body {
+  color: var(--lightA) !important;
+  background-color: var(--darkC) !important;
+  font-family: 'Segoe UI Variable Small'!important;
+}
+
+.main-inner, .list-group-item, section, .navigation, .bg-white:not(a), .nav-tabs, nav, .drawer {
+  background-color: transparent !important;
+  color: var(--lightA) !important;
+}
+
+i, h1, h2, h3 {
+  color: var(--lightA) !important;
+  font-size: 20px !important;
+}
+
+.fa-star:before {
+  color: var(--lightA) !important;
+}
+
+a, h4, h5, h6, .summary {
+  color: var(--lightB) !important;
+}
+
+.block .block-cards span.categoryname,.block .block-cards .btn-link {
+  color: var(--lightB) !important;
+}
+
+.coursebox, div [role="listitem"] {
+  background-color: var(--darkB) !important;
+  border: 1px solid var(--darkA) !important;
+  border-radius: 18px !important;
+  height: fit-content !important;
+  gap: 5px !important;
+  align-items: start !important;
+  padding: 18px !important;
+  margin-bottom: 12px !important;
+}
+
+.rounded:not(a), .btn-outline-secondary.dropdown-toggle, .btn.btn-secondary, .dropdown-menu {
+  color: var(--lightB) !important;
+  background-color: var(--darkB) !important;
+  border: 1.5px solid var(--darkA) !important;
+  border-radius: .75rem !important;
+  padding: 8px 16px 8px 16px !important;
+  height: fit-content !important;
+}
+
+::placeholder {
+  color: var(--lightB) !important;
+}
+
+.moremenu.navigation.observed {
+  width: max-content !important;
+  margin-top: 15px !important;
+  background-color: var(--darkB) !important;
+  border: 1.5px solid var(--darkA) !important;
+  border-radius: .75rem !important;
+  padding-left: 8px !important;
+  padding-right: 11px !important;
+  box-shadow: 0px -5px 20px 15px var(--darkC) !important;
+  height: 50px !important;
+  align-content: center !important;
+}
+
+.frontpage-course-list-enrolled {
+  margin-top: 25px !important;
+}
+
+.card-text:not(a) {
+  margin-top: 20px !important;
+}
+
+.navbar {
+  padding-left: 10px !important;
+  padding-right: 0 !important;
+  margin-right: 14px !important;
+  border-bottom: none !important;
+  background: linear-gradient(to bottom, var(--darkC), transparent) !important;
+}
+
+.active, .nav-link.active {
+  color: var(--lightA) !important;
+  border: none !important;
+}
+
+.nav-link.active:hover, .nav-link:hover {
+  background-color: var(--darkA) !important;
+  border: none !important;
+}
+
+.nav-link {
+  padding: 0px 12px 0px 12px !important;
+  height: 40px !important;
+  border-radius: .75rem !important;
+}
+
+.navbar-nav {
+  align-items: center !important;
+}
+
+.no-gutters {
+  gap: 4px !important;
+}
+
+.secondary-navigation {
+  padding-left: 20px !important;
+  position: sticky !important;
+  top: -50px !important; 
+  z-index: 2000 !important;
+} ::after {
+  
+}
+
+.courseimage, .navbar-brand, hr, .bg-secondary:not(.o).btn-icon, .d-md-flex:not(.o), .divider, .open-nav, .drawer-right-toggle {
+  display: none !important;
+}
+
+span.text-primary {
+  font-size: 1px !important;
+  padding-right: 10px !important;
+}
+
+#page.drawers, .drawercontent {
+  height: auto !important;
+  margin-top: 0px !important;
+  padding-top: 65px !important;
+  scrollbar-width: unset !important;
+  scrollbar-color: var(--darkA) var(--darkC) !important;
+}
+
+.drawer-toggles .drawer-right-toggle .btn {
+  background-color: var(--darkB) !important;
+  border: 1.5px solid var(--darkA) !important;
+  border-radius: 20px !important;
+  height: min-content !important;
+  padding: 12px 12px 10px 10px !important;
+  margin-right: 15px !important;
+}
+
+i.icon {
+  color: var(--lightB) !important;
+}
+
+.section, .activity-item {
+  border: none !important;
+}
+
+.course-description-item {
+  background-color: var(--darkB) !important;
+  border: 1.5px solid var(--darkA) !important;
+  border-radius: .75rem !important;
+}
+
+.description-inner {
+  padding-left: 6px !important;
+}
+
+.modal-dialog {
+  background-color: var(--darkB) !important;
+  border: 1.5px solid var(--darkA) !important;
+  border-radius: .75rem !important;
+  box-shadow: 0px -5px 20px 15px var(--darkC) !important;
+}

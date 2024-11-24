@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Dark-VC",
+    "description": "Gives HuggingChat webpage the UI appearence of ChatGPT",
+    "icons": { "48" : "icon.png" },
+    "version": "1.0",
+    "homepage_url": "https://github.com/car-dochao/Dark-VC",
+
+    "content_scripts": [{
+            "matches": ["https://cvdof.ucm.es/moodle/*"],
+            "exclude_globs": ["*login/index.php*"],
+            "css": ["main.css"]
+    }]   
+}
