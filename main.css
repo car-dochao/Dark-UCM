@@ -1,8 +1,8 @@
 :root {
   color-scheme: dark;
-  --darkA: #2c2c33;
-  --darkB: #1e1e25;
-  --darkC: #131318;
+  --darkA: #383842;
+  --darkB: #26262e;
+  --darkC: #17171d;
   --lightA: #FFFFFF;
   --lightB: #b6b6b6;
 }
@@ -13,7 +13,7 @@ body {
   font-family: 'Segoe UI Variable Small'!important;
 }
 
-.main-inner, .list-group-item, section, .navigation, .bg-white:not(a), .nav-tabs, nav, .drawer {
+.main-inner, .list-group-item, section, .navigation, .bg-white:not(a), .nav-tabs, nav, .drawer, .activity-header {
   background-color: transparent !important;
   color: var(--lightA) !important;
 }
@@ -61,7 +61,6 @@ a, h4, h5, h6 {
 
 .moremenu.navigation.observed {
   width: max-content !important;
-  margin-top: 15px !important;
   background-color: var(--darkB) !important;
   border: 1.5px solid var(--darkA) !important;
   border-radius: .75rem !important;
@@ -90,6 +89,10 @@ a, h4, h5, h6 {
   margin-right: 14px !important;
   border-bottom: none !important;
   background: linear-gradient(to bottom, var(--darkC), transparent) !important;
+}
+
+.primary-navigation {
+  margin-top: 15px !important;
 }
 
 .active, .nav-link.active {
@@ -127,13 +130,12 @@ a, h4, h5, h6 {
 }
 
 .secondary-navigation {
-  padding-left: 20px !important;
-  position: sticky !important;
-  top: -50px !important;
+  padding-left: 7px !important;
+  top: 25px !important;
   z-index: 2000 !important;
 }
 
-li[data-key="competencies"], a[href="https://cvdof.ucm.es/moodle/reportbuilder/index.php"], .fp-vb-icons.btn.btn-secondary.btn-sm, div#node_id, .fp-restrictions, .col-md-3.col-form-label.d-flex, h6.dropdown-header, .custom-switch, #message-user-button, .divider.border-left, .langbutton, .summary, .dropdown-item:before, .dropdown-divider, .border-bottom, .courseimage, .navbar-brand, hr, .bg-secondary:not(.o).btn-icon, .d-md-flex:not(.o), .divider, .open-nav, .drawer-right-toggle {
+.icon.fa.fa-caret-right.fa-fw, .ygtvcell.ygtvln, .portfolio-add-link, i.fa-plus, li[data-key="competencies"], a[href="https://cvdof.ucm.es/moodle/reportbuilder/index.php"], .fp-vb-icons.btn.btn-secondary.btn-sm, div#node_id, .fp-restrictions, .col-md-3.col-form-label.d-flex, h6.dropdown-header, .custom-switch, #message-user-button, .divider.border-left, .langbutton, .summary, .dropdown-item:before, .dropdown-divider, .border-bottom, .courseimage, .navbar-brand, hr, .bg-secondary:not(.o).btn-icon, .d-md-flex:not(.o), .divider, .open-nav, .drawer-right-toggle {
   display: none !important;
 }
 
@@ -148,6 +150,12 @@ span.text-primary {
   padding-top: 65px !important;
   scrollbar-width: unset !important;
   scrollbar-color: var(--darkA) var(--darkC) !important;
+}
+
+@media (min-width: 768px) {
+  .header-maxwidth {
+    padding-left: 0px !important;
+  }
 }
 
 i.icon, .text-truncate {
@@ -229,7 +237,6 @@ div [class="row no-gutters"]  {
 }
 
 div [class="d-flex align-items-center my-2"] {
-  position: sticky !important;
   top: -45px !important; 
   z-index: 2000 !important;
 }
@@ -393,13 +400,23 @@ td, th {
 }
 
 .page-header-headings {
+  align-content: center !important;
   padding-top: 5px !important;
 }
 
 .page-header-image {
   padding-right: 5px !important;
-  margin-bottom: 25px !important;
+  margin-bottom: 10px !important;
+  margin-top: 6px !important;
   z-index: 1000 !important;
+}
+
+.page-header-image.mr-2 {
+  margin-right: 15px !important;
+}
+
+.breadcrumb {
+  padding: 10px 0px 10px 0px !important;
 }
 
 section:not(.card), section.node_category > div.card-body {
@@ -413,9 +430,13 @@ aside, #frontpage-course-list, .userprofile {
   outline: 60px solid var(--darkC) !important;
 }
 
-.no-overflow { 
-  padding-right: 15px !important;
-  padding-left: 10px !important;
+.no-overflow {
+  padding: 0px 30px 0px 5px !important;
+}
+
+.flex-fill.description-inner.text-break > .no-overflow > .no-overflow, .flex-fill.description-inner.text-break > .no-overflow, p[dir="ltr"] {
+  padding: 0px !important;
+  margin-bottom: 0px !important;
 }
 
 .editmode-switch-form:not(.a) {
@@ -458,7 +479,7 @@ aside, #frontpage-course-list, .userprofile {
 
 .card-body.p-3 {
   padding: 0 !important;
-  margin-top: 15px !important;
+  /*margin-top: 15px !important;*/
 }
 
 .block-add {
@@ -518,8 +539,8 @@ aside, #frontpage-course-list, .userprofile {
   padding-right: 0px !important;
 }
 
-section#region-main:has(> div > div.generalbox) {
-  padding: 30px 15px !important;
+section#region-main:has(> div > div.generalbox), section#region-main:has(.activity-header) {
+  padding: 30px 30px !important;
   padding-bottom: 15px !important;
 }
 
@@ -591,4 +612,231 @@ div.btn-cancel > span > input.btn.btn-secondary {
 
 .moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd {
   border: none !important;
+}
+
+.activity-header {
+  padding-top: 20px !important;
+}
+
+.activity-header:has(.sr-only),.activity-header:has(> .activity-description), .activity-dates , .activity-description {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+div[role="main"]:not(> form) {
+  padding: 0px !important;
+}
+
+td.submissionstatussubmitted, td.earlysubmission, td.submissiongraded  {
+  background-color: #27704552 !important;
+  border: 1.5px solid #498b64a2 !important;
+  border-radius: .75rem !important;
+}
+
+.activity-dates{
+  border: none !important;
+  padding-bottom: 15px !important;
+}
+
+.course-content {
+  padding: 0px 35px 30px 35px !important;
+}
+
+.nav-tabs:not(.a) {
+  border: none !important;
+  margin-bottom: 0px !important;
+}
+
+.icons-collapse-expand {
+  display: none !important;
+}
+
+.nav-link.active {
+  background-color: transparent !important;
+}
+
+.tabs-wrapper {
+  padding: 25px 25px 0px 25px !important;
+}
+
+ul.nav-tabs:not(.more-nav) > li.nav-item {
+  padding: 5px 4px !important;
+}
+
+ul.nav-tabs:not(.more-nav) > li.nav-item > a.nav-link {
+  height: 32px !important;
+  align-content: center !important;
+  background-color: #3e3e47 !important;
+  font-size: 13px !important;
+  padding: 0px 15px !important;
+  border-radius: 90px !important;
+  font-weight: bold !important;
+}
+
+ul.nav-tabs:not(.more-nav) > li.nav-item > a.nav-link:hover {
+  background-color: #515158 !important;
+}
+
+ul.nav-tabs:not(.more-nav) > li.nav-item > a.nav-link.active {
+  background-color: #26bbff !important;
+  color: var(--darkC) !important;
+}
+
+ul.nav-tabs:not(.more-nav) > li.nav-item > a.nav-link.active:hover {
+  background-color: #1b85b6 !important;
+}
+
+.box.feedbacktable {
+  padding-bottom: 0px !important;
+}
+
+.generaltable:not(#overview-grade) {
+  row-gap: 13px !important;
+  border-collapse: unset !important;
+  margin-bottom: 0px !important;
+}
+
+#overview-grade {
+  width: fit-content !important;
+  margin-left: 20px !important;
+  margin-bottom: 22px !important;
+}
+
+.path-mod:not(a){
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.path-mod .activity-header:not(:empty) {
+  margin-bottom: 0px !important;
+}
+
+.submissionsummarytable.py-3 {
+  padding-bottom: 0px !important;
+}
+
+a[target="_blank"] {
+  color: var(--lightA) !important;
+}
+
+.fileuploadsubmissiontime {
+  color: var(--lightB) !important;
+  font-size: small !important;
+  float: none !important;
+  padding-top: 30px !important;
+}
+
+.plugincontentsummary.summary_assignsubmission_file_2015426 {
+  padding-top: 0px !important;
+}
+
+.coursemenubtn {
+  margin-right: 12px !important;
+}
+
+.block .block-cards .btn.btn-link.btn-icon:focus {
+  background-color: var(--darkA) !important;
+}
+
+.fa-ellipsis-v:before {
+  font-size: 18px !important;
+  content: "⋮" !important;
+}
+
+a[data-value="card"] {
+  display: none !important; /* Temporal hide, FIX */
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+.block-timeline > .px-2 > .row > .mr-auto.mb-1 {
+  margin-right: 8px !important
+}
+
+.text-muted.mt-1 {
+  margin-top: 15px !important;
+}
+
+.container-fluid.mb-4 {
+  padding-top: 5px !important;
+  padding-bottom: 10px !important;
+}
+
+.box.plugincontentsummary.py-3 {
+  padding-top: 0px !important;
+}
+
+.path-mod-assign .submissionsummarytable {
+  margin-top: 0px !important;
+}
+
+.mform fieldset {
+  margin-bottom: 0px !important;
+  border-bottom: none !important;
+}
+
+.box.editsubmissionform.py-3 {
+  padding-bottom: 0px !important;
+}
+
+.d-flex.align-items-center.mb-2 {
+  margin-bottom: 18px !important;
+}
+
+img.userpicture {
+  margin-right: 0px !important;
+  height: auto !important;
+  max-width: 60px !important;
+}
+
+.page-context-header:not(.mr-auto) {
+  margin-bottom: 10px !important;
+}
+
+@media (min-width: 576px) {
+  #page.drawers .main-inner {
+    margin-top: 0px !important;
+  }
+}
+
+div[role="main"] > h2:has(~ .container-fluid.p-sm-0) { /* wth */
+  padding: 25px !important;
+}
+
+.container-fluid.p-sm-0 {
+  padding: 0px 25px 10px 25px !important;
+}
+
+.card:not(section) {
+  background-color: var(--darkB) !important;
+  border: 1.5px solid var(--darkA) !important;
+}
+
+.container-fluid.p-sm-0 > .row {
+  display: block !important;
+}
+
+@media (min-width: 768px) {
+  .col-md-4 {
+    max-width: 100% !important
+  }
+}
+
+.card-text > div {
+  padding-top: 5px !important;
+}
+
+@media (min-width: 768px) {
+  #page.drawers div[role="main"]:has(> form) {
+    padding: 30px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  #page.drawers div[role="main"] {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
 }

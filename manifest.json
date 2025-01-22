@@ -1,10 +1,10 @@
 {
     "manifest_version": 3,
-    "name": "Dark-CV",
+    "name": "Dark-UCM",
     "description": "Dark theme for the UCM Virtual Campus",
-    "icons": { "48" : "icon.png" },
-    "version": "0.1",
-    "homepage_url": "https://github.com/car-dochao/Dark-CV",
+    "icons": { "96" : "icon.png" },
+    "version": "0.2",
+    "homepage_url": "https://github.com/car-dochao/Dark-UCM",
 
     "content_scripts": [{
             "matches": ["https://cvdof.ucm.es/moodle/*"],
