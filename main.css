@@ -11,6 +11,7 @@ body {
   color: var(--lightA) !important;
   background-color: var(--darkC) !important;
   font-family: 'Segoe UI Variable Small'!important;
+  color-scheme: dark !important;
 }
 
 .main-inner, .list-group-item, section, .navigation, .bg-white:not(a), .nav-tabs, nav, .drawer, .activity-header {
@@ -18,9 +19,13 @@ body {
   color: var(--lightA) !important;
 }
 
-i, h1, h2, h3 {
+i, h1, h2, h3, h4.card-title {
   color: var(--lightA) !important;
   font-size: 20px !important;
+}
+
+.coursename, .coursename > a {
+  color: var(--lightA) !important;
 }
 
 .fa-star:before {
@@ -166,7 +171,7 @@ i.icon, .text-truncate {
   border: none !important;
 }
 
-.course-description-item {
+.course-description-item:not(.summarytext) {
   background-color: var(--darkB) !important;
   border: 1.5px solid var(--darkA) !important;
   border-radius: .75rem !important;
@@ -314,7 +319,7 @@ div [id="local-mail-navbar"].popover-region {
   padding-top: 4px !important;
 }
 
-.userinitials.size-35 {
+.userinitials.size-35, .userpicture {
   height: 27px !important;
   width: 27px !important;
   font-size: 12px !important;
@@ -401,7 +406,7 @@ td, th {
 
 .page-header-headings {
   align-content: center !important;
-  padding-top: 5px !important;
+  padding-top: 2px !important;
 }
 
 .page-header-image {
@@ -411,8 +416,8 @@ td, th {
   z-index: 1000 !important;
 }
 
-.page-header-image.mr-2 {
-  margin-right: 15px !important;
+.userinitials {
+  margin-right: 0px !important;
 }
 
 .breadcrumb {
@@ -639,7 +644,7 @@ td.submissionstatussubmitted, td.earlysubmission, td.submissiongraded  {
 }
 
 .course-content {
-  padding: 0px 35px 30px 35px !important;
+  padding: 0px 35px 15px 35px !important;
 }
 
 .nav-tabs:not(.a) {
@@ -656,7 +661,7 @@ td.submissionstatussubmitted, td.earlysubmission, td.submissiongraded  {
 }
 
 .tabs-wrapper {
-  padding: 25px 25px 0px 25px !important;
+  padding: 30px 25px 0px 30px !important;
 }
 
 ul.nav-tabs:not(.more-nav) > li.nav-item {
@@ -787,8 +792,6 @@ a[data-value="card"] {
 
 img.userpicture {
   margin-right: 0px !important;
-  height: auto !important;
-  max-width: 60px !important;
 }
 
 .page-context-header:not(.mr-auto) {
@@ -839,4 +842,193 @@ div[role="main"] > h2:has(~ .container-fluid.p-sm-0) { /* wth */
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
+}
+
+.col-md-9.d-flex.flex-column {
+  gap: 8px !important;
+}
+
+.expandsummaryicon, .icon.spacer, .cell.c1.lastcol > :first-child, .search-icon, div.py-3, .closewidget {
+  display: none !important;
+}
+
+.cell.c1.lastcol > :nth-child(2):not(:empty) {
+  display: block !important;
+  visibility: visible !important;
+  padding: 15px !important;
+  background-color: #122e3b !important;
+  border: 1.5px solid #116891 !important;
+  border-radius: .75rem !important;
+}
+
+div[role="main"] > .box.py-3.generalbox:not(:empty):not(.feedback_description) {
+  padding-bottom: 15px !important;
+}
+
+input {
+  background-color: var(--darkA) !important;
+  border: 1.5px solid #515158 !important;
+  border-radius: .9rem !important;
+  height: 45px !important;
+  padding-left: 16px !important;
+  padding-right: 40px !important;
+}
+
+.btn.btn-link.p-0 {
+  padding-top: 12px !important;
+  padding-right: 5px !important;
+}
+
+#searchform-navbar {
+  background: linear-gradient(to bottom, var(--darkC), transparent) !important;
+}
+
+.btn-close {
+  padding-top: 7px !important;
+  right: 0.9rem !important;
+}
+
+.btn.btn-clear {
+  padding-top: 5px !important;
+  right: 0.8rem !important;
+}
+
+.input-group-append > .btn.btn-submit {
+  display: none !important;
+}
+
+input, select, textarea {
+  color: var(--lightB) !important;
+}
+
+.fa-remove:before, .fa-close:before, .fa-times:before, .fa-times-rectangle:before, .fa-window-close:before {
+  font-weight: 100 !important;
+  content: "⨯" !important;
+  font-size: 20pt !important;
+}
+
+.tertiary-navigation .navitem, .tertiary-navigation .navitem-divider {
+  margin-bottom: 0px !important;
+}
+
+@media (min-width: 768px) {
+  .header-maxwidth {
+    margin: 0 0 !important;
+  }
+}
+
+.searchform-navbar {
+  margin-top: 15px !important;
+  border-radius: .9rem !important;
+  background-color: var(--darkC) !important;
+  box-shadow: 0px 5px 20px 15px var(--darkC) !important;
+}
+.container-fluid.tertiary-navigation {
+  padding-top: 20px !important;
+}
+
+.dropdown-menu {
+  margin-top: 10px !important;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 8px 12px !important;
+  padding: 12px 10px !important;
+}
+
+.dropdown-menu-right#user-action-menu {
+  margin-top: 15px !important;
+}
+
+.drawer.bg-white {
+  z-index: 1050 !important;
+  transition: none !important;
+  margin-top: 20px !important;
+  margin-right: 25px !important;
+  height: fit-content !important;
+  background-color: var(--darkB) !important;
+  border: 1.5px solid var(--darkA) !important;
+  border-radius: 0.75rem !important;
+  padding: 8px 16px !important;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4) !important;
+}
+
+.message-app {
+  padding: 15px !important;
+  background-color: transparent !important;
+}
+
+div[data-region="view-overview"] {
+  padding-top: 30px !important;
+}
+
+.section .activity.indented .activity-item {
+  margin-left: 0px !important;
+}
+
+.section .activity {
+  padding: 5px 0px !important;
+}
+
+ul {
+  padding-inline-start: 0px !important;
+}
+
+.bg-light:not(.a) {
+  background-color: var(--darkB) !important;
+}
+
+.border:not(.a) {
+  border: 1.5px solid var(--darkA) !important;
+}
+
+.filter-group, .initialbar:not(.a), .buttons > .form-inline, .usercheckbox, #select-all-participants, .commands, th > i.fa-sort-asc {
+  display: none !important;
+} /* Temporal hide, FIX */
+
+a[data-action="showcount"] {
+  display: block !important;
+  padding: 20px 0px 10px 0px !important;
+  text-align: center !important;
+  font-size: 10pt !important;
+}
+
+.page-item.active .page-link {
+  color: #fff;
+  background-color: var(--darkA) !important;
+  border-color: none !important;
+}
+
+.page-link {
+  color: #0f6cbf;
+  background-color: var(--darkB) !important;
+  border: 1.5px solid var(--darkA) !important;
+}
+
+.pagination-centered {
+  padding-top: 15px !important;
+}
+
+.userlist table#participants th {
+  padding: 20px 5px !important;
+}
+
+.d-inline-block.aabtn > img, .d-inline-block.aabtn > span {
+  margin-right: 10px !important;
+}
+
+div[data-table-handler="participants"] > nav:nth-of-type(1), p[data-region="participant-count"] {
+  display: none !important;
+}
+
+#action_bar ~ h2:not(:empty) {
+  padding-top: 15px !important;
+  padding-left: 35px !important;
+}
+
+th.header.c2 {
+  color: var(--lightB) !important;
+}
+
+.modal-content {
+  background-color: var(--darkB) !important;
+  border: 1.5px solid var(--darkA) !important;
+  border-radius: .75rem !important;
 }
