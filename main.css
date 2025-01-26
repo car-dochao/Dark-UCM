@@ -4,7 +4,7 @@
   --darkB: #26262e;
   --darkC: #17171d;
   --lightA: #FFFFFF;
-  --lightB: #b6b6b6;
+  --lightB: #a7a7b1;
 }
 
 body {
@@ -110,6 +110,26 @@ a, h4, h5, h6 {
   border: none !important;
 }
 
+.nav-link.icon-no-margin:not(.fa-fw) {
+  padding: 0px 12px 0px 12px !important;
+  height: 40px !important;
+  border-radius: .75rem !important;
+  border: none !important;
+  height: 50px !important;
+  width: 50px !important;
+  padding-left: 15px !important;
+  padding-bottom: 8px !important;
+}
+
+.btn.nav-link:not(.fa-fw) {
+  padding-left: 15px !important;
+  padding-bottom: 8px !important;
+  height: 50px !important;
+  width: 50px !important;
+  border-radius: .75rem !important;
+  border: none !important;
+}
+
 .nav-link:not(.fa-fw) {
   padding: 0px 12px 0px 12px !important;
   height: 40px !important;
@@ -120,6 +140,11 @@ a, h4, h5, h6 {
 .navbar-nav:not(.nav) {
   align-items: center !important;
   margin-right: 10px !important;
+}
+
+.navbar-nav.ml-auto {
+  background: var(--darkC) !important;
+  box-shadow: 0px -5px 20px 15px var(--darkC) !important;
 }
 
 .more-nav {
@@ -140,7 +165,7 @@ a, h4, h5, h6 {
   z-index: 2000 !important;
 }
 
-.icon.fa.fa-caret-right.fa-fw, .ygtvcell.ygtvln, .portfolio-add-link, i.fa-plus, li[data-key="competencies"], a[href="https://cvdof.ucm.es/moodle/reportbuilder/index.php"], .fp-vb-icons.btn.btn-secondary.btn-sm, div#node_id, .fp-restrictions, .col-md-3.col-form-label.d-flex, h6.dropdown-header, .custom-switch, #message-user-button, .divider.border-left, .langbutton, .summary, .dropdown-item:before, .dropdown-divider, .border-bottom, .courseimage, .navbar-brand, hr, .bg-secondary:not(.o).btn-icon, .d-md-flex:not(.o), .divider, .open-nav, .drawer-right-toggle {
+.icon.fa.fa-caret-right.fa-fw, .ygtvcell.ygtvln, .portfolio-add-link, i.fa-plus, li[data-key="competencies"], a[href="https://cvdof.ucm.es/moodle/reportbuilder/index.php"], .fp-vb-icons.btn.btn-secondary.btn-sm, div#node_id, .fp-restrictions, .col-md-3.col-form-label.d-flex:not(.pb-0,.pr-md-0), h6.dropdown-header, .custom-switch, #message-user-button, .divider.border-left, .langbutton, .summary, .dropdown-item:before, .dropdown-divider, .border-bottom, .courseimage, .navbar-brand, hr, .bg-secondary:not(.o).btn-icon, .d-md-flex:not(.o), .divider, .open-nav, .drawer-right-toggle {
   display: none !important;
 }
 
@@ -262,7 +287,7 @@ div [class="items h-100 overflow-auto"]:not(a) {
   overflow-x: hidden !important;
 }
 
-.btn.btn-icon:hover {
+.btn.btn-icon:hover, .btn.btn-icon:focus {
   background-color: var(--darkA) !important
 }
 
@@ -273,19 +298,19 @@ div [class="simplesearchform"] {
   border-radius: .75rem !important;
   height: 50px !important;
   width: 50px !important;
-  justify-items: center !important;
+  align-items: center !important;
   margin-right: 10px !important;
 }
 
 .rounded-0.nav-link:not(.h-100) {
-  width: fill !important;
-  padding-left: 10px !important;
-  padding-top: 3px !important;
-  border-radius: .75rem !important;
+  height: 50px !important;
+  width: 50px !important;
+  padding-left: 15px !important;
+  padding-bottom: 6px !important;
 }
 
 .rounded-0.nav-link.h-100 {
-  padding-left: 6px !important;
+  padding-left: 14px !important;
 }
 
 .popover-region {
@@ -430,9 +455,14 @@ section:not(.card), section.node_category > div.card-body {
   border-radius: .75rem !important;
 }
 
-aside, #frontpage-course-list, .userprofile {
+aside, #frontpage-course-list {
   background-color: var(--darkC) !important;
   outline: 60px solid var(--darkC) !important;
+}
+
+.userprofile {
+  background-color: var(--darkC) !important;
+  outline: 15px solid var(--darkC) !important;
 }
 
 .no-overflow {
@@ -545,8 +575,7 @@ aside, #frontpage-course-list, .userprofile {
 }
 
 section#region-main:has(> div > div.generalbox), section#region-main:has(.activity-header) {
-  padding: 30px 30px !important;
-  padding-bottom: 15px !important;
+  padding: 30px !important;
 }
 
 .box.generalbox {
@@ -587,6 +616,7 @@ div.btn-cancel > span > input.btn.btn-secondary {
 
 .filemanager-toolbar {
   margin-bottom: 15px !important;
+  margin-top: 15px !important;
 }
 
 .filemanager-container {
@@ -805,26 +835,33 @@ img.userpicture {
 }
 
 div[role="main"] > h2:has(~ .container-fluid.p-sm-0) { /* wth */
-  padding: 25px !important;
-}
-
-.container-fluid.p-sm-0 {
-  padding: 0px 25px 10px 25px !important;
+  display: none !important;
 }
 
 .card:not(section) {
   background-color: var(--darkB) !important;
   border: 1.5px solid var(--darkA) !important;
+  border-radius: .75rem !important;
 }
 
 .container-fluid.p-sm-0 > .row {
-  display: block !important;
+  background-color: var(--darkC) !important;
+  outline: 60px solid var(--darkC) !important;
 }
 
 @media (min-width: 768px) {
   .col-md-4 {
-    max-width: 100% !important
+    flex: 100% !important;
+    max-width: 100% !important;
   }
+}
+
+.container-fluid.p-sm-0 > .row > :nth-last-child(1), .container-fluid.p-sm-0 > .row > :nth-last-child(2), .container-fluid.p-sm-0 > .row > :nth-last-child(3) {
+  display: none !important;
+}
+
+.col-md-4 {
+  padding-right: 0px !important;
 }
 
 .card-text > div {
@@ -848,7 +885,7 @@ div[role="main"] > h2:has(~ .container-fluid.p-sm-0) { /* wth */
   gap: 8px !important;
 }
 
-.expandsummaryicon, .icon.spacer, .cell.c1.lastcol > :first-child, .search-icon, div.py-3, .closewidget {
+.expandsummaryicon, .icon.spacer, .cell.c1.lastcol > :first-child:not(.plugincontentsummary), .search-icon, div.py-3:not(.box), .closewidget {
   display: none !important;
 }
 
@@ -862,12 +899,25 @@ div[role="main"] > h2:has(~ .container-fluid.p-sm-0) { /* wth */
 }
 
 div[role="main"] > .box.py-3.generalbox:not(:empty):not(.feedback_description) {
-  padding-bottom: 15px !important;
+  /*padding-bottom: 15px !important;        Probbably would have to enable this again*/
 }
 
 input {
-  background-color: var(--darkA) !important;
-  border: 1.5px solid #515158 !important;
+  background-color: #32323b !important;
+  border: none !important;
+  border-radius: .9rem !important;
+  height: 45px !important;
+  padding-left: 16px !important;
+  padding-right: 40px !important;
+}
+
+input:disabled {
+  color: #74747e !important;
+}
+
+.custom-select {
+  background: #32323b url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23a7a7b1' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") right .75rem center / 8px 10px no-repeat !important;
+  border: none !important;
   border-radius: .9rem !important;
   height: 45px !important;
   padding-left: 16px !important;
@@ -923,8 +973,10 @@ input, select, textarea {
   background-color: var(--darkC) !important;
   box-shadow: 0px 5px 20px 15px var(--darkC) !important;
 }
+
 .container-fluid.tertiary-navigation {
-  padding-top: 20px !important;
+  padding-top: 10px !important;
+  padding-bottom: 20px !important;
 }
 
 .dropdown-menu {
@@ -1014,7 +1066,7 @@ a[data-action="showcount"] {
   margin-right: 10px !important;
 }
 
-div[data-table-handler="participants"] > nav:nth-of-type(1), p[data-region="participant-count"] {
+div[data-table-handler="participants"] > nav:nth-of-type(1), p[data-region="participant-count"], .activity-header:empty, .lastpost, .activity-wrapper.label.modtype_label {
   display: none !important;
 }
 
@@ -1023,12 +1075,68 @@ div[data-table-handler="participants"] > nav:nth-of-type(1), p[data-region="part
   padding-left: 35px !important;
 }
 
-th.header.c2 {
+th.header.c2, th.text-center, td {
   color: var(--lightB) !important;
+}
+
+th.topic > div > div > a {
+  color: var(--lightA) !important;
 }
 
 .modal-content {
   background-color: var(--darkB) !important;
   border: 1.5px solid var(--darkA) !important;
   border-radius: .75rem !important;
+}
+
+.user-report-container, .header, .cell {
+  background-color: var(--darkB) !important;
+}
+
+.activity-description > div:not(:empty) {
+  font-weight: bold !important;
+  font-size: 20px !important;
+  padding-bottom: 15px !important;
+}
+
+.fcontainer {
+  display: block !important;
+}
+
+.dropdown-item.active, .dropdown-item:active, .dropdown-item:hover, .dropdown-item:focus, .dropdown-item:focus-within {
+  background-color: var(--darkA) !important;
+}
+
+*:focus, *.focus {
+  box-shadow: none !important;
+}
+
+@media (min-width: 768px) {
+  .mform fieldset .fcontainer.collapseable .col-form-label {
+    padding-left: 0px !important;
+  }
+}
+
+.form-group {
+  margin-bottom: 0px !important;
+}
+
+.fitem > .col-md-3.col-form-label.d-flex.pb-0.pr-md-0 {
+  display: none !important;
+}
+
+.alert-info {
+  color: var(--lightB) !important;
+  background-color: var(--darkA) !important;
+  border: none !important;
+}
+
+.alert {
+  border: none !important;
+  border-radius: .75rem !important;
+  margin-bottom: 0px !important;
+}
+
+.card.mb-3 > .card-body {
+  padding: 30px !important;
 }
