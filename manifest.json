@@ -3,7 +3,7 @@
     "name": "Dark-UCM",
     "description": "Dark theme for the UCM Virtual Campus",
     "icons": { "96" : "icon.png" },
-    "version": "0.2",
+    "version": "0.3",
     "homepage_url": "https://github.com/car-dochao/Dark-UCM",
 
     "content_scripts": [{
