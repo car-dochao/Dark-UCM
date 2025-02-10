@@ -252,7 +252,7 @@ i.icon, .text-truncate {
   box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4) !important;
 }
 
-div [data-region="no-events-empty-message"], div [data-region="empty-message"], .dir-rtl-hide {
+div [data-region="no-events-empty-message"], div [data-region="empty-message"]:not(.empty-message), .dir-rtl-hide {
   padding-top: 60px !important;
   gap: 100px !important;
   filter: invert(0.7) !important;
@@ -875,6 +875,10 @@ a[target="_blank"] {
   display: none !important;
 }
 
+.container-fluid.mb-4:has(> .row > .col-xs-6) {
+  display: flex !important;
+}
+
 .box.plugincontentsummary.py-3 {
   padding-top: 0px !important;
 }
@@ -1072,7 +1076,7 @@ input, select, textarea {
 
 .drawer.bg-white {
   z-index: 1040 !important;
-  height: 75% !important;
+  height: 60% !important;
   transition: none !important;
   margin-top: 20px !important;
   margin-right: 25px !important;
@@ -1089,11 +1093,11 @@ input, select, textarea {
 }
 
 .message-app {
-  padding: 15px !important;
+  padding: 10px !important;
   background-color: transparent !important;
 }
 
-div[data-region="view-overview"] > a {
+div[data-region="view-overview"] > a, .see-all-link  {
   display: block !important;
   justify-self: center !important;
   background-color: var(--darkA) !important;
@@ -1103,7 +1107,7 @@ div[data-region="view-overview"] > a {
   border-radius: .9rem !important;
 }
 
-div[data-region="view-overview"] > a:hover {
+div[data-region="view-overview"] > a:hover, .see-all-link:hover {
   filter: brightness(1.1);
   text-decoration: none !important;
 }
@@ -1341,6 +1345,7 @@ label#fp-mkdir-dlg-title {
 }
 
 .popover-region-container:has(> a.see-all-link) {
+  padding: 20px !important;
   right: -150px !important;
 }
 
@@ -1665,4 +1670,28 @@ body.pagelayout-popup {
 
 #page {
   margin-top: 0px !important;
+}
+
+.profile_tree > .node_category:nth-child(2), div:has(> a[href="https://cvdof.ucm.es/moodle/message/notificationpreferences.php?userid=75624"]), 
+div:has(> a[href="https://cvdof.ucm.es/moodle/message/edit.php?id=75624"]), li:has(> span > a[href="https://cvdof.ucm.es/moodle/report/usersessions/user.php"]), 
+li:has(> span > a[href="https://cvdof.ucm.es/moodle/admin/tool/lp/plans.php?userid=75624"]), li:has(> span > a[href="https://cvdof.ucm.es/moodle/mod/customcert/my_certificates.php?userid=75624"]) {
+  display: none !important;
+}
+
+.popover-region-footer-container {
+  border-top: none !important;
+  background-color: transparent !important;
+}
+
+.popover-region-header-container {
+  border-bottom: none !important;
+}
+
+.empty-message {
+  color: var(--lightB) !important;
+  padding: 75px !important;
+}
+
+.border-top:not(.a) {
+  border-top: none !important;
 }
