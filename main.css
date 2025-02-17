@@ -182,7 +182,7 @@ a, h4, h5, h6 {
   z-index: 2000 !important;
 }
 
-.icon.fa.fa-caret-right.fa-fw, .ygtvcell.ygtvln, .portfolio-add-link, i.fa-plus, li[data-key="competencies"], a[href="https://cvdof.ucm.es/moodle/reportbuilder/index.php"], .fp-vb-icons.btn.btn-secondary.btn-sm, div#node_id, .fp-restrictions, .col-md-3.col-form-label.d-flex:not(.pb-0,.pr-md-0), h6.dropdown-header, .custom-switch, #message-user-button, .divider.border-left, .langbutton, .summary, .dropdown-item:before, .dropdown-divider, .border-bottom, .courseimage, .navbar-brand, hr, .bg-secondary:not(.o).btn-icon, .d-md-flex:not(.o), .divider, .open-nav, .drawer-right-toggle {
+.icon.fa.fa-caret-right.fa-fw, .ygtvcell.ygtvln, .portfolio-add-link, i.fa-plus, li[data-key="competencies"], a[href="https://cvdof.ucm.es/moodle/reportbuilder/index.php"], .fp-vb-icons.btn.btn-secondary.btn-sm, div#node_id, .fp-restrictions, .col-md-3.col-form-label.d-flex:not(.pb-0,.pr-md-0), h6.dropdown-header, .custom-switch:not(.custom-control), #message-user-button, .divider.border-left, .langbutton, .summary, .dropdown-item:before, .dropdown-divider, .courseimage, .navbar-brand, hr, .bg-secondary:not(.o).btn-icon, .d-md-flex:not(.o), .divider, .open-nav, .drawer-right-toggle {
   display: none !important;
 }
 
@@ -978,9 +978,9 @@ div[role="main"] > h2:has(~ .container-fluid.p-sm-0) { /* wth */
   border-radius: .75rem !important;
 }
 
-div[role="main"] > .box.py-3.generalbox:not(:empty):not(.feedback_description) {
-  /*padding-bottom: 15px !important;        Probbably would have to enable this again*/
-}
+/*div[role="main"] > .box.py-3.generalbox:not(:empty):not(.feedback_description) {
+  padding-bottom: 15px !important;        Probbably would have to enable this again
+}*/
 
 input, textarea, select {
   color: var(--lightB) !important;
@@ -1076,7 +1076,7 @@ input, select, textarea {
 
 .drawer.bg-white {
   z-index: 1040 !important;
-  height: 60% !important;
+  height: 70% !important;
   transition: none !important;
   margin-top: 20px !important;
   margin-right: 25px !important;
@@ -1176,7 +1176,7 @@ div[data-table-handler="participants"] > nav:nth-of-type(1), p[data-region="part
   padding-left: 35px !important;
 }
 
-th.header.c2, th.text-center, td {
+th.header, th.text-center, td {
   color: var(--lightB) !important;
 }
 
@@ -1194,11 +1194,9 @@ th.topic > div > div > a {
   background-color: var(--darkB) !important;
 }
 
-/*.activity-description > div:not(:empty) {
-  font-weight: bold !important;
-  font-size: 20px !important;
-  padding-bottom: 15px !important;
-}*/
+.activity-description > div:not(:empty) {
+  margin-bottom: 15px !important;
+}
 
 .fileuploadsubmissiontime {
   margin-bottom: 25px !important;
@@ -1497,9 +1495,9 @@ iframe:not(.vjs-tech) {
 }
 
 .description-inner > .no-overflow > .no-overflow > div[style="padding: 1em; font-family: Arial, Helvetica; border: 1px solid #3498db; display: inline-block; float: left; margin: 1em;"] {
-  border: none !important;
-  background-color: var(--darkA) !important;
-  border-radius: .75rem !important;
+  border: 1.5px solid #3e3e47 !important;
+  background-color: #32323b !important;
+  border-radius: .9rem !important;
   padding: 20px !important;
   width: 105% !important;
   margin-left: -4px !important;
@@ -1694,4 +1692,156 @@ li:has(> span > a[href="https://cvdof.ucm.es/moodle/admin/tool/lp/plans.php?user
 
 .border-top:not(.a) {
   border-top: none !important;
+}
+
+.timeline-event-list-item:not(.a) {
+  padding-top: 20px !important;
+}
+
+.local-mail-navbar-popover {
+  padding: 20px !important;
+}
+
+.fa-edit, .icon.itemicon, .d-inline-block.mt-1.align-top > img.icon {
+  filter: invert(0.9) !important;
+}
+
+.local-mail-menu-navbar.list-group-flush {
+  padding-top: 10px !important;
+  gap: 10px !important ;
+}
+
+.local-mail-combo-box-left-icon, .local-mail-combo-box {
+  display: none !important;
+}
+
+.list-group > .local-mail-combo-box.svelte-1sayswp > .form-control.svelte-1sayswp:not(.a) {
+  padding-left: 12px !important;
+}
+
+.tertiary-navigation.full-width-bottom-border, .user-heading:not(.a), .btn-icon.mr-1.toggle-category, .icon.fa-square-o.fa-fw.icon.itemicon {
+  display: none !important;
+}
+
+.user-report-container {
+  padding-left: 20px !important;
+  margin-top: 15px !important;
+}
+
+.level2.item.b1b.column-itemname.cell {
+  padding-left: 0px !important;
+}
+
+.dimmed_text, .rowtitle, .text-muted:not(.a) {
+  color: var(--lightB) !important;
+}
+
+.text-muted:not(.a) {
+  font-size: 14px !important;
+}
+
+img[src="https://cvdof.ucm.es/moodle/theme/image.php/boost/core/1739674820/i/agg_mean"].icon.itemicon {
+  filter: brightness(1.3) !important;
+}
+
+.path-grade-report-user .user-grade .column-contributiontocoursetotal {
+  min-width: 220px !important;
+}
+
+.fp-repo-area.nav-pills {
+  gap: 10px !important;
+  padding-right: 25px !important;
+}
+
+.nav-pills .nav-link {
+  display: flex !important;
+  align-items: center !important;
+  min-height: 50px !important;
+  height: max-content !important;
+  padding: 15px !important;
+  border-radius: .9rem !important;
+}
+
+.fp-repo-name {
+  padding-left: 10px !important;
+  font-size: 13.5px !important;
+}
+
+.fp-navbar.bg-faded.card.mb-0.clearfix.icon-no-spacing, .fp-setlicense.form-group, fieldset.form-group.row.flex-column {
+  display: none !important;
+}
+
+.fp-filename {
+  background: none !important;
+}
+
+.fp-content.card {
+  border-color: var(--darkB) !important;
+}
+
+.fp-file.form-group > .px-3 {
+  background-color: none !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.fp-file.form-group > .px-3 > input {
+  padding-top: 8px !important;
+  padding-left: 10px !important;
+  width: 100% !important;
+}
+
+.notification-area {
+  border: none !important;
+}
+
+.control-area {
+  background-color: var(--darkA) !important;
+  border-radius: .9rem !important;
+  border-right: none !important;
+  margin-top: 20px !important;
+  padding-top: 30px !important;
+  color: var(--lightB);
+}
+
+div[role="main"]:not(:has(> .generalbox)):has(> .notification-area, .addbloglink, .user-content, .alert-block) {
+  margin: 40px !important;
+  margin-bottom: 60px !important;
+}
+
+.message-app.main {
+  padding: 40px 30px !important;
+  border: none !important;
+  background-color: none !important;
+}
+
+.border-right:not(.a) {
+  border-right: none !important;
+}
+
+div[data-region="view-overview-group-messages"], div[data-region="view-overview-messages"], div[data-region="view-overview-favourites"] {
+  margin-bottom: 10px !important;
+  background-color: var(--darkA) !important;
+}
+
+.loading-icon, a[href="https://cvdof.ucm.es/moodle/message/notificationpreferences.php"] {
+  display: none !important;
+}
+
+.alert.alert-danger.alert-block.fade.in.alert-dismissible > button.close {
+  display: none !important;
+}
+
+.alert.alert-danger.alert-block.fade.in.alert-dismissible {
+  margin-top: 25px !important;
+}
+
+h2.main.mt-4.mb-4, .page-context-header:not(.mr-auto):has(~ .grade-report-user) {
+  display: none !important;
+}
+
+.calendar_event_course.card-header {
+  border: 1.5px solid #ffaa0c79 !important;
+  background-color: #fdaa1044 !important;
+  border-radius: .9rem !important;
 }
