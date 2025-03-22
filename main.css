@@ -182,7 +182,7 @@ a, h4, h5, h6 {
   z-index: 2000 !important;
 }
 
-.icon.fa.fa-caret-right.fa-fw, .ygtvcell.ygtvln, .portfolio-add-link, i.fa-plus, li[data-key="competencies"], a[href="https://cvdof.ucm.es/moodle/reportbuilder/index.php"], .fp-vb-icons.btn.btn-secondary.btn-sm, div#node_id, .fp-restrictions, .col-md-3.col-form-label.d-flex:not(.pb-0,.pr-md-0), h6.dropdown-header, .custom-switch:not(.custom-control), #message-user-button, .divider.border-left, .langbutton, .summary, .dropdown-item:before, .dropdown-divider, .courseimage, .navbar-brand, hr, .bg-secondary:not(.o).btn-icon, .d-md-flex:not(.o), .divider, .open-nav, .drawer-right-toggle {
+.icon.fa.fa-caret-right.fa-fw, .portfolio-add-link, i.fa-plus, li[data-key="competencies"], a[href="https://cvdof.ucm.es/moodle/reportbuilder/index.php"], .fp-vb-icons.btn.btn-secondary.btn-sm, div#node_id, .fp-restrictions, .col-md-3.col-form-label.d-flex:not(.pb-0,.pr-md-0), h6.dropdown-header, .custom-switch:not(.custom-control), #message-user-button, .divider.border-left, .langbutton, .summary, .dropdown-item:before, .dropdown-divider, .courseimage, .navbar-brand, hr, .bg-secondary:not(.o).btn-icon, .d-md-flex:not(.o), .divider, .open-nav, .drawer-right-toggle {
   display: none !important;
 }
 
@@ -1534,6 +1534,7 @@ iframe:not(.vjs-tech) {
   padding: 20px !important;
   width: 105% !important;
   margin-left: -4px !important;
+  box-shadow: #19191fa2 0px 5px 25px !important;
 }
 
 li[style="display: inline; padding: 0.5em; color: #ffffff; background-color: #3498db; font-weight: normal;"] {
@@ -2168,6 +2169,7 @@ h1.h2.local-mail-view-side-column.text-truncate {
   border-radius: .75rem !important;
   background-color: #2d2d38 !important;
   padding: 20px !important;
+  box-shadow: #19191fa2 0px 5px 25px !important;
 }
 
 .forum-post-container:focus > .focus-target {
@@ -2209,6 +2211,7 @@ th.header {
 .event > .card {
   background-color: #2d2d38ee !important;
   padding: 0px 0px !important;
+  box-shadow: #19191fa2 0px 5px 25px !important;
 }
 
 .modal-dialog:has(> .modal-content > .calendar_event_course) {
@@ -2224,7 +2227,7 @@ td.day > .d-md-block {
 }
 
 td.day > .d-md-block:hover {
-  background-color: #5e5e7425 !important;
+  background-color: #6a6a8338 !important;
 }
 
 td.day.clickable:hover {
@@ -2242,7 +2245,7 @@ td.today > .d-md-block {
 }
 
 td.today > .d-md-block:hover {
-  background-color: #26baff1e !important;
+  background-color: #26baff25 !important;
 }
 
 .maincalendar > .bottom {
@@ -2296,4 +2299,119 @@ small.text-dark {
 .checkbox > .form-check > input.form-check-input {
   top: -10px !important;
   margin-top: 0px !important;
+}
+
+.maincalendar {
+  background: radial-gradient(ellipse 150% 110%, var(--darkC) 0%, transparent 100%);
+}
+
+.calendarmonth > thead > tr > th.header {
+  background-color: transparent !important;
+}
+
+.btn-group {
+  gap: 10px !important;
+}
+
+.container-fluid.tertiary-navigation > .row > .navitem.ml-auto:has(> form > button) {
+  margin-left: 0px !important;
+}
+
+.filemanager > .ygtvitem > .ygtvchildren > .ygtvitem > #ygtvtableel1.ygtvtable.ygtvdepth0.ygtv-expanded.ygtv-highlight0 {
+  display: none !important;
+}
+
+.ygtvrow > .ygtvcell.ygtvblankdepthcell:has(> .ygtvspacer) {
+  display: none !important;
+}
+
+.ygtvrow > .ygtvcell.ygtvln:has(> .ygtvspacer) {
+  display: none !important;
+}
+
+.local-mail-view-main-column > .card {
+  padding: 25px !important;
+  background-color: #2d2d38a2 !important;
+  border: 1.5px solid #62627a63 !important;
+  border-radius: .75rem !important;
+}
+
+.local-mail-message-users.d-flex.mb-n2 {
+  padding-bottom: 30px !important;
+}
+
+.local-mail-message-users.d-flex.mb-n2 > .d-flex.flex-column > div, .card-body.p-3.px-xl-4 > .d-sm-flex.mb-n1  {
+  margin-top: 0px !important;
+  margin-bottom: 2px !important;
+  font-size: 13px !important;
+  color: var(--lightB) !important;
+}
+
+.local-mail-message-users.d-flex.mb-n2 > .d-flex.flex-column > div > a, .card-body.p-3.px-xl-4 > .d-sm-flex.mb-n1 > .d-flex.mb-3.mb-sm-0 > .mt-1 > a {
+  color: var(--lightA) !important;
+}
+
+.btn-primary > .fa.fa-reply, .btn-primary > .fa.fa-share, .btn-primary > .fa-send {
+  filter: invert(0.9) !important;
+  font-size: 15px !important;
+  margin-bottom: 2px !important;
+}
+
+.local-mail-message-content {
+  padding-top: 20px !important;
+}
+
+.h5.card-title.mb-3 {
+  color: var(--lightA) !important;
+}
+
+.alert.alert-secondary {
+  color: #9999aadc !important;
+  background-color: #47475c44 !important;
+  border: 1.5px solid #57576db7 !important;
+  margin-top: 0px !important;
+}
+
+.alert.alert-danger {
+  color: #b99696dc !important;
+  background-color: #744b4b4d !important;
+  border: 1.5px solid #6b5050c0 !important;
+  margin-bottom: 10px !important;
+}
+
+.alert.alert-danger >.fa-exclamation-circle {
+  color: #b99696dc !important;
+}
+
+form.pt-lg-2.pb-3.px-lg-4.card > div:last-child {
+  margin-top: 20px !important;
+}
+
+form.pt-lg-2.pb-3.px-lg-4.card, .local-mail-view-main-column > .card {
+  margin-bottom: 25px !important;
+}
+
+.local-mail-paging-buttons > .align-self-center.text-nowrap {
+  color: var(--lightB) !important;
+}
+
+.justify-content-end > .btn.mr-3.mb-3.disabled.btn-secondary {
+  display: none !important;
+}
+
+.local-mail-list-message.font-weight-bold > div > .w-100 > .flex-grow-1 {
+  color: var(--lightA) !important;
+}
+
+.alert-info.text-truncate:has(> .fa-clock-o), .alert-info.text-truncate:has(> .fa-check) {
+  background-color: transparent !important;
+}
+
+#local-mail-message-form-subject {
+  background-color: var(--darkC) !important;
+  border: 1.5px solid var(--darkA) !important;
+}
+
+#local-mail-message-form-subject::placeholder {
+  color: #6c6c7ce8 !important;
 }
