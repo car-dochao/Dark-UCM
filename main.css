@@ -632,16 +632,6 @@ div.btn-cancel > span > input.btn.btn-secondary {
   gap: 5px !important;
 }
 
-.btn.btn-secondary.btn-sm {
-  padding-left: 12px !important;
-  padding-top: 10px !important;
-  justify-content: center !important;
-  height: fit-content !important;
-  width: 42px !important;
-  background-color: var(--darkA) !important;
-  border: none !important;
-}
-
 .filemanager-toolbar {
   margin-top: 15px !important;
   margin-bottom: 0px !important;
@@ -927,7 +917,7 @@ div[role="main"] > h2:has(~ .container-fluid.p-sm-0) { /* wth */
 
 .container-fluid.p-sm-0 > .row {
   background-color: var(--darkC) !important;
-  outline: 60px solid var(--darkC) !important;
+  outline: 170px solid var(--darkC) !important;
 }
 
 @media (min-width: 768px) {
@@ -2059,7 +2049,7 @@ div[data-region="content-messages-footer-container"] > .d-flex.mt-sm-1 {
   margin-top: 0px !important;
   border-radius: .75rem !important;
   padding: 0px !important;
-  outline: 150px solid var(--darkC) !important;
+  box-shadow: 0 0 0 90px var(--darkC) !important;
   overflow: visible !important;
 }
 
@@ -2090,7 +2080,8 @@ h1.h2.local-mail-view-side-column.text-truncate {
 }
 
 .local-mail.local-mail-view.container-fluid > div:nth-child(2) {
-  margin-bottom: 0px !important
+  margin-bottom: 0px !important;
+  flex-wrap: nowrap !important;
 }
 
 .local-mail.local-mail-view.container-fluid > div:nth-child(2) > div:first-child {
@@ -2334,6 +2325,7 @@ small.text-dark {
   background-color: #2d2d38a2 !important;
   border: 1.5px solid #62627a63 !important;
   border-radius: .75rem !important;
+  box-shadow: rgba(25, 25, 31, 0.635) 0px 5px 25px !important;
 }
 
 .local-mail-message-users.d-flex.mb-n2 {
@@ -2351,7 +2343,7 @@ small.text-dark {
   color: var(--lightA) !important;
 }
 
-.btn-primary > .fa.fa-reply, .btn-primary > .fa.fa-share, .btn-primary > .fa-send {
+.btn-primary > .fa.fa-reply, .btn-primary > .fa.fa-share, .btn-primary > .fa-send, .btn-primary > .fa-reply-all {
   filter: invert(0.9) !important;
   font-size: 15px !important;
   margin-bottom: 2px !important;
@@ -2366,9 +2358,9 @@ small.text-dark {
 }
 
 .alert.alert-secondary {
-  color: #9999aadc !important;
-  background-color: #47475c44 !important;
-  border: 1.5px solid #57576db7 !important;
+  color: #b8b8c48f !important;
+  background-color: #4b4b5c54 !important;
+  border: 1.5px solid #65657ab7 !important;
   margin-top: 0px !important;
 }
 
@@ -2414,4 +2406,86 @@ form.pt-lg-2.pb-3.px-lg-4.card, .local-mail-view-main-column > .card {
 
 #local-mail-message-form-subject::placeholder {
   color: #6c6c7ce8 !important;
+}
+
+.file-picker.fp-generallayout.row {
+  flex-wrap: nowrap !important;
+}
+
+@media (min-width: 768px) {
+  .col-md-9.p-0 {
+    max-width: 60% !important;
+  }
+}
+
+option[value="adaptable"], option[value="boost"], option[value="classic"] { /* only boost theme is supported atm */
+  display: none !important;
+}
+
+.alert.alert-success.alert-block.fade.alert-dismissible {
+  margin-bottom: 25px !important;
+}
+
+textarea#id_description_editor {
+  margin-bottom: 15px !important;
+  height: auto !important;
+}
+
+.count-container {
+  padding: 2px 4.5px !important;
+  border-radius: 1rem !important;
+  color: var(--lightA) !important;
+  font-weight: 500 !important;
+  font-size: 9px !important;
+  line-height: 9px !important;
+}
+
+.btn.btn-secondary.btn-sm {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 42px !important;
+  width: 42px !important;
+  background-color: var(--darkA) !important;
+  border: none !important;
+}
+
+.btn.btn-secondary.btn-sm > i.icon {
+  position: relative !important;
+  top: -2px !important;
+  left: -1px !important;
+}
+
+.fp-navbar.card.bg-faded.mb-0, .filemanager.w-100.fm-loaded.fm-nomkdir.fm-nofiles {
+  background-color: transparent !important;
+}
+
+@media (min-width: 992px) {
+  .local-mail-view-side-column.svelte-1uxxomv {
+    flex-basis: 15% !important;
+  }
+}
+
+.box.plugincontentsummary {
+  display: none !important;
+}
+
+.box > table {
+  border: none !important;
+}
+
+div[style*="background-color: #ffcc80"] {
+  background-color: #3856aa1c !important;
+  border: 1.5px solid #6070b86e !important;
+  border-radius: .9rem !important;
+  padding: 30px 20px !important;
+  box-shadow: #19191fa2 0px 5px 25px !important;
+}
+
+a[target="_blank"] {
+  color: var(--link) !important;
+}
+
+.local-mail-view-side-column.svelte-1uxxomv {
+  min-width: auto !important;
 }
