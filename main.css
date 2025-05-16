@@ -483,7 +483,7 @@ aside, #frontpage-course-list {
   padding: 0px 30px 0px 0px !important;
 }
 
-.flex-fill.description-inner.text-break > .no-overflow > .no-overflow, .flex-fill.description-inner.text-break > .no-overflow, p[dir="ltr"] {
+.flex-fill.description-inner.text-break > .no-overflow > .no-overflow, .flex-fill.description-inner.text-break > .no-overflow, p[dir="ltr"]:not(:has(~ .expandsummaryicon)):not(.expandsummaryicon ~ p[dir="ltr"]) {
   padding: 0px !important;
   margin-bottom: 0px !important;
 }
@@ -502,7 +502,7 @@ aside, #frontpage-course-list {
   border: none !important;
   z-index: -5 !important;
   cursor: pointer !important;
-  display: none !important; /* WIP atm, hidden*/
+  display: none !important; /* Highly-Experimental, hidden*/
 }
 
 .editmode-switch-form:hover {
@@ -529,7 +529,6 @@ aside, #frontpage-course-list {
 
 .card-body.p-3 {
   padding: 0 !important;
-  /*margin-top: 15px !important;*/
 }
 
 .block-add {
@@ -976,9 +975,9 @@ div[role="main"] > h2:has(~ .container-fluid.p-sm-0) { /* wth */
   border-radius: .75rem !important;
 }
 
-/*div[role="main"] > .box.py-3.generalbox:not(:empty):not(.feedback_description) {
-  padding-bottom: 15px !important;        Probbably would have to enable this again
-}*/
+.cell.c1.lastcol > :nth-child(2):not(:empty) > :is(p) {
+  color:#7cb6d1 !important;
+}
 
 input, textarea, select {
   color: var(--lightB) !important;
@@ -1122,6 +1121,37 @@ ul {
   padding-inline-start: 0px !important;
 }
 
+.no-overflow > .no-overflow > ul, li > ul, .post-content-container > ul {
+  padding-inline-start: 22px !important;
+  margin-top: 5px !important;
+}
+
+.no-overflow > .no-overflow > ul > li, .post-content-container > ul > li {
+  list-style-type: disc !important;
+  margin-bottom: 5px !important;
+}
+
+ol > li > ul > li {
+  margin-top: 10px !important;
+  margin-left: 12px !important;
+  list-style-type: disc !important;
+  margin-bottom: 8px !important;
+  font-size: 14px !important;
+}
+
+strong {
+  -webkit-text-stroke: 0.09px currentColor !important; /* Temporal? (Bold text looks... weird...) */
+}
+
+.no-overflow > ol {
+  margin-left: 25px !important;
+}
+
+.no-overflow > ol > li {
+  list-style-type: decimal !important;
+  margin-bottom: 15px !important;
+}
+
 .bg-light:not(.a) {
   background-color: var(--darkB) !important;
 }
@@ -1198,6 +1228,23 @@ th.topic > div > div > a {
 
 .fileuploadsubmissiontime {
   margin-bottom: 25px !important;
+}
+
+td.lastcol > .plugincontentsummary {
+  padding-bottom: 0px !important;
+}
+
+#ygtvcontentel5 > div > .fileuploadsubmissiontime {
+  margin-bottom: 0px !important;
+}
+
+#ygtvcontentel5 > div > .fileuploadsubmission > a {
+  color: var(--lightB) !important;
+}
+
+.feedbacktable > .table-responsive > .generaltable > tbody > tr > .c0 {
+  padding-left: 0px !important;
+  width: 285px !important;
 }
 
 .fcontainer {
@@ -1408,7 +1455,7 @@ ol, ul, dl, dd {
   margin: 0px !important;
 }
 
-p:empty, p > br:empty {
+p:empty:not(> br), p > br:empty {
   display: none !important;
 }
 
@@ -1445,16 +1492,13 @@ p:empty, p > br:empty {
   margin-bottom: 0px !important;
 }
 
-/*div#intro.activity-description:has(> .generalbox > .no-overflow:not(:empty)) {
-  padding-bottom: 30px !important;
-}*/
-
 .feedback {
   margin-top: 25px !important;
 }
 
 .activity-item.activityinline {
   padding-top: 4px !important;
+  padding-bottom: 5px !important;
 }
 
 .activity-item.activityinline:has(> .description > .activity-altcontent > .description-inner > .no-overflow > .no-overflow > a) {
@@ -1469,15 +1513,28 @@ p:empty, p > br:empty {
   padding-top: 0px !important;
 }
 
-/*.description-inner > .no-overflow > .no-overflow > p:not(:empty):not(:has(> b)) {
-  padding-top: 8px !important;
-}*/
-
 .description-inner > .no-overflow > .no-overflow > p:not(:empty) > a {
   color: var(--link) !important;
 }
 
-.description-inner > .no-overflow > .no-overflow > h3 {
+.activity.activity-wrapper:not(:first-child) > .activity-item > .description > .activity-altcontent > .description-inner > .no-overflow > .no-overflow > h3 {
+  margin-top: 16px !important;
+}
+
+.activity.activity-wrapper > .activity-item > .description > .activity-altcontent > .description-inner > .no-overflow > .no-overflow > p:empty {
+  display: none !important;
+}
+
+.activity.activity-wrapper > .activity-item > .description > .activity-altcontent > .description-inner > .no-overflow > .no-overflow > br:empty {
+  display: none !important;
+}
+
+.activity.activity-wrapper > .activity-item > .description > .activity-altcontent > .description-inner > .no-overflow > .no-overflow > p {
+  margin-bottom: 0px !important;
+;
+}
+
+.description-inner > .no-overflow > .no-overflow > h3:only-child {
   margin-bottom: 0px !important;
 }
 
@@ -1951,7 +2008,7 @@ label.custom-control-label.ml-2 {
 
 .p-3[data-region="settings"] > *:is(h3), * > div > h3:not(.mb-0) {
   font-size: 17px !important;
-  margin-bottom: 20px !important;
+  margin-bottom: 15px !important;
 }
 
 .text-primary:not(.a), .button-text {
@@ -2466,7 +2523,7 @@ textarea#id_description_editor {
   }
 }
 
-.box.plugincontentsummary {
+.box.plugincontentsummary:empty {
   display: none !important;
 }
 
@@ -2480,6 +2537,7 @@ div[style*="background-color: #ffcc80"] {
   border-radius: .9rem !important;
   padding: 30px !important;
   box-shadow: #19191fa2 0px 5px 25px !important;
+  margin-bottom: 15px !important;
 }
 
 div[style*="background-color: #ffcc80"] > :is(h2, h4, p) {
@@ -2538,4 +2596,20 @@ a[target="_blank"] {
   #page.drawers .main-inner {
     max-width: 95% !important;
   }
+}
+
+td.gradefail {
+  color: #df5050 !important;
+}
+
+td.gradefail > i.icon.text-danger {
+  display: none !important;
+}
+
+.item.b1b.feedbacktext.column-feedback > p {
+  display: none !important;
+}
+
+.no-overflow > ol {
+  padding-left: 0px !important;
 }
