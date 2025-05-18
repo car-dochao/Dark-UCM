@@ -3,12 +3,13 @@
     "name": "Dark-UCM",
     "description": "Dark theme for the UCM Virtual Campus",
     "icons": { "96" : "icon.png" },
-    "version": "0.4",
+    "version": "0.5",
+    "author": "Carlos Dochao",
     "homepage_url": "https://github.com/car-dochao/Dark-UCM",
-
+    
     "content_scripts": [{
-            "matches": ["https://cvdof.ucm.es/moodle/*"],
-            "exclude_globs": ["*login/index.php*"],
-            "css": ["main.css"]
-    }]   
+        "matches": ["https://cvdof.ucm.es/moodle/*"],
+        "exclude_globs": ["*login/index.php*"],
+        "css": ["main.css"]
+    }]
 }

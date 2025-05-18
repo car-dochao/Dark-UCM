@@ -2,7 +2,7 @@
 
 <img src="icon.png" align="left" width="104"/>
 CSS Reskin for the Moodle Virtual Campus webpage (UCM) <br/>https://cvdof.ucm.es/moodle/<br/><br/>
-<sub>Note: This is still a WIP extension and functionality/readability can be affected.</sub>
+<sub>Note: This is an Alpha version and functionality/readability can be affected.</sub>
 
 <br clear="left"/>
 

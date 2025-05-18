@@ -5,7 +5,7 @@
   --darkC: #17171d;
   --lightA: #FFFFFF;
   --lightB: #a7a7b1;
-  --link: #4fc7ffda;
+  --link: #4fc7fffd;
 }
 
 body {
@@ -74,6 +74,11 @@ a, h4, h5, h6 {
   border-radius: .75rem !important;
   padding: 8px 16px 8px 16px !important;
   height: fit-content !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.btn.btn-secondary:not(.fp-file-download, .fp-file-delete):hover {
+  filter: brightness(1.1) !important;
 }
 
 ::placeholder {
@@ -479,7 +484,7 @@ aside, #frontpage-course-list {
   outline: 15px solid var(--darkC) !important;
 }
 
-.no-overflow {
+.no-overflow:not(.content-alignment-container) {
   padding: 0px 30px 0px 0px !important;
 }
 
@@ -1123,7 +1128,7 @@ ul {
 
 .no-overflow > .no-overflow > ul, li > ul, .post-content-container > ul {
   padding-inline-start: 22px !important;
-  margin-top: 5px !important;
+  margin-top: 8px !important;
 }
 
 .no-overflow > .no-overflow > ul > li, .post-content-container > ul > li {
@@ -1627,9 +1632,20 @@ li[style="display: inline; padding: 0.5em; color: #ffffff; background-color: #34
   height: 100% !important;
   position: absolute !important;
   margin-top: 100px !important;
-  margin-left: -10px !important;
   opacity: 0.6 !important;
   transition: opacity 0.25s ease-in-out !important;
+}
+
+.aalink.coursename.mr-2.mb-1:hover {
+  text-decoration: none !important;
+}
+
+.card.dashboard-card > a[tabindex="-1"] {
+  position: absolute !important;
+  top: 0px !important;
+  left: 0px !important;
+  width: 100% !important;
+  height: 140px !important;
 }
 
 .tableform {
@@ -2612,4 +2628,106 @@ td.gradefail > i.icon.text-danger {
 
 .no-overflow > ol {
   padding-left: 0px !important;
+}
+
+td.lastcol > .plugincontentsummary:has(~ .box[hidden="hidden"]) {
+  display: none !important;
+}
+
+.no-overflow > p:empty + p[dir="ltr"][style="text-align: left;"] { /* i really didn't know this existed */
+  display: none !important;
+}
+
+.feedback, .gradingsummary {
+  margin-bottom: 0px !important;
+}
+
+.dropdown-item.pl-5 {
+  padding-left: 15px !important;
+}
+
+ul > li:has(> a:not(.autolink))::marker, .no-overflow > .no-overflow > ul > li > a {
+  color: var(--link) !important;
+}
+
+.autolink:focus {
+  outline: none !important;
+  background-color: transparent !important;
+}
+
+#ygtvtableel1.ygtvtable.ygtvdepth0.ygtv-expanded.ygtv-highlight0 > tbody > tr.ygtvrow:hover {
+  background-color: transparent !important;
+}
+
+.generaltable tbody tr:nth-of-type(odd) {
+  background-color: transparent !important;
+}
+
+tr.discussion > td.align-middle.fit-content.limit-width.px-3 > .d-flex > div.p-0 {
+  margin-right: 10px !important;
+}
+
+.position-relative > .no-overflow, .body-content-container > .no-overflow.w-100.content-alignment-container {
+  overflow: visible !important;
+}
+
+.post-actions > a[tabindex="0"], div[data-container="discussion-tools"], .discussion > td:nth-child(5):is(.p-0.text-center.align-middle.fit-content.px-2):has(+ .text-center.align-middle.fit-content.px-2) {
+  display: none !important;
+}
+
+.post-actions > a[tabindex="-1"] {
+  margin-top: 15px !important;
+  display: flex !important;
+  align-items: center !important;
+  height: 40px !important;
+  padding: 0px 15px !important;
+  background-color: #52526659 !important;
+  border-radius: .90rem !important;
+  margin-left: 15px !important;
+}
+
+.post-actions > a[tabindex="-1"]:hover {
+  background-color: #525266ab !important;
+  text-decoration: none !important;
+}
+
+.flex-column > div[data-content="inpage-reply-content"] {
+  margin-top: 15px !important;
+}
+
+form[data-content="inpage-reply-form"] > .row.pb-1 {
+  margin-top: 5px !important;
+  padding-bottom: 30px !important;
+}
+
+form[data-content="inpage-reply-form"] > .row.pb-1 > span > textarea {
+  min-height: 80px !important;
+}
+
+button[data-action="forum-advanced-reply"] {
+  color: var(--lightB) !important;
+  padding: 10px 20px !important;
+  background-color: transparent !important;
+  border-radius: .9rem !important;
+}
+
+button[data-action="forum-advanced-reply"]:hover {
+  background-color: var(--darkA) !important;
+  text-decoration: none !important;
+}
+
+button[data-action="forum-inpage-submit"] {
+  margin-right: 5px !important;
+}
+
+.forumpost.focus-target::before {
+  display: none !important;
+}
+
+.clearfix#id_tagshdr {
+  display: none !important;
+}
+
+#id_messageeditable {
+  padding: 25px !important;
 }
