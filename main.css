@@ -604,6 +604,7 @@ aside, #frontpage-course-list {
 
 section#region-main:has(> div > div.generalbox), section#region-main:has(.activity-header) {
   padding: 30px !important;
+  overflow: hidden !important;
 }
 
 .box.generalbox {
@@ -1090,6 +1091,13 @@ input, select, textarea {
   width: 300px !important;
 }
 
+@media (max-width: 767.98px) {
+  [data-region=right-hand-drawer].drawer {
+    top: 60px !important;
+    height: 70% !important;
+  }
+}
+
 .expanded-icon-container:has(> i.fa-caret-down) {
   display: none !important;
 }
@@ -1131,7 +1139,7 @@ ul {
   margin-top: 8px !important;
 }
 
-.no-overflow > .no-overflow > ul > li, .post-content-container > ul > li {
+.no-overflow > .no-overflow > ul > li, .post-content-container > ul > li, .description-content > ol > li {
   list-style-type: disc !important;
   margin-bottom: 5px !important;
 }
@@ -1142,6 +1150,10 @@ ol > li > ul > li {
   list-style-type: disc !important;
   margin-bottom: 8px !important;
   font-size: 14px !important;
+}
+
+.description-content > ol {
+  padding-left: 0px !important;
 }
 
 strong {
@@ -1219,7 +1231,6 @@ th.topic > div > div > a {
 
 .modal-content {
   background-color: var(--darkB) !important;
-  border: 1.5px solid var(--darkA) !important;
   border-radius: .75rem !important;
 }
 
@@ -1420,6 +1431,13 @@ label#fp-mkdir-dlg-title {
   padding: 20px !important;
   right: -150px !important;
   width: 280px !important;
+}
+
+@media (max-width: 480px) {
+  .navbar .popover-region .popover-region-container {
+    position: absolute !important;
+    left: auto !important;
+  }
 }
 
 .popover-region-toggle::before, .popover-region-toggle::after {
@@ -1896,6 +1914,13 @@ img[src="https://cvdof.ucm.es/moodle/theme/image.php/boost/core/1739674820/i/agg
   border-radius: .9rem !important;
 }
 
+@media (max-width: 767.98px) {
+  .nav-tabs:not(.more-nav) .nav-link, .nav-pills .nav-link,  .nav-pills{
+    margin: 0px !important;
+    background-color: transparent !important;
+  }
+}
+
 .fp-repo-name {
   padding-left: 10px !important;
   font-size: 13.5px !important;
@@ -2253,8 +2278,9 @@ th.header {
 }
 
 .calendar_event_course {
-  background-color: #ff57033a !important;
-  border: 2px solid #bb623669 !important;
+  margin-bottom: 2px !important;
+  background-color: #ff6b3170 !important;
+  border: 2px solid #ff8251b9 !important;
 }
 
 .calendar_event_course.modal-header {
@@ -2574,7 +2600,7 @@ a[target="_blank"] {
 }
 
 .navbar-toggler.aabtn {
-  margin-top: 20px !important;
+  margin-top: 16px !important;
   width: 50px !important;
   height: 50px !important;
   margin-left: 5px !important;
@@ -2583,6 +2609,10 @@ a[target="_blank"] {
   border-radius: .75rem !important;
   box-shadow: 0px -5px 20px 15px var(--darkC) !important;
   padding-left: 6px !important;
+}
+
+.navbar-toggler.aabtn:hover {
+  background-color: var(--darkA) !important;
 }
 
 .modal-backdrop.show {
@@ -2602,6 +2632,10 @@ a[target="_blank"] {
   box-shadow: 0px -5px 20px 15px var(--darkC) !important;
   padding-right: 8px !important;
   padding-bottom: 4px !important;
+}
+
+.drawerheader > .btn.drawertoggle.icon-no-margin:hover {
+  background-color: var(--darkA) !important;
 }
 
 .drawerheader > .btn.drawertoggle.icon-no-margin > .icon.fa.fa-times.fa-fw::before  {
@@ -2646,7 +2680,7 @@ td.lastcol > .plugincontentsummary:has(~ .box[hidden="hidden"]) {
   padding-left: 15px !important;
 }
 
-ul > li:has(> a:not(.autolink))::marker, .no-overflow > .no-overflow > ul > li > a {
+.no-overflow > .no-overflow > ul > li > a {
   color: var(--link) !important;
 }
 
@@ -2659,7 +2693,7 @@ ul > li:has(> a:not(.autolink))::marker, .no-overflow > .no-overflow > ul > li >
   background-color: transparent !important;
 }
 
-.generaltable tbody tr:nth-of-type(odd) {
+.generaltable tbody tr {
   background-color: transparent !important;
 }
 
@@ -2730,4 +2764,280 @@ button[data-action="forum-inpage-submit"] {
 
 #id_messageeditable {
   padding: 25px !important;
+}
+
+span.eventname {
+  line-height: 0px !important;
+  font-size: 13px !important;
+}
+
+tr.discussion:hover {
+  background-color: transparent !important;
+}
+
+footer.footer-dark.bg-dark {
+  opacity: 0 !important;
+  max-height: 10px !important;
+  overflow: hidden !important;
+}
+
+.toast {
+  background-color: #20202c !important;
+  border-radius: .75rem !important;
+  border: 1.5px solid #333344 !important;
+  padding: 10px !important;
+  box-shadow: 0px -5px 20px 15px var(--darkC) !important;
+}
+
+.drawer-left > .drawercontent.drag-container > .list-group > .list-group-item.list-group-item-action {
+  margin-top: 15px !important;
+  height: 50px !important;
+  width: 220px !important;
+  margin-left: 15px !important;
+  background-color: var(--darkB) !important;
+  border: 1.5px solid var(--darkA) !important;
+  border-radius: 0.75rem !important;
+  transition: all 0.2s ease-in-out !important;
+  color: var(--lightB) !important;
+  box-shadow: #19191fa2 0px 5px 25px !important;
+}
+
+.drawer-left > .drawercontent.drag-container > .list-group > .list-group-item.list-group-item-action.active {
+  color: var(--lightA) !important;
+}
+
+.drawer-left > .drawercontent.drag-container > .list-group > .list-group-item.list-group-item-action:hover {
+  background-color: var(--darkA) !important;
+}
+
+.drawer-primary .drawercontent {
+  margin-top: 5px !important;
+  padding: .15rem !important;
+}
+
+.d-flex.flex-wrap > .ml-auto > .singlebutton {
+  display: none !important;
+}
+
+.popover-header {
+  background-color: var(--darkB) !important;
+  border: none !important;
+}
+
+.popover-header::before {
+  display: none !important;
+}
+
+.popover {
+  background-color: var(--darkB) !important;
+  border: 1px solid var(--darkA) !important;
+  border-radius: .75rem !important;
+  padding: 15px !important;
+}
+
+.popover-body > div {
+  color: var(--lightA) !important;
+}
+
+.popover-body > div > img {
+  filter: invert(0.9) !important;
+}
+
+.arrow {
+  filter: invert(0.83) !important;
+}
+
+/* TODO: fix popover getting bugged after clicking an entry with it being displayed */
+
+.info {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.que {
+  margin-top: 25px !important;
+}
+
+.formulation {
+  display: flex !important;
+  flex-direction: column !important;
+  color: #9bd9f8 !important;
+  padding: 25px !important;
+  background-color: #1a3f5056 !important;
+  border: 1.5px solid #318cb696 !important;
+  border-radius: .75rem !important;
+  max-height: min-content !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-top: none !important;
+  padding-top: 12px !important;
+}
+
+.qtype_essay_response, .qtype_essay_editor {
+  padding: 20px !important;
+  font-size: 13px !important;
+  color: #b2e5ff !important;
+  background-color: #31628d34 !important;
+  border: 1.5px solid #5097b8a2 !important;
+  border-radius: .75rem !important;
+  max-height: fit-content !important;
+  min-height: auto !important;
+  margin-right: 15px !important;
+  margin-top: 10px !important;
+}
+
+.answer > input {
+  color: #b3def3 !important;
+  font-size: 14px !important;
+  background-color: #31628d34 !important;
+  border: 1.5px solid #17739eaf !important;
+  border-radius: 1rem !important;
+  margin-left: 5px !important;
+  margin-right: 10px !important;
+}
+
+.comment, .outcome:has(.rightanswer):not(:has(.numpartscorrect)) {
+  color: #94e7ad !important;
+  padding: 25px !important;
+  background-color: #1a502c4b !important;
+  border: 1.5px solid #179e4ba1 !important;
+  border-radius: .75rem !important;
+}
+
+.formulation:has(fieldset > .answer > .incorrect) ~ .outcome:not(:has(.numpartscorrect)) {
+  color: #e79494 !important;
+  padding: 25px !important;
+  background-color: #501e1a4b !important;
+  border: 1.5px solid #bd4d3eab !important;
+  border-radius: .75rem !important;
+}
+
+.answer > div {
+  align-items: center !important;
+}
+
+.answer > div > .specificfeedback {
+  padding: 8px 14px !important;
+  font-size: 12.8px !important;
+  color: #9fcadf !important;
+  background-color: #31628d63 !important;
+  border-radius: 1rem !important;
+  margin-left: 10px !important;
+  margin-top: 5px !important;
+}
+
+.specificfeedback > p[style="text-align: left;"]:has(>br:only-child) {
+  display: none !important;
+}
+
+.specificfeedback > p, .qtext {
+  margin: 0px !important;
+}
+
+.answer > div.correct > span > i.icon, .answer > i.fa-check.icon {
+  color: #75f0ac !important;
+}
+
+.answer > div.incorrect > span > i.icon, .answer > i.fa-remove.icon {
+  color: #f56956 !important;
+}
+
+.outcome {
+  min-height: min-content !important;
+  color: #e4ca93 !important;
+  padding: 25px !important;
+  background-color: #50421a4d !important;
+  border: 1.5px solid #9e73179a !important;
+  border-radius: .75rem !important;
+}
+
+.outcome > .feedback {
+  margin-top: 0px !important;
+}
+
+.qtext > p > img.img-fluid {
+  margin-top: 15px !important;
+  border-radius: .75rem !important;
+}
+
+.qtext > p > a {
+  color: #27bbff !important;
+}
+
+.comment:not(:has(p))::after {
+  content: 'N/A';
+  visibility: visible !important;
+  font-size: 14.5px !important;
+  margin-top: 2px !important;
+  margin-bottom: 20px !important;
+}
+
+pre:has(code) {
+  padding: 20px !important;
+  margin-top: 15px !important;
+  color: #8dfff0 !important;
+  background-color: #318d8134 !important;
+  border: 1.5px solid #50b8afa2 !important;
+  border-radius: .75rem !important;
+  max-height: min-content !important;
+  margin-bottom: 0px !important;
+  margin-right: 20px !important;
+}
+
+pre:has(code[class="language-c#"]) {
+  padding-top: 0px !important;
+}
+
+div > .que {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.que > .content {
+  margin-left: 0px !important;
+}
+
+.que > .info {
+  width: 100% !important;
+  display: flex !important;
+  margin-bottom: 0px !important;
+  flex-direction: row !important;
+  color: #aee4ff !important;
+  padding: 25px !important;
+  padding-bottom: 5px !important;
+  background-color: #1a3f5056 !important;
+  border: 1.5px solid #318cb696 !important;
+  border-radius: .75rem !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-bottom: none !important;
+  overflow: hidden !important;
+}
+
+.info > .questionflag {
+  margin-left: auto !important;
+  margin-right: 20px !important;
+}
+
+.info > h3 {
+  margin-top: 8px !important;
+  text-transform: uppercase !important;
+  color: #a8e2ff !important;
+  margin-right: 20px !important;
+}
+
+.info > h3 > .qno {
+  margin-left: 1px !important;
+  font-size: 17.2px !important;
+}
+
+.info > .state, .info > .grade {
+  padding: 6px 14px !important;
+  height: min-content !important;
+  font-size: 12px !important;
+  color: #9fcadf !important;
+  background-color: #31628d63 !important;
+  border-radius: 1rem !important;
+  margin-top: 2px !important;
+  margin-right: 10px !important;
 }
