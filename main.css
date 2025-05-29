@@ -8,6 +8,11 @@
   --link: #4fc7fffd;
 }
 
+* {
+  scrollbar-width: auto !important;
+  scrollbar-color: #66676e transparent !important;
+}
+
 body {
   color: var(--lightA) !important;
   background-color: var(--darkC) !important;
@@ -47,7 +52,7 @@ a, h4, h5, h6 {
   color: var(--lightB) !important;
 }
 
-.coursebox, div [role="listitem"] {
+.coursebox, div[role="listitem"]:not() {
   background-color: var(--darkB) !important;
   border: 1px solid var(--darkA) !important;
   border-radius: .75rem !important;
@@ -187,7 +192,7 @@ a, h4, h5, h6 {
   z-index: 2000 !important;
 }
 
-.icon.fa.fa-caret-right.fa-fw, .portfolio-add-link, i.fa-plus, li[data-key="competencies"], a[href="https://cvdof.ucm.es/moodle/reportbuilder/index.php"], .fp-vb-icons.btn.btn-secondary.btn-sm, div#node_id, .fp-restrictions, .col-md-3.col-form-label.d-flex:not(.pb-0,.pr-md-0), h6.dropdown-header, .custom-switch:not(.custom-control), #message-user-button, .divider.border-left, .langbutton, .summary, .dropdown-item:before, .dropdown-divider, .courseimage, .navbar-brand, hr, .bg-secondary:not(.o).btn-icon, .d-md-flex:not(.o), .divider, .open-nav, .drawer-right-toggle {
+.icon.fa.fa-caret-right.fa-fw, .portfolio-add-link, i.fa-plus, li[data-key="competencies"], a[href="https://cvex1.ucm.es/moodle/message/index.php"], a[href="https://cvdof.ucm.es/moodle/reportbuilder/index.php"], a[href="https://cvex1.ucm.es/moodle/reportbuilder/index.php"], .fp-vb-icons.btn.btn-secondary.btn-sm, div#node_id, .fp-restrictions, .col-md-3.col-form-label.d-flex:not(.pb-0,.pr-md-0), h6.dropdown-header, .custom-switch:not(.custom-control), #message-user-button, .divider.border-left, .langbutton, .summary, .dropdown-item:before, .dropdown-divider, .courseimage, .navbar-brand, hr, .bg-secondary:not(.o).btn-icon, .d-md-flex:not(.o), .divider, .open-nav {
   display: none !important;
 }
 
@@ -200,8 +205,6 @@ span.text-primary {
   height: auto !important;
   margin-top: 0px !important;
   padding-top: 65px !important;
-  scrollbar-width: unset !important;
-  scrollbar-color: var(--darkA) var(--darkC) !important;
 }
 
 @media (min-width: 768px) {
@@ -945,7 +948,7 @@ div[role="main"] > h2:has(~ .container-fluid.p-sm-0) { /* wth */
 }
 
 @media (min-width: 768px) {
-  #page.drawers div[role="main"]:has(> form:not(.tableform)) {
+  #page.drawers div[role="main"]:has(> form:not(.tableform):not(.questionflagsaveform)) {
     padding: 30px !important;
   }
 }
@@ -1762,8 +1765,7 @@ li[style="display: inline; padding: 0.5em; color: #ffffff; background-color: #34
   background: var(--darkB) !important;
 }
 
-div.editor_atto_toolbar button+button,
-div.editor_atto_toolbar .menuplaceholder+button {
+div.editor_atto_toolbar button+button,div.editor_atto_toolbar .menuplaceholder+button {
   border-left: none !important;
 }
 
@@ -1952,15 +1954,16 @@ img[src="https://cvdof.ucm.es/moodle/theme/image.php/boost/core/1739674820/i/agg
 
 .notification-area {
   border: none !important;
+  display: flex !important;
+  flex-direction: row !important;
 }
 
 .control-area {
-  background-color: var(--darkA) !important;
-  border-radius: .9rem !important;
   border-right: none !important;
-  margin-top: 20px !important;
-  padding-top: 30px !important;
+  padding-top: 15px !important;
   color: var(--lightB);
+  margin-right: 30px !important;
+  width: 400px !important;
 }
 
 div[role="main"]:not(:has(> .generalbox)):has(> .notification-area, .addbloglink, .user-content, .alert-block) {
@@ -2537,6 +2540,13 @@ textarea#id_description_editor {
   font-weight: 500 !important;
   font-size: 9px !important;
   line-height: 9px !important;
+  top: 10px !important;
+}
+
+.content-item-container {
+  padding: 20px !important;
+  background-color: #44495062 !important;
+  border: 1.5px solid #5960699a !important;
 }
 
 .btn.btn-secondary.btn-sm {
@@ -2861,16 +2871,16 @@ footer.footer-dark.bg-dark {
 .formulation {
   display: flex !important;
   flex-direction: column !important;
-  color: #9bd9f8 !important;
-  padding: 25px !important;
-  background-color: #1a3f5056 !important;
-  border: 1.5px solid #318cb696 !important;
+  color: var(--lightA) !important;
+  padding: 35px !important;
+  background-color: #44495062 !important;
+  border: 1.5px solid #5960699a !important;
   border-radius: .75rem !important;
   max-height: min-content !important;
   border-top-left-radius: 0px !important;
   border-top-right-radius: 0px !important;
   border-top: none !important;
-  padding-top: 12px !important;
+  padding-top: 22px !important;
 }
 
 .qtype_essay_response, .qtype_essay_editor {
@@ -2919,8 +2929,8 @@ footer.footer-dark.bg-dark {
 .answer > div > .specificfeedback {
   padding: 8px 14px !important;
   font-size: 12.8px !important;
-  color: #9fcadf !important;
-  background-color: #31628d63 !important;
+  color: var(--lightB) !important;
+  background-color: #7d97ad27 !important;
   border-radius: 1rem !important;
   margin-left: 10px !important;
   margin-top: 5px !important;
@@ -2953,6 +2963,11 @@ footer.footer-dark.bg-dark {
 
 .outcome > .feedback {
   margin-top: 0px !important;
+}
+
+.answer > div {
+  margin: 0px !important;
+  font-size: 14px !important;
 }
 
 .qtext > p > img.img-fluid {
@@ -2991,6 +3006,8 @@ pre:has(code[class="language-c#"]) {
 div > .que {
   display: flex !important;
   flex-direction: column !important;
+  margin-left: 15px !important;
+  margin-right: 15px !important;
 }
 
 .que > .content {
@@ -3002,11 +3019,11 @@ div > .que {
   display: flex !important;
   margin-bottom: 0px !important;
   flex-direction: row !important;
-  color: #aee4ff !important;
-  padding: 25px !important;
+  padding: 35px !important;
+  padding-top: 30px !important;
   padding-bottom: 5px !important;
-  background-color: #1a3f5056 !important;
-  border: 1.5px solid #318cb696 !important;
+  background-color: #44495062 !important;
+  border: 1.5px solid #5960699a !important;
   border-radius: .75rem !important;
   border-bottom-left-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
@@ -3022,7 +3039,7 @@ div > .que {
 .info > h3 {
   margin-top: 8px !important;
   text-transform: uppercase !important;
-  color: #a8e2ff !important;
+  color: var(--lightA) !important;
   margin-right: 20px !important;
 }
 
@@ -3035,9 +3052,140 @@ div > .que {
   padding: 6px 14px !important;
   height: min-content !important;
   font-size: 12px !important;
-  color: #9fcadf !important;
-  background-color: #31628d63 !important;
+  color: var(--lightB) !important;
+  background-color: #7d97ad27 !important;
   border-radius: 1rem !important;
   margin-top: 2px !important;
   margin-right: 10px !important;
+}
+
+.quizreviewsummary > tbody > tr > th, .quizreviewsummary > tbody > tr > td {
+  text-align: start !important;
+  background-color: transparent !important;
+}
+
+.quizreviewsummary > tbody > tr > th {
+  padding-bottom: 15px !important;
+}
+
+.quizreviewsummary {
+  padding: 15px 0px !important;
+  border-radius: .75rem !important;
+  max-height: min-content !important;
+}
+
+.content-item-container {
+  padding: 15px !important;
+  background-color: #44495062 !important;
+  border: 1.5px solid #5960699a !important;
+  border-radius: .75rem !important;
+  margin-bottom: 15px !important;
+}
+
+.content-item-container > .context-link {
+  color: var(--lightA) !important;
+}
+
+.content-item-container > .view-more {
+  display: none !important;
+}
+
+.content-area:not(:has(.content:empty)) {
+  margin-top: 14px !important;
+  padding: 15px !important;
+  background-color: #44495062 !important;
+  border: 1.5px solid #5960699a !important;
+  border-radius: .75rem !important;
+  max-height: min-content !important;
+}
+
+.empty-text {
+  color: var(--lightB) !important;
+}
+
+.timestamp {
+  color: var(--lightB) !important;
+}
+
+.content-area > .header {
+  border-bottom: none !important;
+}
+
+.content-area > .content {
+  max-height: min-content !important;
+}
+
+.content-area > .content > p > a, .content-area > .footer > a {
+  color: var(--link) !important;
+}
+
+.content-area > .footer {
+  margin-left: 15px !important;
+  text-align: start !important;
+}
+
+.drawerheader {
+  justify-content: flex-end !important;
+  margin-right: 20px !important;
+  margin-top: 3px !important;
+  overflow: visible !important;
+}
+
+.drawer-right {
+  gap: 0px !important;
+}
+
+.drawer-right > .drawercontent.drag-container {
+  padding-right: 23px !important;
+  padding-top: 0px !important;
+  margin-top: 20px !important;
+  padding-left: 29px !important;
+  max-height: 89% !important;
+  scrollbar-width: none !important;
+  padding-bottom: 0px !important;
+}
+
+.drawer-right > .drawerheader > .drawertoggle {
+  padding-top: 1px !important;
+}
+
+.drawer-right-toggle > button {
+  margin-top: 10px !important;
+  margin-right: 11px !important;
+  width: 50px !important;
+  height: 50px !important;
+  background-color: var(--darkB) !important;
+  box-shadow: 0px -5px 20px 15px var(--darkC) !important;
+  padding-right: 3px !important;
+  padding-top: 3px !important;
+  border: 1.5px solid var(--darkA) !important;
+  border-radius: 0.75rem !important;
+}
+
+.drawer-right-toggle > button:hover {
+  background-color: var(--darkA) !important;
+}
+
+.drawer-right-toggle > button > .dir-rtl-hide {
+  filter: none !important;
+}
+
+.drawer-right-toggle > button > .dir-rtl-hide > i {
+  color: var(--lightB) !important;
+}
+
+.drawer-right-toggle:before {
+  background-color: transparent !important;
+}
+
+.drawer.scrolled .drawerheader {
+  box-shadow: none !important;
+}
+
+.tooltip {
+  visibility: hidden !important;
+}
+
+.drawer-right-toggle {
+  margin-right: 13px !important;
 }
