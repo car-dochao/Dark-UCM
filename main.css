@@ -1601,13 +1601,13 @@ iframe:not(.vjs-tech) {
 }
 
 .description-inner > .no-overflow > .no-overflow > div[style="padding: 1em; font-family: Arial, Helvetica; border: 1px solid #3498db; display: inline-block; float: left; margin: 1em;"] {
-  border: 1.5px solid #3e3e47 !important;
-  background-color: #32323b !important;
+  color: var(--lightA) !important;
+  background-color: #44495062 !important;
+  border: 1.5px solid #5960699a !important;
   border-radius: .9rem !important;
   padding: 20px !important;
   width: 105% !important;
   margin-left: -4px !important;
-  box-shadow: #19191fa2 0px 5px 25px !important;
 }
 
 li[style="display: inline; padding: 0.5em; color: #ffffff; background-color: #3498db; font-weight: normal;"] {
@@ -2588,12 +2588,12 @@ div[style*="background-color: #ffcc80"] {
   border: 1.5px solid #ffcc801f !important;
   border-radius: .9rem !important;
   padding: 30px !important;
-  box-shadow: #19191fa2 0px 5px 25px !important;
   margin-bottom: 15px !important;
 }
 
 div[style*="background-color: #ffcc80"] > :is(h2, h4, p) {
   color: #ffe8c9e3 !important;
+  font-size: 15px !important;
   text-align: start !important;
 }
 
