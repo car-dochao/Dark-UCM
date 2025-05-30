@@ -13,6 +13,10 @@
   scrollbar-color: #66676e transparent !important;
 }
 
+html {
+  scrollbar-width: none !important;
+}
+
 body {
   color: var(--lightA) !important;
   background-color: var(--darkC) !important;
@@ -52,7 +56,7 @@ a, h4, h5, h6 {
   color: var(--lightB) !important;
 }
 
-.coursebox, div[role="listitem"]:not() {
+.coursebox {
   background-color: var(--darkB) !important;
   border: 1px solid var(--darkA) !important;
   border-radius: .75rem !important;
@@ -261,13 +265,13 @@ i.icon, .text-truncate {
   box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4) !important;
 }
 
-div [data-region="no-events-empty-message"], div [data-region="empty-message"]:not(.empty-message), .dir-rtl-hide {
+div [data-region="no-events-empty-message"], div [data-region="empty-message"]:not(.empty-message) {
   padding-top: 60px !important;
   gap: 100px !important;
-  filter: invert(0.7) !important;
+  opacity: 0.4 !important;
 }
 
-#qrcode {
+#qrcode, .dir-rtl-hide {
   filter: invert(0.8) !important;
 }
 
@@ -2063,7 +2067,7 @@ label.custom-control-label.ml-2 {
   display: none !important;
 }
 
-footer.footer-popover.bg-white {
+footer.footer-popover.bg-white, .navbar-brand.d-flex  {
   display: none !important;
 }
 
@@ -2282,8 +2286,8 @@ th.header {
 
 .calendar_event_course {
   margin-bottom: 2px !important;
-  background-color: #ff6b3170 !important;
-  border: 2px solid #ff8251b9 !important;
+  background-color: #50341a57 !important;
+  border: 1.5px solid #9e5f17a8 !important;
 }
 
 .calendar_event_course.modal-header {
@@ -2922,6 +2926,14 @@ footer.footer-dark.bg-dark {
   border-radius: .75rem !important;
 }
 
+.partiallycorrect > .content > .outcome {
+  color: #e4ca93 !important;
+  padding: 25px !important;
+  background-color: #50421a4d !important;
+  border: 1.5px solid #9e73179a !important;
+  border-radius: .75rem !important;
+}
+
 .answer > div {
   align-items: center !important;
 }
@@ -2950,6 +2962,34 @@ footer.footer-dark.bg-dark {
 
 .answer > div.incorrect > span > i.icon, .answer > i.fa-remove.icon {
   color: #f56956 !important;
+}
+
+.qnbutton {
+  padding-top: 4px !important;
+  height: 30px !important;
+  border-radius: .75rem !important;
+}
+
+.qnbutton.correct {
+  color: #94e7ad !important;
+  background-color: #1a502c4b !important;
+  border: 1.5px solid #179e4ba1 !important;
+}
+
+.qnbutton.incorrect {
+  color: #e79494 !important;
+  background-color: #501e1a4b !important;
+  border: 1.5px solid #bd4d3eab !important;
+}
+
+.qnbutton.partiallycorrect {
+  color: #e4ca93 !important;
+  background-color: #50421a4d !important;
+  border: 1.5px solid #9e73179a !important;
+}
+
+.qnbutton > .trafficlight, .qnbutton > .thispageholder {
+  display: none !important;
 }
 
 .outcome {
@@ -3124,29 +3164,62 @@ div > .que {
   text-align: start !important;
 }
 
-.drawerheader {
+.drawer-right > .drawercontent > .d-print-none {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.drawer-right > .drawercontent > .d-print-none > aside {
+  outline: none !important;
+  background-color: transparent !important;
+}
+
+.drawer-right > .drawerheader {
+  position: fixed !important;
+  padding-top: 5px !important;
+  padding-bottom: 20px !important;
+  bottom: 0px !important;
+  right: 0px !important;
   justify-content: flex-end !important;
   margin-right: 20px !important;
   margin-top: 3px !important;
   overflow: visible !important;
+  height: min-content !important;
+  width: 295px !important;
+  box-shadow: none !important;
+  z-index: 100 !important;
 }
 
-.drawer-right {
-  gap: 0px !important;
+@media (min-width: 992px) {
+  .drawer#theme_boost-drawers-blocks:focus-within {
+    position: fixed !important;
+    z-index: unset !important;
+  }
 }
 
 .drawer-right > .drawercontent.drag-container {
-  padding-right: 23px !important;
   padding-top: 0px !important;
   margin-top: 20px !important;
-  padding-left: 29px !important;
-  max-height: 89% !important;
+  margin-left: 29px !important;
+  padding: 0px !important;
   scrollbar-width: none !important;
+  max-height: calc(100vh - 100px) !important;
   padding-bottom: 0px !important;
+  width: 261px !important;
+  border-radius: .75rem !important;
 }
 
-.drawer-right > .drawerheader > .drawertoggle {
+.drawer-right > .drawerheader > .btn.drawertoggle.icon-no-margin {
   padding-top: 1px !important;
+  margin-top: 0px !important;
+  box-shadow: 0px 0px 10px 5px var(--darkC) !important;
+}
+
+.drawer-toggles .drawer-toggler {
+  right: 1px !important;
+  bottom: 20px !important;
+  top: unset !important;
+  z-index: 1500 !important;
 }
 
 .drawer-right-toggle > button {
@@ -3155,11 +3228,15 @@ div > .que {
   width: 50px !important;
   height: 50px !important;
   background-color: var(--darkB) !important;
-  box-shadow: 0px -5px 20px 15px var(--darkC) !important;
+  box-shadow: 0px 0px 10px 5px var(--darkC) !important;
   padding-right: 3px !important;
   padding-top: 3px !important;
   border: 1.5px solid var(--darkA) !important;
   border-radius: 0.75rem !important;
+}
+
+.drawer-right-toggle > .btn:focus {
+  box-shadow: 0px 0px 10px 5px var(--darkC) !important;
 }
 
 .drawer-right-toggle > button:hover {
@@ -3188,4 +3265,8 @@ div > .que {
 
 .drawer-right-toggle {
   margin-right: 13px !important;
+}
+
+#mod_quiz_navblock > .card-body > .content > #user-picture {
+  display: none !important;
 }
