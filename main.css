@@ -495,32 +495,69 @@ aside, #frontpage-course-list {
   padding: 0px 30px 0px 0px !important;
 }
 
-.flex-fill.description-inner.text-break > .no-overflow > .no-overflow, .flex-fill.description-inner.text-break > .no-overflow, p[dir="ltr"]:not(:has(~ .expandsummaryicon)):not(.expandsummaryicon ~ p[dir="ltr"]) {
+.flex-fill.description-inner.text-break > .no-overflow > .no-overflow, .flex-fill.description-inner.text-break > .no-overflow, 
+p[dir="ltr"]:not(:has(~ .expandsummaryicon)):not(.expandsummaryicon ~ p[dir="ltr"]) {
   padding: 0px !important;
   margin-bottom: 0px !important;
 }
 
+@media (max-width: 767.98px) {
+  .editmode-switch-form label {
+    position:  relative !important;
+    clip: unset !important;
+    margin-top: 0px !important;
+  }
+}
+
 .editmode-switch-form:not(.a) {
   border-radius: .75rem !important;
-  height: 42px !important;
-  padding-left: 16px !important;
-  padding-right: 7px !important;
-  position: absolute !important;
-  top: 80px;
-  right: 10px;
+  height: 50px !important;
+  width: 50px !important;
+  position: fixed !important;
+  bottom: 20px;
+  left: 10px;
   background-color: #26bbff !important;
   color: var(--darkC) !important;
   font-weight: bold !important;
   border: none !important;
-  z-index: -5 !important;
   cursor: pointer !important;
-  display: none !important; /* Highly-Experimental, hidden*/
+  box-shadow: 0px 0px 10px 5px var(--darkC) !important;
 }
 
 .editmode-switch-form:hover {
   background-color: #1b85b6 !important;
   color: var(--darkC) !important;
   font-weight: bold !important;
+}
+
+.custom-control.custom-switch:has(> .custom-control-input) {
+  display: none !important;
+}
+
+.editmode-switch-form:not(.a):has(> .input-group > label.text-primary) {
+  color: var(--lightA) !important;
+  background-color: var(--darkA) !important;
+}
+
+.editmode-switch-form:not(.a):has(> .input-group > label.text-primary):hover {
+  filter: brightness(1.1) !important;
+}
+
+.editmode-switch-form > .input-group > label.mr-2.mb-0:before {
+  font-size: 24px !important;
+  content: "✎" !important;
+}
+
+.editmode-switch-form > .input-group > label.mr-2.mb-0 {
+  padding-left: 14px !important;
+  padding-top: 6px !important;
+  width: 50px !important;
+  height: 50px !important;
+  outline: none !important;
+  border: none !important;
+  background-color: transparent !important;
+  font-size: 0px !important;
+  cursor: pointer !important;
 }
 
 .text-primary:not([data-region="is-favourite"], [data-action="load-more-users"], [data-region="favourite-icon-container"]) {
@@ -539,12 +576,69 @@ aside, #frontpage-course-list {
   background-color: var(--darkB) !important;
 }
 
-.card-body.p-3 {
-  padding: 0 !important;
+.add_block_button {
+  position: relative !important;
+}
+
+.block-add:before {
+  font-size: 25px !important;
+  content: "+" !important;
+  padding-bottom: 3px !important;
+  margin-right: 5px !important;
 }
 
 .block-add {
-  z-index: 2500;
+  background-color: var(--darkB) !important;
+  color: var(--lightB) !important;
+  border: 1.5px solid var(--darkA) !important;
+  border-radius: .75rem !important;
+  height: 41px !important;
+  max-width: 260px !important;
+  padding-left: 15px !important;
+  padding-right: 25px !important;
+  padding-bottom: 1px !important;
+  text-decoration: none !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.block-add:hover {
+  background-color: var(--darkA) !important;
+}
+
+.commands > .menubar {
+  position: absolute !important;
+  top: 2px !important;
+  right: 13px !important;
+  justify-content: space-between!important;
+  width: 50% !important;
+}
+
+.action-menu-trigger > .dropdown > a > i.icon {
+  margin-top: 5px !important;
+}
+
+.action-menu-item > span > i.icon:before {
+  content: "══";
+  font-size: 18px !important;
+}
+
+.action-menu-trigger > .dropdown > a > i.icon:before {
+  content: "";
+  font-size: 14px !important;
+}
+
+
+.card-body:has( > .content > .maincalendar) {
+  background: radial-gradient(ellipse 150% 110%, var(--darkC) 0%, transparent 100%);
+}
+
+.card-body > .content > .maincalendar {
+  background: none !important;
+}
+
+.card-body.p-3 {
+  padding: 0 !important;
 }
 
 .btn-primary, .fp-file-download {
@@ -1076,7 +1170,7 @@ input, select, textarea {
 
 .dropdown-menu {
   margin-top: 10px !important;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 8px 12px !important;
+  box-shadow: 8px 16px 32px 4px rgba(0, 0, 0, 0.85);
   padding: 12px 10px !important;
 }
 
@@ -1184,7 +1278,7 @@ strong {
   border: 1.5px solid var(--darkA) !important;
 }
 
-.filter-group, .initialbar:not(.a), .buttons > .form-inline, .usercheckbox, #select-all-participants, .commands, th > i.fa-sort-asc, .paging.paging-morelink {
+.filter-group, .initialbar:not(.a), .buttons > .form-inline, .usercheckbox, #select-all-participants, th > i.fa-sort-asc, .paging.paging-morelink {
   display: none !important;
 } /* Temporal hide, FIX */
 
@@ -3187,7 +3281,7 @@ div > .que {
   height: min-content !important;
   width: 295px !important;
   box-shadow: none !important;
-  z-index: 100 !important;
+  z-index: 2000 !important;
 }
 
 @media (min-width: 992px) {
@@ -3203,6 +3297,7 @@ div > .que {
   margin-left: 29px !important;
   padding: 0px !important;
   scrollbar-width: none !important;
+  height: 100% !important;
   max-height: calc(100vh - 100px) !important;
   padding-bottom: 0px !important;
   width: 261px !important;
