@@ -530,7 +530,7 @@ p[dir="ltr"]:not(:has(~ .expandsummaryicon)):not(.expandsummaryicon ~ p[dir="ltr
   font-weight: bold !important;
 }
 
-.custom-control.custom-switch:has(> .custom-control-input) {
+.input-group > .custom-control.custom-switch:has(> .custom-control-input) {
   display: none !important;
 }
 
@@ -1046,7 +1046,7 @@ div[role="main"] > h2:has(~ .container-fluid.p-sm-0) { /* wth */
 }
 
 @media (min-width: 768px) {
-  #page.drawers div[role="main"]:has(> form:not(.tableform):not(.questionflagsaveform)) {
+  #page.drawers div[role="main"]:has(> form:not(.tableform):not(.questionflagsaveform):not(.horizontal)) {
     padding: 30px !important;
   }
 }
@@ -1082,7 +1082,7 @@ div[role="main"] > h2:has(~ .container-fluid.p-sm-0) { /* wth */
   border-radius: .75rem !important;
 }
 
-.cell.c1.lastcol > :nth-child(2):not(:empty) > :is(p) {
+td.cell.c1.lastcol > :nth-child(2) > :is(p), td.cell.c1.lastcol > :nth-child(2) > ul > li > p   {
   color:#7cb6d1 !important;
 }
 
@@ -2064,9 +2064,36 @@ img[src="https://cvdof.ucm.es/moodle/theme/image.php/boost/core/1739674820/i/agg
   width: 400px !important;
 }
 
-div[role="main"]:not(:has(> .generalbox)):has(> .notification-area, .addbloglink, .user-content, .alert-block) {
+div[role="main"]:not(:has(> form.horizontal)):not(:has(> .generalbox)):has(> .notification-area, .addbloglink, .user-content, .alert-block) {
   margin: 40px !important;
   margin-bottom: 60px !important;
+}
+
+li.option  {
+  height: 40px !important;
+  padding-left: 7px !important;
+  padding-right: 15px !important;
+  padding-top: 1px !important;
+  background-color: #44495062 !important;
+  border: 1.5px solid #5960699a !important;
+  border-radius: 2rem !important;
+  width: fit-content !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+li.option > label  {
+  margin-bottom: 2px !important;
+  margin-left: 7px !important;
+}
+
+.choices.list-unstyled.unstyled {
+  margin-bottom: 20px !important;
+  margin-top: 15px !important;
+}
+
+#intro.activity-description > .no-overflow > p[dir="ltr"]:has(br:only-child), #intro.activity-description > .no-overflow > p:empty:last-child, #intro.activity-description > .no-overflow > br:empty {
+  display: none !important;
 }
 
 .message-app.main {
@@ -2897,17 +2924,25 @@ footer.footer-dark.bg-dark {
   box-shadow: 0px -5px 20px 15px var(--darkC) !important;
 }
 
-.drawer-left > .drawercontent.drag-container > .list-group > .list-group-item.list-group-item-action {
+.drawer-left > .drawercontent.drag-container > .list-group {
   margin-top: 15px !important;
-  height: 50px !important;
-  width: 220px !important;
+  padding: 12px 10px !important;
+  width: min-content !important;
   margin-left: 15px !important;
   background-color: var(--darkB) !important;
   border: 1.5px solid var(--darkA) !important;
   border-radius: 0.75rem !important;
-  transition: all 0.2s ease-in-out !important;
-  color: var(--lightB) !important;
   box-shadow: #19191fa2 0px 5px 25px !important;
+}
+
+.drawer-left > .drawercontent.drag-container > .list-group > .list-group-item.list-group-item-action {
+  height: 50px !important;
+  width: 220px !important;
+  border-radius: 0.75rem !important;
+  color: var(--lightB) !important;
+  padding: 16px !important;
+  align-items: center !important;
+  display: flex !important;
 }
 
 .drawer-left > .drawercontent.drag-container > .list-group > .list-group-item.list-group-item-action.active {
@@ -3324,8 +3359,8 @@ div > .que {
   height: 50px !important;
   background-color: var(--darkB) !important;
   box-shadow: 0px 0px 10px 5px var(--darkC) !important;
-  padding-right: 3px !important;
-  padding-top: 3px !important;
+  padding-right: 2px !important;
+  padding-top: 4px !important;
   border: 1.5px solid var(--darkA) !important;
   border-radius: 0.75rem !important;
 }
@@ -3363,5 +3398,13 @@ div > .que {
 }
 
 #mod_quiz_navblock > .card-body > .content > #user-picture {
+  display: none !important;
+}
+
+th.header > .commands {
+  display: none !important;
+}
+
+.dropdown-item[data-value="summary"] {
   display: none !important;
 }
