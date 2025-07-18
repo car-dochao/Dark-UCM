@@ -211,6 +211,10 @@ span.text-primary {
   padding-top: 65px !important;
 }
 
+#page.drawers {
+  overflow: visible !important;
+}
+
 @media (min-width: 768px) {
   .header-maxwidth {
     padding-left: 0px !important;
@@ -3434,4 +3438,20 @@ th.header > .commands {
   background-color: var(--darkA) !important;
   color: var(--lightB) !important;
   font-weight: 500 !important;
+}
+
+div#region-main {
+  background-color: transparent !important;
+}
+
+#notice {
+  padding-bottom: 25px !important;
+}
+
+.btn-outline-secondary {
+  padding: 10px !important;
+  border-color: transparent !important;
+  background-color: var(--darkA) !important;
+  border-radius: .9rem !important;
+  color: var(--lightB) !important;
 }

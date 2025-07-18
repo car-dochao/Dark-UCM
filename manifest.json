@@ -9,7 +9,7 @@
     "host_permissions": ["https://cvdof.ucm.es/*", "https://cvex1.ucm.es/*"],
     
     "content_scripts": [{
-        "matches": ["https://cvdof.ucm.es/moodle/*", "https://cvex1.ucm.es/moodle/*"],
+        "matches": ["https://cvdof.ucm.es/*", "https://cvex1.ucm.es/*", "https://cvant.ucm.es/*"],
         "exclude_globs": ["*login/index.php*"],
         "css": ["main.css"]
     }]
