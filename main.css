@@ -3455,3 +3455,7 @@ div#region-main {
   border-radius: .9rem !important;
   color: var(--lightB) !important;
 }
+
+.overlay-icon-container {
+  display: none !important;
+}

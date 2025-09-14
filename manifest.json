@@ -1,15 +1,15 @@
 {
     "manifest_version": 3,
-    "name": "Dark-UCM",
-    "description": "Dark theme for the UCM Virtual Campus",
+    "name": "Dark-UCM (Legacy)",
+    "description": "Dark theme for the (old) UCM Virtual Campus",
     "icons": { "96" : "icon.png" },
-    "version": "0.6",
+    "version": "0.6.1",
     "author": "Carlos Dochao",
-    "homepage_url": "https://github.com/car-dochao/Dark-UCM",
-    "host_permissions": ["https://cvdof.ucm.es/*", "https://cvex1.ucm.es/*"],
+    "homepage_url": "https://github.com/car-dochao/Dark-UCM/tree/legacy",
+    "host_permissions": ["https://cvant.ucm.es/*"],
     
     "content_scripts": [{
-        "matches": ["https://cvdof.ucm.es/*", "https://cvex1.ucm.es/*", "https://cvant.ucm.es/*"],
+        "matches": ["https://cvant.ucm.es/*"],
         "exclude_globs": ["*login/index.php*"],
         "css": ["main.css"]
     }]
