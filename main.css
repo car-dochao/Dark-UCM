@@ -205,7 +205,7 @@ a, h4, h5, h6 {
 
 .navbar-nav .fa-bell {
   position: relative !important;
-  left: 2px !important;
+  left: 1px !important;
   top: 3px !important;
 }
 
@@ -528,6 +528,15 @@ td, th {
   border: none !important;
 }
 
+#page-mod-forum-index #region-main-box > div:not(.card, .block-region) {
+  padding: 40px !important;
+}
+
+#page-mod-forum-index .subscription {
+  float: left !important;
+  text-align: left !important;
+}
+
 aside, #frontpage-course-list {
   background-color: var(--darkC) !important;
   outline: 37px solid var(--darkC) !important;
@@ -540,6 +549,11 @@ aside, #frontpage-course-list {
 
 .no-overflow:not(.content-alignment-container) {
   padding: 0px 30px 0px 0px !important;
+  overflow: hidden !important;
+}
+
+.onetopic-tab-body .modified {
+  display: none !important;
 }
 
 .flex-fill.description-inner.text-break > .no-overflow > .no-overflow, .flex-fill.description-inner.text-break > .no-overflow, 
@@ -755,6 +769,15 @@ div#region-main:has(> div > div.generalbox), div#region-main:has(.activity-heade
   overflow: hidden !important;
 }
 
+div#region-main:has(.activity-header) .tabs-wrapper {
+  padding: 0 !important;
+}
+
+div#region-main:has(.activity-header) .no-overflow > .generalbox.center {
+  padding: 10px !important;
+  padding-top: 20px !important;
+}
+
 .box.generalbox {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
@@ -887,6 +910,10 @@ td.submissionstatussubmitted, td.earlysubmission, td.submissiongraded  {
   padding: 0px 35px 30px 35px !important;
 }
 
+#page-course-view-section-topics .course-content {
+  padding: 12px 35px 30px 35px !important;
+}
+
 .nav-tabs:not(.a) {
   border: none !important;
   margin-bottom: 0px !important;
@@ -955,6 +982,7 @@ ul.nav-tabs:not(.more-nav) > li.nav-item > a.nav-link.active:hover {
   padding-top: 30px !important;
   padding-left: 30px !important;
   margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
 }
 
 .path-mod:not(a){
@@ -1050,6 +1078,10 @@ img.userpicture {
 
 .page-context-header:not(.mr-auto, .me-auto) {
   margin-bottom: 10px !important;
+}
+
+#page-site-index .page-context-header:not(.mr-auto, .me-auto) {
+  margin-bottom: 15px !important;
 }
 
 @media (min-width: 576px) {
@@ -1175,9 +1207,33 @@ input:disabled {
   background: linear-gradient(to bottom, var(--darkC), transparent) !important;
 }
 
-.btn-close {
-  padding-top: 7px !important;
-  right: 0.9rem !important;
+.simplesearchform .btn-close {
+  top: 11px !important;
+  right: 8px !important;
+  font-size: 16px !important;
+  line-height: inherit !important;
+  text-shadow: none !important
+}
+
+.btn-close > span {
+  top: 0 !important;
+  color: var(--lightB) !important;
+  line-height: inherit !important;
+  text-shadow: none !important
+}
+
+.toast-message, .toast-body {
+  color: var(--lightA) !important;
+}
+
+.toast-body::before {
+  position: relative !important;
+  top: 3px !important;
+}
+
+.alert-dismissible .btn-close {
+  padding-top: 10px !important;
+  padding-right: 15px !important;
 }
 
 .btn.btn-clear {
@@ -1523,6 +1579,12 @@ td.lastcol > .plugincontentsummary {
   background: var(--darkC) !important;
   border: none !important;
   color: var(--lightB) !important;
+  height: 20px !important;
+  
+  div {
+    padding-bottom: 8px !important;
+    align-content: center !important; 
+  }
 }
 
 label#fp-mkdir-dlg-title {
@@ -1599,6 +1661,97 @@ label#fp-mkdir-dlg-title {
   margin-bottom: 10px !important;
   padding-right: 5px !important;
   border-radius: .75rem !important;
+}
+
+.notification-area .control-area {
+  padding-right: 10px !important;
+  border-radius: .75rem !important;
+}
+
+.notification-area .navbar {
+  display: none !important;
+}
+
+.notification-area .content .forumpost {
+  margin-top: 0 !important;
+  border-color: rgba(83, 83, 94, 0.719) !important;
+  background-color: rgba(74, 74, 82, 0.397) !important;
+  box-shadow: none !important;
+  border-radius: 0.75rem !important;
+  padding: 20px !important;
+  padding-top: 15px !important;
+}
+
+.notification-area .content-area .header {
+  border-bottom: none !important;
+}
+
+.header .subject {
+  color: var(--lightA) !important;
+}
+
+.header .author {
+  font-size: 12px !important;
+}
+
+.notification-area .forumpost .picture img {
+  margin: 0 !important;
+  margin-top: 7px !important;
+  margin-right: 5px !important;
+}
+
+.notification-area .content-area .header a {
+  color: var(--lightB) !important;
+}
+
+.notification-area .forumpost .content {
+  padding-top: 15px !important;
+}
+
+.notification-area .content-area {
+  padding-bottom: 0 !important;
+}
+
+.notification-area .forumpost .content .commands {
+  display: none !important;
+}
+
+.notification-area .content-area .footer {
+  display: none !important;
+}
+
+.notification-area .content .unsubscribelink {
+  margin-top: 25px !important;
+}
+
+.notification-area .forumpost .content .link {
+  padding: 8px 12px !important;
+  background-color: rgba(86, 86, 102, 0.452) !important;
+  border-radius: .75rem !important;
+  width: fit-content !important;
+  margin-top: 20px !important;
+
+  a { color: var(--lightB) !important; }
+
+  &:hover {
+    filter: brightness(1.1);
+    a { text-decoration: none !important; }
+  }
+}
+
+.notification-area .content-area .content ul li a {
+  padding: 8px 12px !important;
+  background-color: rgba(86, 86, 102, 0.452) !important;
+  border-radius: .75rem !important;
+  display: block !important;
+  width: fit-content !important;
+  margin-top: 20px !important;
+  color: var(--lightB) !important;
+
+  &:hover {
+    filter: brightness(1.1);
+    text-decoration: none !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1747,6 +1900,11 @@ li {
 
 .topics > li.section#section-0 {
   padding-top: 1.5rem !important;
+}
+
+.single-section .topics > li.section#section-0 {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
 }
 
 li.section:last-child {
@@ -2102,7 +2260,7 @@ img[src="https://cvdof.ucm.es/moodle/theme/image.php/boost/core/1739674820/i/agg
   font-size: 13.5px !important;
 }
 
-.fp-navbar.bg-faded.card.mb-0.clearfix.icon-no-spacing, .fp-setlicense.form-group, fieldset.form-group.row.flex-column {
+.fp-navbar.bg-faded.border-bottom.icon-no-spacing, .fp-setlicense.form-group, fieldset.form-group.row.flex-column {
   display: none !important;
 }
 
@@ -2110,17 +2268,17 @@ img[src="https://cvdof.ucm.es/moodle/theme/image.php/boost/core/1739674820/i/agg
   background: none !important;
 }
 
-.fp-content.card {
+.fp-repo-items.card {
   border-color: var(--darkB) !important;
 }
 
-.fp-file.form-group > .px-3 {
+.fp-file > .px-3 {
   background-color: none !important;
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
 
-.fp-file.form-group > .px-3 > input {
+.fp-file > .px-3 > input {
   padding-top: 8px !important;
   padding-left: 10px !important;
   width: 100% !important;
@@ -2251,9 +2409,10 @@ label.custom-control-label.ml-2 {
   font-size: 12.5px !important;
 }
 
-.p-3[data-region="settings"] > *:is(h3), * > div > h3:not(.mb-0, .h5, .sectionname) {
+.p-3[data-region="settings"] > *:is(h3), * > div > h3:not(.mb-0, .h5, .sectionname, .lead) {
   font-size: 17px !important;
-  margin-bottom: 15px !important;
+  padding-bottom: 25px !important;
+  margin-bottom: 0 !important;
 }
 
 .text-primary:not(.a), .button-text {
@@ -2736,6 +2895,15 @@ form.pt-lg-2.pb-3.px-lg-4.card, .local-mail-view-main-column > .card {
   flex-wrap: nowrap !important;
 }
 
+.file-picker .fp-content {
+  background: transparent !important;
+  overflow: visible !important;
+}
+
+:focus-visible {
+  outline: none !important;
+}
+
 @media (min-width: 768px) {
   .col-md-9.p-0 {
     max-width: 60% !important;
@@ -2756,13 +2924,13 @@ textarea#id_description_editor {
 }
 
 .count-container {
-  padding: 2px 4.5px !important;
+  padding: 2px 3px 3px 3px !important;
   border-radius: 1rem !important;
   color: var(--lightA) !important;
   font-weight: 500 !important;
   font-size: 9px !important;
-  line-height: 9px !important;
-  top: 10px !important;
+  line-height: 8px !important;
+  top: 9px !important;
 }
 
 .content-item-container {
@@ -2783,12 +2951,26 @@ textarea#id_description_editor {
 
 .btn.btn-secondary.btn-sm > i.icon {
   position: relative !important;
-  top: -2px !important;
-  left: -1px !important;
+  top: 0px !important;
+  right: 0px !important;
 }
 
 .fp-navbar.card.bg-faded.mb-0, .filemanager.w-100.fm-loaded.fm-nomkdir.fm-nofiles {
   background-color: transparent !important;
+}
+
+#page-mod-folder-view .navitem.ms-auto {
+  margin-left: 0 !important;
+  margin-bottom: 20px !important;
+}
+  
+.fp-filename-icon .fp-icon {
+  filter: invert(1) !important;
+}
+
+.fp-filename-icon .fp-filename {
+  position:  relative !important;
+  bottom: 3px !important;
 }
 
 @media (min-width: 992px) {
@@ -3647,7 +3829,7 @@ div#region-main {
   border-bottom: none !important;
 }
 
-.course-section-header {
+.course-section-header:has(.position-relative) {
   border-bottom: 1.5px solid var(--darkA) !important;
   padding-bottom: 15px !important;
 }
@@ -3873,4 +4055,57 @@ dd > img {
 
 .message-app .fa-chevron-right, .message-app .fa-chevron-down {
   font-size: 14px !important;
+}
+
+.notification-image .icon {
+  font-size: 14px !important;
+}
+
+h5 strong {
+  margin-top: 5px !important;
+  font-size: 16px !important;
+  color: var(--lightA) !important;
+}
+
+.content:not(.course-content-item-content) .summarytext h3 {
+  text-align: start !important;
+  border-bottom: 1.5px solid var(--darkA) !important;
+
+  strong { font-size: 18px !important; }
+}
+
+.activity-wrapper.indented .activity-item .activity-altcontent {
+  margin-top: 10px !important;
+}
+
+.activity-wrapper:has(hr:empty) {
+  display:  none !important;
+}
+
+.course-content-item-content .summarytext p:empty, .course-content-item-content .summarytext br:empty, .course-content-item-content .summarytext h3:empty {
+  display: none !important;
+}
+
+.course-content-item-content .summarytext div[style="text-align: center;"] {
+  text-align: start !important;
+  margin-top: 20px !important;
+}
+
+.moodle-dialogue-base .closebutton {
+  top: -25px !important;
+  right: -20px !important;
+  position: absolute !important;
+  font-size: 30px !important;
+
+  &:hover { opacity: 1 !important; }
+}
+
+table:not(.a) {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+table:not(.a) {
+  background-color: transparent !important;
+  border: none !important;
 }
