@@ -1165,10 +1165,22 @@ div[role="main"] > h2:has(~ .container-fluid.p-sm-0) {
   background-color: #122e3b !important;
   border: 1.5px solid #116891 !important;
   border-radius: .75rem !important;
+
+  a { color: #53bef0 !important; }
+
+  .fileuploadsubmissiontime { color: #52bef0d3 !important; }
+
+  img.icon {
+    filter: invert(0.75) hue-rotate(180deg) saturate(50) !important;
+  }
 }
 
 td.cell.c1.lastcol > :nth-child(2) > :is(p), td.cell.c1.lastcol > :nth-child(2) > ul > li > p   {
   color:#7cb6d1 !important;
+}
+
+.generaltable.table-bordered .cell.c1.lastcol:has(> :nth-child(2):not(:empty)) {
+  padding: 0 !important;
 }
 
 input, textarea, select {
@@ -1464,13 +1476,15 @@ td.lastcol > .plugincontentsummary {
   padding-bottom: 0px !important;
 }
 
+/* Temporary removal 
+
 #ygtvcontentel5 > div > .fileuploadsubmissiontime {
   margin-bottom: 0px !important;
-}
+}    
 
 #ygtvcontentel5 > div > .fileuploadsubmission > a {
   color: var(--lightB) !important;
-}
+}*/ 
 
 .feedbacktable > .table-responsive > .generaltable > tbody > tr > .c0 {
   padding-left: 0px !important;
@@ -1647,6 +1661,10 @@ label#fp-mkdir-dlg-title {
   box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4) !important;
 }
 
+.popover-region-container[aria-hidden="true"] {
+  display: none !important;
+}
+
 .popover-region-container:has(> a.see-all-link) {
   padding: 20px !important;
   right: -150px !important;
@@ -1674,7 +1692,9 @@ label#fp-mkdir-dlg-title {
 
 .notification-area .content .forumpost {
   margin-top: 0 !important;
-  border-color: rgba(83, 83, 94, 0.719) !important;
+  border-width: 1.5px !important;
+  border-style: solid !important;
+  border-color: rgba(99, 99, 110, 0.625) !important;
   background-color: rgba(74, 74, 82, 0.397) !important;
   box-shadow: none !important;
   border-radius: 0.75rem !important;
@@ -1726,7 +1746,7 @@ label#fp-mkdir-dlg-title {
 
 .notification-area .forumpost .content .link {
   padding: 8px 12px !important;
-  background-color: rgba(86, 86, 102, 0.452) !important;
+  background-color: rgba(139, 139, 154, 0.216) !important;
   border-radius: .75rem !important;
   width: fit-content !important;
   margin-top: 20px !important;
@@ -1739,7 +1759,7 @@ label#fp-mkdir-dlg-title {
   }
 }
 
-.notification-area .content-area .content ul li a {
+.notification-area .content-area .content ul li a:not(.autolink) {
   padding: 8px 12px !important;
   background-color: rgba(86, 86, 102, 0.452) !important;
   border-radius: .75rem !important;
@@ -1752,6 +1772,19 @@ label#fp-mkdir-dlg-title {
     filter: brightness(1.1);
     text-decoration: none !important;
   }
+}
+
+.autolink {
+  color: var(--link) !important;
+}
+
+.content-item-container:hover {
+  color: inherit !important;
+  filter: brightness(1.25) !important;
+}
+
+.content-item-container {
+  transition: 0.25s ease-in-out !important;
 }
 
 @media (max-width: 480px) {
@@ -3891,8 +3924,8 @@ div#region-main {
 }
 
 .activityiconcontainer .activityicon, .activityiconcontainer .icon {
-  height: 12px !important;
-  width: 12px !important;
+  height: 17px !important;
+  width: 17px !important;
 }
 
 .icon-size-6 .icon:not(.a) {
@@ -4108,4 +4141,137 @@ table:not(.a) {
 table:not(.a) {
   background-color: transparent !important;
   border: none !important;
+}
+
+em, span[style="color: #000000;"] {
+  color: var(--lightA) !important;
+}
+
+h3 > span > strong > em {
+  font-size: 20px !important;
+}
+
+#page-mod-page-view .generalbox li, .activity-description li {
+  list-style-type: disc !important;
+  margin-top: 12px !important;
+}
+
+.format-onetopic.cm-type-page table h1.h2.mb-0 {
+  display: none !important;
+}
+
+.format-onetopic.cm-type-page .onetopic-tab-body table th, .format-onetopic.cm-type-page .onetopic-tab-body table td {
+  background-color: transparent !important;
+  border: none !important;
+  text-align: center !important;
+}
+
+.comment-link img {
+  display: none !important;
+}
+
+.fileuploadsubmission img.icon {
+  filter: invert(0.8) !important;
+  height: 20px !important;
+  width: 20px !important;
+  margin-right: 0 !important;
+  margin-bottom: 2px !important;
+}
+
+.fileuploadsubmission a[target="_blank"] {
+  color: var(--lightB) !important;
+}
+
+body.limitedwidth #page.drawers .main-inner {
+  max-width: 830px !important;
+}
+
+.content .summarytext h4 {
+  font-size: 16px !important;
+  font-weight: 900 !important;
+  color: var(--lightA) !important;
+  margin-bottom: 30px !important;
+
+  &:not(:first-of-type) { margin-top: 30px !important; }
+}
+
+.content .summarytext section[style="margin: 1em 0 2em 1em;"], .content .summarytext section[style="margin: 1em 0 1em 1em;"]{
+  margin: 0 !important;
+  margin-top: 15px !important;
+}
+
+.activityinsummarytpl.activityinline .activity-icon.activityiconcontainer.smaller.courseicon.align-self-start {
+  display: flex !important;
+  margin-right: 15px !important;
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.summarytext .cmnameinline.position-relative {
+  display: flex !important;
+  align-items: center !important;
+  margin-bottom: 15px !important;
+}
+
+.content .cvheader {
+  flex-direction: column !important;
+  margin-left: 35px !important;
+  gap: 5px !important;
+}
+
+.content .cvheader figure {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 15px !important;
+}
+
+.content .cvheader figure > div {
+  width: 25px !important;
+  height: 25px !important;
+  font-size: 14px !important;
+}
+
+.content .cvheader figure > figcaption {
+  font-weight: 500 !important;
+  color: #ffffffd5 !important;
+  text-align: start !important;
+
+  > br { display: none !important; }
+}
+
+.single-section.general-section + .defaulttabs.hastopictabs .tabs-wrapper {
+  padding-top: 0 !important;
+}
+
+.diag.diag-fatalerror {
+  border-radius: .75rem !important;
+  border-width: 1.5px !important;
+  border-color: #df5050 !important;
+  background-color: #8825253f !important;
+  color: #df5050 !important;
+  font-size: 14px !important;
+
+  .location { 
+    font-size: 11px !important;
+    color: #df5050 !important; 
+  }
+
+  code {
+    margin-right: 2px !important;
+    font-size: 14px !important;
+    color: #df5050 !important; 
+  }
+
+  pre { 
+    border-left: none !important;
+    color: #df5050 !important;
+    margin-bottom: 0 !important;
+  }
+
+}
+
+.activity-description .img-fluid {
+  border-radius: .75rem !important;
+  margin-bottom: 10px !important;
 }
