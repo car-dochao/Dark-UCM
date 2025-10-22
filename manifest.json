@@ -6,10 +6,9 @@
     "version": "0.7",
     "author": "Carlos Dochao",
     "homepage_url": "https://github.com/car-dochao/Dark-UCM",
-    "host_permissions": ["https://cvdof.ucm.es/*", "https://cvex1.ucm.es/*"],
-    
+    "host_permissions": ["https://cvdof.ucm.es/*", "https://cvex1.ucm.es/*", "https://cvmix.ucm.es/*"],
     "content_scripts": [{
-        "matches": ["https://cvdof.ucm.es/*", "https://cvex1.ucm.es/*"],
+        "matches": ["https://cvdof.ucm.es/*", "https://cvex1.ucm.es/*", "https://cvmix.ucm.es/*"],
         "exclude_globs": ["*login/index.php*"],
         "css": ["main.css"]
     }]
