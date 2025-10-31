@@ -3653,6 +3653,7 @@ div > .que {
   border: 1.5px solid #5960699a !important;
   border-radius: .75rem !important;
   max-height: min-content !important;
+  overflow: hidden !important;
 }
 
 .empty-text {
@@ -3668,7 +3669,9 @@ div > .que {
 }
 
 .content-area > .content {
-  max-height: min-content !important;
+  max-height: 45dvh !important;
+  margin-bottom: 40px !important;
+  margin-top: 15px !important;
 }
 
 .content-area > .content > p > a, .content-area > .footer > a {
@@ -4224,6 +4227,8 @@ body.limitedwidth #page.drawers .main-inner {
   flex-direction: row !important;
   align-items: center !important;
   gap: 15px !important;
+
+  &&:hover { text-decoration: underline !important; }
 }
 
 .content .cvheader figure > div {
@@ -4274,4 +4279,26 @@ body.limitedwidth #page.drawers .main-inner {
 .activity-description .img-fluid {
   border-radius: .75rem !important;
   margin-bottom: 10px !important;
+}
+
+#page-my-index .me-auto.d-flex.flex-column > div > .mb-2 > .h2 {
+  display: none !important;
+}
+
+.fp-thumbnail > img {
+  background-color: transparent !important;
+  filter: invert(0.9) !important;
+}
+
+#page-message-output-popup-notifications  #region-main {
+  max-height: 75dvh !important;
+  overflow: hidden !important;
+}
+
+#page-message-output-popup-notifications .main-inner {
+  margin-bottom: 0 !important;
+}
+
+#page-message-output-popup-notifications .notification-area {
+  height: calc(75dvh - 120px) !important;
 }
