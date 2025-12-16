@@ -13,6 +13,11 @@
   scrollbar-color: #66676e transparent !important;
 }
 
+/* to preserve the space for the scrollbar and avoid layout shifts */
+/*html {
+  scrollbar-gutter: stable !important; 
+}*/
+
 body {
   color: var(--lightA) !important;
   background-color: var(--darkC) !important;
@@ -2449,7 +2454,8 @@ fieldset.form-group.row.flex-column {
   background: none !important;
 }
 
-.onetopic-tab-body .fp-filename > a:not(.a), .onetopic-tab-body .fp-filename-icon > a:not(.a) {
+.onetopic-tab-body .fp-filename>a:not(.a),
+.onetopic-tab-body .fp-filename-icon>a:not(.a) {
   color: var(--lightB) !important;
 }
 
@@ -4682,5 +4688,139 @@ div[style*="background-color: aquamarine;"] {
 }
 
 #page-mod-assign-view .container-fluid.mb-4:empty {
+  display: none !important;
+}
+
+.forumpost a>i {
+  font-size: 15px !important;
+  color: var(--link) !important;
+
+  &:hover {
+    text-decoration: underline !important;
+  }
+}
+
+.forumpost pre,
+.forumpost pre span {
+  color: rgb(141, 255, 240) !important;
+}
+
+#ac-banner {
+  gap: 0 !important;
+  margin-top: 10px !important;
+  margin-right: 11px !important;
+  width: 50px !important;
+  height: 50px !important;
+  background-color: var(--darkB) !important;
+  box-shadow: 0px 0px 10px 5px var(--darkC) !important;
+  padding-left: 13px !important;
+  padding-top: 12px !important;
+  border: 1.5px solid var(--darkA) !important;
+  border-radius: 0.75rem !important;
+  text-align: center !important;
+  font-family: "Font Awesome 6 Free" !important;
+  font-size: 20px !important;
+  color: var(--lightB) !important;
+
+  &:hover {
+    background-color: var(--darkA) !important;
+  }
+}
+
+#ac-banner[aria-expanded="false"]:after {
+  content: "\f06e" !important;
+}
+
+#ac-banner[aria-expanded="true"]:after {
+  content: "\f00d" !important;
+  font-weight: 600 !important;
+  padding-left: 1.5px !important;
+  font-size: 25px !important;
+}
+
+#ac-banner:focus {
+  outline: none !important;
+}
+
+#ac-panel {
+  background-color: var(--darkB) !important;
+  border: 1.5px solid var(--darkA) !important;
+  padding: 30px !important;
+}
+
+#ac-panel-title {
+  color: var(--lightA) !important;
+  font-size: 21px !important;
+  padding-bottom: 30px !important;
+  border-bottom: 1.5px solid var(--darkA) !important;
+  text-align: left !important;
+}
+
+.ac-section {
+  margin-top: 35px !important;
+}
+
+.ac-actions>button, .ac-controls-group > button {
+  margin-top: 10px !important;
+  margin-right: 11px !important;
+  width: 50px !important;
+  height: 50px !important;
+  background-color: var(--darkA) !important;
+  border: none !important;
+  padding-left: 10px !important;
+  padding-top: 12px !important;
+  color: var(--lightB) !important;
+  font-size: 15px !important;
+  border-radius: 0.75rem !important;
+
+  &:hover {
+    filter: brightness(1.2) !important;
+  }
+}
+
+.ac-text-slider-container {
+  color: var(--lightB) !important;
+}
+
+input[type=range] {
+  height: 5px !important;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  background: var(--link) !important;
+}
+
+#ac-close-panel {
+  font-family: "Font Awesome 6 Free" !important;
+  position: absolute !important;
+  top: 0px !important;
+  right: 10px !important;
+  font-size: 0 !important;
+  font-weight: 600 !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+#ac-close-panel:after {
+  content: "\f00d" !important;
+  font-size: 22px !important;
+}
+
+.ac-section:has(#ac-font-select),
+.ac-section:has(.ac-layout-control) {
+  display: none !important;
+}
+
+.onetopic-withsectionbg {
+  background: transparent !important;
+}
+
+button,
+.nav-link {
+  transition: background-color 0.25s ease-in-out !important;
+}
+
+.ac-banner-block,
+.ac-gear {
   display: none !important;
 }
