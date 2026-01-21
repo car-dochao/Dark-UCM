@@ -574,13 +574,7 @@ th {
   padding: 10px 0px 10px 0px !important;
 }
 
-/* #region-main-box > div:not(.card, .block-region):has(> div > .course-content, > .course-content-header), section.node_category > div.card-body {
-  background-color: var(--darkB) !important;
-  border: 1.5px solid var(--darkA) !important;
-  border-radius: .75rem !important;
-} */
-
-#region-main-box>div:not(.card, .block-region),
+body:not(#page-my-index) #region-main-box>div:not(.card, .block-region),
 section.node_category>div.card-body {
   background-color: var(--darkB) !important;
   border: 1.5px solid var(--darkA) !important;
@@ -641,8 +635,8 @@ p[dir="ltr"]:not(:has(~ .expandsummaryicon)):not(.expandsummaryicon ~ p[dir="ltr
   height: 50px !important;
   width: 50px !important;
   position: fixed !important;
-  bottom: 20px;
-  left: 10px;
+  bottom: 12px;
+  left: 70px;
   background-color: #26bbff !important;
   color: var(--darkC) !important;
   font-weight: bold !important;
@@ -664,20 +658,27 @@ p[dir="ltr"]:not(:has(~ .expandsummaryicon)):not(.expandsummaryicon ~ p[dir="ltr
 .editmode-switch-form:not(.a):has(> .input-group > label.text-primary) {
   color: var(--lightA) !important;
   background-color: var(--darkA) !important;
+  padding-left: 1px !important;
+  padding-top: 1px !important;
+
+  >.input-group>label.me-2.mb-0::before {
+    font-weight: 400 !important;
+    content: "↩" !important;
+  }
 }
 
 .editmode-switch-form:not(.a):has(> .input-group > label.text-primary):hover {
   filter: brightness(1.1) !important;
 }
 
-.editmode-switch-form>.input-group>label.mr-2.mb-0:before {
+.editmode-switch-form>.input-group>label.me-2.mb-0:before {
   font-size: 24px !important;
   content: "✎" !important;
 }
 
-.editmode-switch-form>.input-group>label.mr-2.mb-0 {
-  padding-left: 14px !important;
-  padding-top: 6px !important;
+.editmode-switch-form>.input-group>label.me-2.mb-0 {
+  padding-left: 13.5px !important;
+  padding-top: 6.5px !important;
   width: 50px !important;
   height: 50px !important;
   outline: none !important;
@@ -4030,9 +4031,23 @@ div>.que {
 }
 
 .drawer-right>.drawerheader>.btn.drawertoggle.icon-no-margin {
-  padding-top: 1px !important;
   margin-top: 0px !important;
+  height: 50px !important;
+  width: 50px !important;
+  border: 1.5px solid var(--darkA) !important;
+  border-radius: .75rem !important;
+  background-color: var(--darkB) !important;
   box-shadow: 0px 0px 10px 5px var(--darkC) !important;
+
+  > i.icon.fa.fa-xmark.fa-fw::before {
+    font-size: 24px !important;
+    left: 1px !important;
+    bottom: 12px !important;
+  }
+
+  &:hover {
+    background-color: var(--darkA) !important;
+  }
 }
 
 .drawer-toggles .drawer-toggler {
@@ -4071,7 +4086,7 @@ div>.que {
   color: var(--lightB) !important;
   position: relative !important;
   left: 1px !important;
-  bottom: 0px !important;
+  top: 1px !important;
 }
 
 .drawer-right-toggle:before {
@@ -4544,10 +4559,16 @@ body.limitedwidth #page.drawers .main-inner {
   margin-bottom: 15px !important;
 }
 
-.content .cvheader {
+.content .cvheader  {
   flex-direction: column !important;
   margin-left: 35px !important;
   gap: 5px !important;
+}
+
+#coursecontentcollapse0 ul.section  {
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+  margin-left: 35px !important;
 }
 
 .content .cvheader figure {
@@ -4559,6 +4580,11 @@ body.limitedwidth #page.drawers .main-inner {
   &:hover {
     text-decoration: underline !important;
   }
+}
+
+li.activity {
+  padding: 0 !important;
+  margin-bottom: 10px !important;
 }
 
 .content .cvheader figure>div {
@@ -4811,7 +4837,7 @@ input[type=range]::-webkit-slider-thumb {
   display: none !important;
 }
 
-.onetopic-withsectionbg {
+.format-onetopic .onetopic-withsectionbg .course-section, .onetopic-withsectionbg {
   background: transparent !important;
 }
 
