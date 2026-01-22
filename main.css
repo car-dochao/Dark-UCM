@@ -107,6 +107,15 @@ h6 {
   transition: all 0.2s ease-in-out !important;
 }
 
+.btn.btn-danger {
+  color: var(--lightA) !important;
+  border: 1.5px solid var(--darkA) !important;
+  border-radius: .75rem !important;
+  padding: 8px 16px 8px 16px !important;
+  height: fit-content !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
 .btn.btn-secondary:not(.fp-file-download, .fp-file-delete):hover {
   filter: brightness(1.1) !important;
 }
@@ -3515,6 +3524,10 @@ footer.footer-dark.bg-dark {
   border: 1.5px solid #333344 !important;
   padding: 10px !important;
   box-shadow: 0px -5px 20px 15px var(--darkC) !important;
+}
+
+.local-mail-toasts {
+  z-index: 10010 !important;
 }
 
 .drawer-left>.drawercontent.drag-container>.list-group {
