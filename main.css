@@ -1470,7 +1470,7 @@ ul {
   padding-inline-start: 0px !important;
 }
 
-.no-overflow>.no-overflow>ul,
+.no-overflow>.no-overflow>ul:not(.img-text),
 li>ul,
 .post-content-container>ul {
   padding-inline-start: 22px !important;
@@ -2697,9 +2697,16 @@ span[style*="background-color"] {
   margin-bottom: 10px !important;
 }
 
-.onetopic-tab-body h3 {
+.onetopic-tab-body h3:not(.sectionname) {
   font-size: 20px !important;
+}
+
+.onetopic-tab-body h3:not(.sectionname):not(:has(> span > strong)) {
   margin-top: 30px !important;
+}
+
+.course-section-header>h3.h4.sectionname>a {
+  color: var(--lightA) !important;
 }
 
 .activity-description a,
@@ -4052,7 +4059,7 @@ div>.que {
   background-color: var(--darkB) !important;
   box-shadow: 0px 0px 10px 5px var(--darkC) !important;
 
-  > i.icon.fa.fa-xmark.fa-fw::before {
+  >i.icon.fa.fa-xmark.fa-fw::before {
     font-size: 24px !important;
     left: 1px !important;
     bottom: 12px !important;
@@ -4572,13 +4579,13 @@ body.limitedwidth #page.drawers .main-inner {
   margin-bottom: 15px !important;
 }
 
-.content .cvheader  {
+.content .cvheader {
   flex-direction: column !important;
   margin-left: 35px !important;
   gap: 5px !important;
 }
 
-#coursecontentcollapse0 ul.section  {
+#coursecontentcollapse0 ul.section:not(.img-text) {
   margin-top: 30px !important;
   margin-bottom: 30px !important;
   margin-left: 35px !important;
@@ -4799,7 +4806,8 @@ div[style*="background-color: aquamarine;"] {
   margin-top: 35px !important;
 }
 
-.ac-actions>button, .ac-controls-group > button {
+.ac-actions>button,
+.ac-controls-group>button {
   margin-top: 10px !important;
   margin-right: 11px !important;
   width: 50px !important;
@@ -4850,7 +4858,8 @@ input[type=range]::-webkit-slider-thumb {
   display: none !important;
 }
 
-.format-onetopic .onetopic-withsectionbg .course-section, .onetopic-withsectionbg {
+.format-onetopic .onetopic-withsectionbg .course-section,
+.onetopic-withsectionbg {
   background: transparent !important;
 }
 
@@ -4862,4 +4871,12 @@ button,
 .ac-banner-block,
 .ac-gear {
   display: none !important;
+}
+
+#module-1286659, #module-1357088 { /* TODO: hide element properly */
+  display: none !important;
+}
+
+.description-inner > .no-overflow > .no-overflow > h3:only-child {
+  padding-bottom: 0 !important;
 }
