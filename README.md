@@ -3,16 +3,16 @@
 <img src="icon.png" align="left" width="118"/>
 CSS Reskin for the Moodle Virtual Campus webpage (UCM) 
 <br/>https://cvdof.ucm.es/moodle/<br/><br/>
-<a href="https://chromewebstore.google.com/detail/dark-ucm/jdbdmkdbcnpgkkememicijnpekceibpd"><img src="https://i.imgur.com/qDYdW4N.png" width="150"/></a>
-<a href="https://microsoftedge.microsoft.com/addons/detail/darkucm/dnaefoomipomafgdbjphnenmlflacenc"><img src="https://i.imgur.com/v3Th74R.png" width="150"/></a>
-<a href=""><img src="https://i.imgur.com/maFp3FQ.png" width="150"/></a>
+<a href="https://chromewebstore.google.com/detail/dark-ucm/jdbdmkdbcnpgkkememicijnpekceibpd"><img src="https://i.imgur.com/RaSa0Db.png" width="150"/></a>
+<a href="https://microsoftedge.microsoft.com/addons/detail/darkucm/dnaefoomipomafgdbjphnenmlflacenc"><img src="https://i.imgur.com/R7dP0Dd.png" width="150"/></a>
+<a href="https://addons.mozilla.org/firefox/addon/dark-ucm/"><img src="https://i.imgur.com/8LkyjRH.png" width="150"/></a>
 <br/>
 <br clear="left"/>
 
 > [!NOTE]  
 > Functionality or readability may be affected.
 
-## Installation Instructions:
+## Manual Installation:
 - [Download](https://codeload.github.com/car-dochao/Dark-UCM/zip/refs/heads/main) (or git clone) this repo and extract it somewhere safe
 - On your browser, navigate to ```chrome://extensions``` and enable **Developer Mode** there
 - Click **Load Unpacked** and select the folder that contains the extension files *(Dark-UCM-main)*
