@@ -1,9 +1,12 @@
 # Dark-Theme for the UCM Virtual Campus
 
-<img src="icon.png" align="left" width="104"/>
+<img src="icon.png" align="left" width="118"/>
 CSS Reskin for the Moodle Virtual Campus webpage (UCM) 
 <br/>https://cvdof.ucm.es/moodle/<br/><br/>
-<a href="https://chromewebstore.google.com/detail/dark-ucm"><img src="https://developer.chrome.com/static/docs/webstore/branding/image/206x58-chrome-web-bcb82d15b2486.png" width="150"/></a>
+<a href="https://chromewebstore.google.com/detail/dark-ucm/jdbdmkdbcnpgkkememicijnpekceibpd"><img src="https://i.imgur.com/qDYdW4N.png" width="150"/></a>
+<a href="https://microsoftedge.microsoft.com/addons/detail/darkucm/dnaefoomipomafgdbjphnenmlflacenc"><img src="https://i.imgur.com/v3Th74R.png" width="150"/></a>
+<a href=""><img src="https://i.imgur.com/maFp3FQ.png" width="150"/></a>
+<br/>
 <br clear="left"/>
 
 > [!NOTE]  
