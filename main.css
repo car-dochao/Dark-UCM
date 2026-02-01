@@ -1,75 +1,70 @@
 :root {
   color-scheme: dark;
-  --darkA: #383842;
+  --darkA: #32323b;
   --darkB: #26262e;
   --darkC: #17171d;
   --lightA: #FFFFFF;
   --lightB: #a7a7b1;
-  --link: #4fc7fffd;
+  --link: #4fc7fffd
 }
 
 * {
   scrollbar-width: auto !important;
-  scrollbar-color: #66676e transparent !important;
+  scrollbar-color: #66676e transparent !important
 }
-
-/* to preserve the space for the scrollbar and avoid layout shifts */
-/*html {
-  scrollbar-gutter: stable !important; 
-}*/
 
 body {
   color: var(--lightA) !important;
   background-color: var(--darkC) !important;
-  font-family: 'Segoe UI Variable Small' !important;
-  color-scheme: dark !important;
+  font-family: "Segoe UI Variable Small" !important;
+  color-scheme: dark !important
 }
 
-.main-inner,
-.list-group-item,
-section,
-.navigation,
+.activity-header,
 .bg-white:not(a),
-.nav-tabs,
-nav,
 .drawer,
-.activity-header {
+.list-group-item,
+.main-inner,
+.nav-tabs,
+.navigation,
+nav,
+section {
   background-color: transparent !important;
-  color: var(--lightA) !important;
+  color: var(--lightA) !important
 }
 
-i,
 h1,
 h2,
 h3:not(.h5),
-h4.card-title {
+h4.card-title,
+i {
   color: var(--lightA) !important;
-  font-size: 20px !important;
+  font-size: 20px !important
 }
 
 .coursename,
 .coursename>a,
 .fa-star:before {
   color: #ffffffd5 !important;
-  font-weight: 500 !important;
+  font-weight: 500 !important
 }
 
 ul.teachers>li>span {
-  color: var(--lightB) !important;
-  font-weight: 500 !important;
+  font-weight: 500 !important
 }
 
 .fa-star:before {
-  font-size: 12pt !important;
+  font-size: 12pt !important
 }
 
+.block .block-cards .btn-link,
+.block .block-cards span.categoryname,
 a,
 h4,
 h5,
 h6,
-.block .block-cards span.categoryname,
-.block .block-cards .btn-link {
-  color: var(--lightB) !important;
+ul.teachers>li>span {
+  color: var(--lightB) !important
 }
 
 .coursebox {
@@ -80,45 +75,41 @@ h6,
   gap: 5px !important;
   align-items: start !important;
   padding: 18px !important;
-  margin-bottom: 12px !important;
+  margin-bottom: 12px !important
 }
 
-.rounded:not(.list-image),
 .btn-outline-secondary.dropdown-toggle:not(#calendarviewdropdown),
-.dropdown-menu {
+.btn.btn-secondary:not(.fp-file-download, .fp-file-delete),
+.dropdown-menu,
+.rounded:not(.list-image) {
   color: var(--lightB) !important;
   background-color: var(--darkB) !important;
   border: 1.5px solid var(--darkA) !important;
   border-radius: .75rem !important;
-  padding: 8px 16px 8px 16px !important;
-  height: fit-content !important;
+  padding: 8px 16px !important;
+  height: fit-content !important
 }
 
 .btn.btn-secondary:not(.fp-file-download, .fp-file-delete) {
-  color: var(--lightB) !important;
   background-color: var(--darkA) !important;
-  border: 1.5px solid var(--darkA) !important;
-  border-radius: .75rem !important;
-  padding: 8px 16px 8px 16px !important;
-  height: fit-content !important;
-  transition: all 0.2s ease-in-out !important;
+  transition: all .2s ease-in-out !important
 }
 
 .btn.btn-danger {
   color: var(--lightA) !important;
   border: 1.5px solid var(--darkA) !important;
   border-radius: .75rem !important;
-  padding: 8px 16px 8px 16px !important;
+  padding: 8px 16px !important;
   height: fit-content !important;
-  transition: all 0.2s ease-in-out !important;
+  transition: all .2s ease-in-out !important
 }
 
 .btn.btn-secondary:not(.fp-file-download, .fp-file-delete):hover {
-  filter: brightness(1.1) !important;
+  filter: brightness(1.1) !important
 }
 
 ::placeholder {
-  color: var(--lightB) !important;
+  color: var(--lightB) !important
 }
 
 .moremenu.navigation.observed {
@@ -129,21 +120,21 @@ h6,
   border-radius: .75rem !important;
   padding-left: 8px !important;
   padding-right: 8px !important;
-  box-shadow: 0px -5px 20px 15px var(--darkC) !important;
+  box-shadow: 0-5px 20px 15px var(--darkC) !important;
   height: 50px !important;
-  align-content: center !important;
+  align-content: center !important
 }
 
 .paged-content-page-container {
-  margin-top: 16px !important;
+  margin-top: 16px !important
 }
 
 .frontpage-course-list-enrolled {
-  margin-top: 25px !important;
+  margin-top: 25px !important
 }
 
 .card-text:not(a) {
-  margin-top: 20px !important;
+  margin-top: 20px !important
 }
 
 .navbar {
@@ -151,265 +142,265 @@ h6,
   padding-right: 0 !important;
   margin-right: 15px !important;
   border-bottom: none !important;
-  background: linear-gradient(to bottom, var(--darkC), transparent) !important;
+  background: linear-gradient(to bottom, var(--darkC), transparent) !important
 }
 
 .primary-navigation {
-  margin-top: 15px !important;
+  margin-top: 15px !important
 }
 
 .active,
 .nav-link.active {
   color: var(--lightA) !important;
-  border: none !important;
-  font-weight: 500 !important;
+  border: 0 !important;
+  font-weight: 500 !important
 }
 
 .nav-link.active:hover,
 .nav-link:hover {
   background-color: var(--darkA) !important;
-  border: none !important;
+  border: 0 !important
 }
 
 .nav-link.icon-no-margin:not(.fa-fw) {
-  padding: 0px 12px 0px 12px !important;
-  height: 40px !important;
-  border-radius: .75rem !important;
-  border: none !important;
   height: 50px !important;
   width: 50px !important;
-  padding-left: 15px !important;
-  padding-bottom: 8px !important;
+  padding: 0 12px 8px 15px !important
+}
+
+.btn.nav-link:not(.fa-fw),
+.nav-link.icon-no-margin:not(.fa-fw),
+.nav-link:not(.fa-fw) {
+  border-radius: .75rem !important;
+  border: 0 !important
 }
 
 .btn.nav-link:not(.fa-fw) {
   padding-left: 15px !important;
   padding-bottom: 8px !important;
   height: 50px !important;
-  width: 50px !important;
-  border-radius: .75rem !important;
-  border: none !important;
+  width: 50px !important
 }
 
 .nav-link:not(.fa-fw) {
-  padding: 0px 12px 0px 12px !important;
-  height: 40px !important;
-  border-radius: .75rem !important;
-  border: none !important;
+  padding: 0 12px !important;
+  height: 40px !important
 }
 
 .navbar-nav:not(.nav) {
   align-items: center !important;
-  margin-right: 10px !important;
+  margin-right: 10px !important
 }
 
 .navbar-nav.ms-auto {
   background: var(--darkC) !important;
-  box-shadow: 0px -5px 20px 15px var(--darkC) !important;
+  box-shadow: 0-5px 20px 15px var(--darkC) !important
 }
 
+.g-0,
 .more-nav,
-.no-gutters,
-.g-0 {
-  gap: 5px !important;
+.no-gutters {
+  gap: 5px !important
 }
 
 .login {
-  gap: 20px !important;
+  gap: 20px !important
 }
 
 .secondary-navigation {
   padding-left: 7px !important;
   top: 25px !important;
-  z-index: 2000 !important;
+  z-index: 2000 !important
 }
 
 .navbar-nav .fa-magnifying-glass {
   position: relative !important;
   right: 2px !important;
-  top: 2px !important;
+  top: 2px !important
 }
 
 .navbar-nav .fa-bell {
   position: relative !important;
   left: 1px !important;
-  top: 3px !important;
+  top: 3px !important
 }
 
+.navbar-nav .fa-envelope-o,
 .navbar-nav .fa-message {
   position: relative !important;
   right: 1px !important;
-  top: 3px !important;
+  top: 3px !important
 }
 
 .navbar-nav .fa-envelope-o {
-  position: relative !important;
   right: 2px !important;
-  top: 1px !important;
+  top: 1px !important
 }
 
-.modal-backdrop.in.show[style="z-index: 1039;"],
-.icon.fa.fa-caret-right.fa-fw,
-.portfolio-add-link,
-i.fa-plus,
-li[data-key="competencies"],
-a[href="https://cvex1.ucm.es/moodle/message/index.php"],
-a[href="https://cvdof.ucm.es/moodle/reportbuilder/index.php"],
-a[href="https://cvex1.ucm.es/moodle/reportbuilder/index.php"],
-.fp-vb-icons.btn.btn-secondary.btn-sm,
-div#node_id,
-.fp-restrictions,
-.col-md-3.col-form-label.d-flex:not(.pb-0, .pr-md-0),
-h6.dropdown-header,
-.custom-switch:not(.custom-control),
 #message-user-button,
-.divider.border-left,
-.langbutton,
-.summary,
-.dropdown-item:before,
-.dropdown-divider,
-.courseimage,
 .aabtn.text-reset,
-hr,
 .bg-secondary:not(.o).btn-icon,
+.col-md-3.col-form-label.d-flex:not(.pb-0, .pr-md-0),
+.courseimage,
+.custom-switch:not(.custom-control),
 .d-md-flex:not(.o),
 .divider,
-.open-nav {
-  display: none !important;
+.divider.border-left,
+.dropdown-divider,
+.dropdown-item:before,
+.fp-restrictions,
+.fp-vb-icons.btn.btn-secondary.btn-sm,
+.icon.fa.fa-caret-right.fa-fw,
+.langbutton,
+.modal-backdrop.in.show[style="z-index: 1039;"],
+.open-nav,
+.portfolio-add-link,
+.summary,
+a[href="https://cvdof.ucm.es/moodle/reportbuilder/index.php"],
+a[href="https://cvex1.ucm.es/moodle/message/index.php"],
+a[href="https://cvex1.ucm.es/moodle/reportbuilder/index.php"],
+div#node_id,
+h6.dropdown-header,
+hr,
+i.fa-plus,
+li[data-key=competencies],
+ul.nav-tabs:not(.more-nav)>li.nav-item.dimmed {
+  display: none !important
 }
 
 span.text-primary {
   font-size: 1px !important;
-  padding-right: 10px !important;
+  padding-right: 10px !important
 }
 
 #page.drawers,
 .drawercontent {
   height: auto !important;
-  margin-top: 0px !important;
-  padding-top: 65px !important;
+  margin-top: 0 !important;
+  padding-top: 65px !important
 }
 
 #page.drawers {
-  overflow: visible !important;
+  overflow: visible !important
 }
 
-@media (min-width: 768px){
+@media (min-width:768px) {
   .header-maxwidth {
-    padding-left: 0px !important;
+    padding-left: 0 !important
   }
 }
 
-i.icon,
-.text-truncate {
-  color: var(--lightB) !important;
+.text-truncate,
+i.icon {
+  color: var(--lightB) !important
 }
 
-.section,
-.activity-item {
-  border: none !important;
+.activity-item,
+.section {
+  border: 0 !important
 }
 
-.course-description-item:not(.summarytext, .activity-altcontent) {
+.course-description-item:not(.summarytext, .activity-altcontent),
+body:not(#page-my-index) #region-main-box>div:not(.card, .block-region),
+section.node_category>div.card-body {
   background-color: var(--darkB) !important;
   border: 1.5px solid var(--darkA) !important;
-  border-radius: .75rem !important;
+  border-radius: .75rem !important
 }
 
 .dropdown-item:hover {
-  background-color: var(--darkA) !important;
+  background-color: var(--darkA) !important
 }
 
 .coursename:focus,
 .icons-collapse-expand {
   background-color: var(--darkC) !important;
-  box-shadow: none !important;
+  box-shadow: none !important
 }
 
 .btn {
-  padding: 0 !important;
+  padding: 0 !important
 }
 
 .btn:focus {
-  box-shadow: none !important;
+  box-shadow: none !important
 }
 
-.nav-link:focus,
-.aalink:focus {
+.aalink:focus,
+.nav-link:focus {
   background-color: transparent !important;
-  box-shadow: none !important;
+  box-shadow: none !important
 }
 
 .dropdown-item {
   color: var(--lightB) !important;
   padding: 10px 16px !important;
-  border-radius: .75rem !important;
+  border-radius: .75rem !important
 }
 
 .dropdown-menu {
-  margin-top: 10px !important;
-  padding: 12px 10px !important;
-  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4) !important;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, .4) !important
 }
 
-div [data-region="no-events-empty-message"],
-div [data-region="empty-message"]:not(.empty-message) {
+div [data-region=empty-message]:not(.empty-message),
+div [data-region=no-events-empty-message] {
   padding-top: 60px !important;
   gap: 100px !important;
-  opacity: 0.4 !important;
+  opacity: .4 !important
 }
 
 #qrcode,
-.dir-rtl-hide:not(:has(> .fa-arrow-right)) {
-  filter: invert(0.8) !important;
+.dir-rtl-hide:not(:has(>.fa-arrow-right)) {
+  filter: invert(.8) !important
 }
 
-div[class="row no-gutters"],
-div[class="row g-0"] {
+div[class="row g-0"],
+div[class="row no-gutters"] {
   border-radius: .75rem !important;
   background-color: var(--darkC) !important;
-  box-shadow: 0px 0px 15px 15px var(--darkC) !important;
+  box-shadow: 0 0 15px 15px var(--darkC) !important
 }
 
 .mb-1:not(a) {
-  margin-bottom: 0px !important;
+  margin-bottom: 0 !important
 }
 
 .modal-dialog {
   background-color: var(--darkB) !important;
   border: 1.5px solid var(--darkA) !important;
   border-radius: .75rem !important;
-  box-shadow: 0px -5px 20px 15px var(--darkC) !important;
+  box-shadow: 0-5px 20px 15px var(--darkC) !important
 }
 
 div [class="d-flex align-items-center my-2"] {
   top: -45px !important;
-  z-index: 2000 !important;
+  z-index: 2000 !important
 }
 
 div [class="dropdown show"]>a::after,
-div [class="dropdown"]>a::after {
-  content: none !important;
+div [class=dropdown]>a::after {
+  content: none !important
 }
 
-div [id="usernavigation"] {
-  margin-top: 6px !important;
+div [id=usernavigation] {
+  margin-top: 6px !important
 }
 
 .text-body:not(a) {
-  color: var(--lightA) !important;
+  color: var(--lightA) !important
 }
 
 div [class="items h-100 overflow-auto"]:not(a) {
-  overflow-x: hidden !important;
+  overflow-x: hidden !important
 }
 
-.btn.btn-icon:hover,
-.btn.btn-icon:focus {
+.block .block-cards .btn.btn-link.btn-icon:focus,
+.btn.btn-icon:focus,
+.btn.btn-icon:hover {
   background-color: var(--darkA) !important
 }
 
-div [class="simplesearchform"] {
+div [class=simplesearchform] {
   margin-top: 15px !important;
   background-color: var(--darkB) !important;
   border: 1.5px solid var(--darkA) !important;
@@ -417,18 +408,18 @@ div [class="simplesearchform"] {
   height: 50px !important;
   width: 50px !important;
   align-items: center !important;
-  margin-right: 10px !important;
+  margin-right: 10px !important
 }
 
 .rounded-0.nav-link:not(.h-100) {
   height: 50px !important;
   width: 50px !important;
   padding-left: 15px !important;
-  padding-bottom: 6px !important;
+  padding-bottom: 6px !important
 }
 
 .rounded-0.nav-link.h-100 {
-  padding-left: 15px !important;
+  padding-left: 15px !important
 }
 
 .popover-region {
@@ -436,28 +427,27 @@ div [class="simplesearchform"] {
   background-color: var(--darkB) !important;
   height: 50px !important;
   width: 50px !important;
-  justify-items: center !important;
+  justify-items: center !important
 }
 
 .popover-region.popover-region-notifications {
   border-left: 1.5px solid var(--darkA) !important;
-  border-top: 1.5px solid var(--darkA) !important;
-  border-bottom: 1.5px solid var(--darkA) !important;
   border-top-left-radius: .75rem !important;
-  border-bottom-left-radius: .75rem !important;
+  border-bottom-left-radius: .75rem !important
 }
 
-div [data-region="popover-region-messages"].popover-region,
-div [id="local-mail-navbar"].popover-region {
+.popover-region.popover-region-notifications,
+div [data-region=popover-region-messages].popover-region,
+div [id=local-mail-navbar].popover-region {
   border-top: 1.5px solid var(--darkA) !important;
-  border-bottom: 1.5px solid var(--darkA) !important;
+  border-bottom: 1.5px solid var(--darkA) !important
 }
 
 .fa-bell-o,
 .fa-comment-o,
 .fa-envelope-o {
-  padding-left: 0px !important;
-  padding-top: 3px !important;
+  padding-left: 0 !important;
+  padding-top: 3px !important
 }
 
 .userinitials.size-35,
@@ -465,7 +455,7 @@ div [id="local-mail-navbar"].popover-region {
   height: 27px !important;
   width: 27px !important;
   font-size: 12px !important;
-  margin-right: 0 !important;
+  margin-right: 0 !important
 }
 
 .usermenu {
@@ -478,151 +468,149 @@ div [id="local-mail-navbar"].popover-region {
   border-top: 1.5px solid var(--darkA) !important;
   border-bottom: 1.5px solid var(--darkA) !important;
   border-top-right-radius: .75rem !important;
-  border-bottom-right-radius: .75rem !important;
+  border-bottom-right-radius: .75rem !important
 }
 
 .userbutton {
-  padding-right: 15px !important;
+  padding-right: 15px !important
+}
+
+.langmenu,
+span.login.pl-2 {
+  padding-left: 15px !important;
+  height: 50px !important;
+  border-radius: .75rem !important
 }
 
 span.login.pl-2 {
   background-color: #26bbff !important;
-  height: 50px !important;
-  border-radius: .75rem !important;
-  padding-left: 15px !important;
   gap: 0 !important;
   font-size: 0;
   padding-right: 15px !important;
-  outline: 10px solid var(--darkC) !important;
+  outline: 10px solid var(--darkC) !important
 }
 
 span.login.pl-2:hover {
   background-color: #1b85b6 !important;
-  color: var(--darkC) !important;
+  color: var(--darkC) !important
 }
 
 span.login.pl-2>a {
   font-size: initial;
   color: var(--darkC) !important;
-  font-weight: 600 !important;
+  font-weight: 600 !important
 }
 
 span.login.pl-2>a:hover {
-  text-decoration: none !important;
+  text-decoration: none !important
 }
 
 .langmenu {
   z-index: 1000 !important;
-  padding-left: 15px !important;
   padding-bottom: 2px !important;
   margin-right: 5px !important;
   margin-top: 15px !important;
   background-color: var(--darkB) !important;
-  height: 50px !important;
   width: 50px !important;
-  border: 1.5px solid var(--darkA) !important;
-  border-radius: .75rem !important;
+  border: 1.5px solid var(--darkA) !important
 }
 
 .langmenu:hover {
-  background-color: var(--darkA) !important;
+  background-color: var(--darkA) !important
 }
 
 a:not([class]):focus {
   background-color: transparent !important;
   box-shadow: none !important;
-  outline: none !important;
+  outline: 0 !important
 }
 
 td,
 th {
-  color: var(--lightA) !important;
-  border: none !important;
+  border: 0 !important
+}
+
+th {
+  color: var(--lightA) !important
 }
 
 .userinitials.size-100 {
   font-size: 16px !important;
   width: 35px !important;
   height: 35px !important;
-  z-index: 3000 !important;
+  z-index: 3000 !important
 }
 
 .page-header-headings {
-  padding-bottom: 6px !important;
+  padding-bottom: 6px !important
 }
 
 .page-header-image+.page-header-headings {
-  padding-left: 8px !important;
+  padding-left: 8px !important
 }
 
 .page-header-image {
   padding-right: 5px !important;
   margin-bottom: 10px !important;
   margin-top: 6px !important;
-  z-index: 1000 !important;
+  z-index: 1000 !important
 }
 
-.userinitials {
-  margin-right: 0px !important;
+.userinitials,
+img.userpicture {
+  margin-right: 0 !important
 }
 
 .breadcrumb {
-  padding: 10px 0px 10px 0px !important;
+  padding: 10px 0 !important
 }
 
-body:not(#page-my-index) #region-main-box>div:not(.card, .block-region),
-section.node_category>div.card-body {
-  background-color: var(--darkB) !important;
-  border: 1.5px solid var(--darkA) !important;
-  border-radius: .75rem !important;
-}
-
-#region-main:has(> div[role="main"] > .block-region > .block_myoverview) {
+#region-main:has(>div[role=main]>.block-region>.block_myoverview) {
   background-color: transparent !important;
-  border: none !important;
+  border: 0 !important
 }
 
 #page-mod-forum-index #region-main-box>div:not(.card, .block-region) {
-  padding: 40px !important;
+  padding: 40px !important
 }
 
 #page-mod-forum-index .subscription {
   float: left !important;
-  text-align: left !important;
+  text-align: left !important
 }
 
-aside,
-#frontpage-course-list {
+#frontpage-course-list,
+.userprofile,
+aside {
   background-color: var(--darkC) !important;
-  outline: 37px solid var(--darkC) !important;
+  outline: 37px solid var(--darkC) !important
 }
 
 .userprofile {
-  background-color: var(--darkC) !important;
-  outline: 15px solid var(--darkC) !important;
+  outline: 15px solid var(--darkC) !important
 }
 
 .no-overflow:not(.content-alignment-container) {
-  padding: 0px 30px 0px 0px !important;
-  overflow: hidden !important;
+  padding: 0 30px 0 0 !important;
+  overflow: hidden !important
 }
 
 .onetopic-tab-body .modified {
-  display: none !important;
+  display: none !important
 }
 
-.flex-fill.description-inner.text-break>.no-overflow>.no-overflow,
 .flex-fill.description-inner.text-break>.no-overflow,
-p[dir="ltr"]:not(:has(~ .expandsummaryicon)):not(.expandsummaryicon ~ p[dir="ltr"]) {
-  padding: 0px !important;
-  margin-bottom: 0px !important;
+.flex-fill.description-inner.text-break>.no-overflow>.no-overflow,
+p[dir=ltr]:not(:has(~.expandsummaryicon)):not(.expandsummaryicon~p[dir=ltr]) {
+  padding: 0 !important;
+  margin-bottom: 0 !important
 }
 
-@media (max-width: 767.98px){
+@media (max-width:767.98px) {
   .editmode-switch-form label {
     position: relative !important;
     clip: unset !important;
-    margin-top: 0px !important;
+    margin-top: 0 !important
   }
 }
 
@@ -635,41 +623,36 @@ p[dir="ltr"]:not(:has(~ .expandsummaryicon)):not(.expandsummaryicon ~ p[dir="ltr
   left: 70px;
   background-color: #26bbff !important;
   color: var(--darkC) !important;
-  font-weight: bold !important;
-  border: none !important;
+  font-weight: 700 !important;
+  border: 0 !important;
   cursor: pointer !important;
-  box-shadow: 0px 0px 10px 5px var(--darkC) !important;
+  box-shadow: 0 0 10px 5px var(--darkC) !important
 }
 
 .editmode-switch-form:hover {
   background-color: #1b85b6 !important;
   color: var(--darkC) !important;
-  font-weight: bold !important;
+  font-weight: 700 !important
 }
 
-.input-group>.custom-control.custom-switch:has(> .custom-control-input) {
-  display: none !important;
+.input-group>.custom-control.custom-switch:has(>.custom-control-input) {
+  display: none !important
 }
 
-.editmode-switch-form:not(.a):has(> .input-group > label.text-primary) {
+.editmode-switch-form:not(.a):has(>.input-group>label.text-primary) {
   color: var(--lightA) !important;
   background-color: var(--darkA) !important;
-  padding-left: 0px !important;
-  padding-top: 1px !important;
-
-  >.input-group>label.me-2.mb-0::before {
-    font-weight: 400 !important;
-    content: "↩" !important;
-  }
+  padding-left: 0 !important;
+  padding-top: 1px !important
 }
 
-.editmode-switch-form:not(.a):has(> .input-group > label.text-primary):hover {
-  filter: brightness(1.1) !important;
+.editmode-switch-form:not(.a):has(>.input-group>label.text-primary):hover {
+  filter: brightness(1.1) !important
 }
 
 .editmode-switch-form>.input-group>label.me-2.mb-0:before {
   font-size: 24px !important;
-  content: "✎" !important;
+  content: "✎" !important
 }
 
 .editmode-switch-form>.input-group>label.me-2.mb-0 {
@@ -677,14 +660,14 @@ p[dir="ltr"]:not(:has(~ .expandsummaryicon)):not(.expandsummaryicon ~ p[dir="ltr
   padding-top: 6.5px !important;
   width: 50px !important;
   height: 50px !important;
-  outline: none !important;
-  border: none !important;
+  outline: 0 !important;
+  border: 0 !important;
   background-color: transparent !important;
-  font-size: 0px !important;
-  cursor: pointer !important;
+  font-size: 0 !important;
+  cursor: pointer !important
 }
 
-.text-primary:not([data-region="is-favourite"], [data-action="load-more-users"], [data-region="favourite-icon-container"]) {
+.text-primary:not([data-region=is-favourite], [data-action=load-more-users], [data-region=favourite-icon-container]) {
   color: var(--lightA) !important;
   background-color: var(--darkA) !important;
   border: 12px solid var(--darkA) !important;
@@ -692,23 +675,23 @@ p[dir="ltr"]:not(:has(~ .expandsummaryicon)):not(.expandsummaryicon ~ p[dir="ltr
   outline: 20px solid var(--darkC) !important;
   z-index: 0 !important;
   cursor: pointer !important;
-  margin-right: 0 !important;
+  margin-right: 0 !important
 }
 
-.text-primary:not([data-region="is-favourite"], [data-action="load-more-users"], [data-region="favourite-icon-container"]):hover {
+.text-primary:not([data-region=is-favourite], [data-action=load-more-users], [data-region=favourite-icon-container]):hover {
   border: 12px solid var(--darkB) !important;
-  background-color: var(--darkB) !important;
+  background-color: var(--darkB) !important
 }
 
 .add_block_button {
-  position: relative !important;
+  position: relative !important
 }
 
 .block-add:before {
   font-size: 25px !important;
   content: "+" !important;
   padding-bottom: 3px !important;
-  margin-right: 5px !important;
+  margin-right: 5px !important
 }
 
 .block-add {
@@ -720,14 +703,14 @@ p[dir="ltr"]:not(:has(~ .expandsummaryicon)):not(.expandsummaryicon ~ p[dir="ltr
   max-width: 260px !important;
   padding-left: 15px !important;
   padding-right: 25px !important;
-  padding-bottom: 0px !important;
+  padding-bottom: 0 !important;
   text-decoration: none !important;
   display: flex !important;
-  align-items: center !important;
+  align-items: center !important
 }
 
 .block-add:hover {
-  background-color: var(--darkA) !important;
+  background-color: var(--darkA) !important
 }
 
 .commands>.menubar {
@@ -735,70 +718,71 @@ p[dir="ltr"]:not(:has(~ .expandsummaryicon)):not(.expandsummaryicon ~ p[dir="ltr
   top: 2px !important;
   right: 13px !important;
   justify-content: space-between !important;
-  width: 50% !important;
+  width: 50% !important
 }
 
 .action-menu-trigger>.dropdown>a>i.icon {
-  margin-top: 5px !important;
+  margin-top: 5px !important
 }
 
 .action-menu-item>span>i.icon:before {
   content: "══";
-  font-size: 18px !important;
+  font-size: 18px !important
 }
 
 .action-menu-trigger>.dropdown>a>i.icon:before {
   content: "";
-  font-size: 14px !important;
+  font-size: 14px !important
 }
 
-
-.card-body:has(> .content > .maincalendar) {
-  background: radial-gradient(ellipse 150% 110%, var(--darkC) 0%, transparent 100%);
+.card-body:has(>.content>.maincalendar) {
+  background: radial-gradient(ellipse 150% 110%, var(--darkC) 0%, transparent 100%)
 }
 
 .card-body>.content>.maincalendar {
-  background: none !important;
+  background: 0 0 !important
 }
 
 .card-body.p-3 {
-  padding: 0 !important;
+  padding: 0 !important
+}
+
+.btn-primary,
+.fp-file-delete,
+.fp-file-download {
+  border: 0 !important;
+  border-radius: .75rem !important;
+  height: 42px !important
 }
 
 .btn-primary,
 .fp-file-download {
   background-color: #26bbff !important;
   color: var(--darkC) !important;
-  font-weight: bold !important;
-  border: none !important;
-  border-radius: .75rem !important;
-  height: 42px !important;
-  padding: 10px 15px !important;
+  font-weight: 700 !important;
+  padding: 10px 15px !important
 }
 
 .fp-file-delete {
   background-color: var(--darkA) !important;
   color: var(--lightB) !important;
-  border: none !important;
-  border-radius: .75rem !important;
-  height: 42px !important;
-  padding: 6px 15px !important;
+  padding: 6px 15px !important
 }
 
 .btn-primary:hover,
 .fp-file-download:hover {
-  background-color: #1b85b6 !important;
+  background-color: #1b85b6 !important
 }
 
 .btn-primary:focus {
-  outline: none !important;
+  outline: 0 !important;
   box-shadow: none !important;
   color: var(--lightA) !important;
-  background-color: var(--darkA) !important;
+  background-color: var(--darkA) !important
 }
 
 .btn-primary:focus:hover {
-  background-color: var(--darkC) !important;
+  background-color: var(--darkC) !important
 }
 
 .alert-block {
@@ -806,7 +790,7 @@ p[dir="ltr"]:not(:has(~ .expandsummaryicon)):not(.expandsummaryicon ~ p[dir="ltr
   background-color: var(--darkA) !important;
   border-radius: .75rem !important;
   margin-bottom: 2px !important;
-  margin-top: 10px !important;
+  margin-top: 10px !important
 }
 
 .close,
@@ -814,46 +798,46 @@ p[dir="ltr"]:not(:has(~ .expandsummaryicon)):not(.expandsummaryicon ~ p[dir="ltr
   color: var(--lightB) !important;
   align-items: start !important;
   text-shadow: none !important;
-  line-height: 0.85 !important;
+  line-height: .85 !important
 }
 
 .row.fitem {
   width: fill !important;
-  margin-right: 0px !important;
-  margin-left: 0px !important;
+  margin-right: 0 !important;
+  margin-left: 0 !important
 }
 
 .felement {
-  padding-left: 0px !important;
+  padding-left: 0 !important;
   flex: auto !important;
   max-width: 100% !important;
-  padding-right: 0px !important;
+  padding-right: 0 !important
 }
 
-div#region-main:has(> div > div.generalbox),
-div#region-main:has(.activity-header) {
+div#region-main:has(.activity-header),
+div#region-main:has(>div>div.generalbox) {
   padding: 30px !important;
-  overflow: hidden !important;
+  overflow: hidden !important
 }
 
+.generaltable.table-bordered .cell.c1.lastcol:has(>:nth-child(2):not(:empty)),
 div#region-main:has(.activity-header) .tabs-wrapper {
-  padding: 0 !important;
+  padding: 0 !important
 }
 
 div#region-main:has(.activity-header) .no-overflow>.generalbox.center {
-  padding: 10px !important;
-  padding-top: 20px !important;
+  padding: 20px 10px 10px !important
 }
 
 .box.generalbox {
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important
 }
 
 div.btn-cancel>span>input.btn.btn-secondary {
   margin-left: 5px !important;
   height: 42px !important;
-  background-color: var(--darkA) !important;
+  background-color: var(--darkA) !important
 }
 
 .card.filemanager-container {
@@ -863,37 +847,36 @@ div.btn-cancel>span>input.btn.btn-secondary {
   border-top: none !important;
   border-bottom-left-radius: .75rem !important;
   border-bottom-right-radius: .75rem !important;
-  background-color: var(--darkC) !important;
+  background-color: var(--darkC) !important
 }
 
 .fp-navbar.card {
-  border: none !important;
-  background-color: var(--darkB) !important;
+  border: 0 !important;
+  background-color: var(--darkB) !important
 }
 
 .fp-viewbar {
-  gap: 5px !important;
+  gap: 5px !important
 }
 
 .filemanager-toolbar {
   margin-top: 15px !important;
-  margin-bottom: 0px !important;
+  margin-bottom: 0 !important;
   padding: 10px !important;
   background: var(--darkC) !important;
   border: 1.5px solid var(--darkA) !important;
   border-bottom: none !important;
   border-top-left-radius: .75rem !important;
-  border-top-right-radius: .75rem !important;
+  border-top-right-radius: .75rem !important
 }
 
 .filemanager-container {
   min-height: 250px !important;
-  margin-bottom: 15px !important;
+  margin-bottom: 15px !important
 }
 
 .fm-content-wrapper {
-  padding: 15px !important;
-  padding-top: 0px !important;
+  padding: 0 15px 15px !important
 }
 
 .fp-pathbar {
@@ -901,29 +884,28 @@ div.btn-cancel>span>input.btn.btn-secondary {
   background-color: var(--darkC) !important;
   border: 1.5px solid var(--darkA) !important;
   border-top: none !important;
-  border-bottom: none !important;
+  border-bottom: none !important
 }
 
 span.fp-path-folder,
 span.fp-path-folder>* {
-  filter: invert(1) !important;
+  filter: invert(1) !important
 }
 
 .filemanager .yui3-datatable-even .yui3-datatable-cell:not(.a) {
-  background-color: var(--darkC) !important;
+  background-color: var(--darkC) !important
 }
 
 .yui3-skin-sam .yui3-datatable-header {
-  padding: 10px 0px !important;
+  padding: 10px 0 !important
 }
 
 .fp-vb-details {
-  display: none !important;
-  /* WIP atm, hidden*/
+  display: none !important
 }
 
 .ygtvfocus {
-  background-color: initial !important;
+  background-color: initial !important
 }
 
 .yui3-widget-stdmod {
@@ -931,84 +913,79 @@ span.fp-path-folder>* {
   border: 1.5px solid var(--darkA) !important;
   border-radius: .75rem !important;
   padding: 25px !important;
-  box-shadow: 0px -5px 20px 15px var(--darkC) !important;
+  box-shadow: 0-5px 20px 15px var(--darkC) !important
 }
 
 .yui3-skin-sam,
 .yui3-widget-mask {
-  background-color: var(--darkC) !important;
+  background-color: var(--darkC) !important
 }
 
 .moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd {
-  border: none !important;
+  border: 0 !important
 }
 
 .activity-header {
-  padding-top: 20px !important;
+  padding-top: 20px !important
 }
 
-.activity-header:has(.sr-only),
-.activity-header:has(> .activity-description),
 .activity-dates,
-.activity-description {
-  padding: 0px !important;
-  margin: 0px !important;
+.activity-description,
+.activity-header:has(.sr-only),
+.activity-header:has(>.activity-description) {
+  padding: 0 !important;
+  margin: 0 !important
 }
 
-div[role="main"]:not(> form) {
-  padding: 0px !important;
+div[role=main]:not(>form) {
+  padding: 0 !important
 }
 
-td.submissionstatussubmitted,
 td.earlysubmission,
-td.submissiongraded {
+td.submissiongraded,
+td.submissionstatussubmitted {
   background-color: #17743d52 !important;
   border: 1.5px solid #3bcc7552 !important;
   border-radius: .75rem !important;
-  color: #a4fdc8ce !important;
+  color: #a4fdc8ce !important
 }
 
 .activity-dates {
-  border: none !important;
-  padding-bottom: 25px !important;
+  border: 0 !important;
+  padding-bottom: 25px !important
 }
 
 .activity-dates>.description-inner>div:last-child {
-  padding-top: 10px !important;
+  padding-top: 10px !important
 }
 
 .course-content {
-  padding: 0px 35px 30px 35px !important;
+  padding: 0 35px 30px !important
 }
 
 #page-course-view-section-topics .course-content {
-  padding: 12px 35px 30px 35px !important;
+  padding: 12px 35px 30px !important
 }
 
 .nav-tabs:not(.a) {
-  border: none !important;
-  margin-bottom: 0px !important;
+  border: 0 !important;
+  margin-bottom: 0 !important
 }
 
 .icons-collapse-expand {
-  display: none !important;
+  display: none !important
 }
 
 .nav-link.active {
-  background-color: transparent !important;
+  background-color: transparent !important
 }
 
 .tabs-wrapper {
-  padding: 30px 25px 0px 30px !important;
+  padding: 30px 25px 0 30px !important
 }
 
 ul.nav-tabs:not(.more-nav)>li.nav-item {
-  padding: 5px 4px !important;
-}
-
-ul.nav-tabs:not(.more-nav)>li.nav-item.dimmed {
-  display: none !important;
-  /* hide disabled tabs */
+  padding: 5px 4px !important
 }
 
 ul.nav-tabs:not(.more-nav)>li.nav-item>a.nav-link {
@@ -1016,360 +993,334 @@ ul.nav-tabs:not(.more-nav)>li.nav-item>a.nav-link {
   align-content: center !important;
   background-color: #3e3e47 !important;
   font-size: 13px !important;
-  padding: 0px 15px !important;
+  padding: 0 15px !important;
   border-radius: 90px !important;
-  font-weight: bold !important;
+  font-weight: 700 !important
 }
 
 ul.nav-tabs:not(.more-nav)>li.nav-item>a.nav-link:hover {
-  background-color: #515158 !important;
+  background-color: #515158 !important
 }
 
 ul.nav-tabs:not(.more-nav)>li.nav-item>a.nav-link.active {
   background-color: #26bbff !important;
-  color: var(--darkC) !important;
+  color: var(--darkC) !important
 }
 
 ul.nav-tabs:not(.more-nav)>li.nav-item>a.nav-link.active:hover {
-  background-color: #1b85b6 !important;
+  background-color: #1b85b6 !important
 }
 
 .box.feedbacktable {
-  padding-bottom: 0px !important;
+  padding-bottom: 0 !important
 }
 
 .generaltable:not(#overview-grade) {
   row-gap: 13px !important;
   border-collapse: unset !important;
-  margin-bottom: 0px !important;
+  margin-bottom: 0 !important
 }
 
 #overview-grade {
   width: fit-content !important;
   margin-left: 20px !important;
-  margin-bottom: 22px !important;
+  margin-bottom: 22px !important
 }
 
-.no-overflow>h3:has(~ table#overview-grade) {
+.no-overflow>h3:has(~table#overview-grade) {
   padding-top: 30px !important;
   padding-left: 30px !important;
-  margin-bottom: 0px !important;
-  padding-bottom: 0px !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important
 }
 
 .path-mod:not(a) {
-  margin: 0px !important;
-  padding: 0px !important;
+  margin: 0 !important;
+  padding: 0 !important
 }
 
 .activity-header:not(:empty) {
-  margin-bottom: 0px !important;
+  margin-bottom: 0 !important
 }
 
 .submissionsummarytable.py-3 {
-  padding-bottom: 0px !important;
-}
-
-a[target="_blank"] {
-  color: var(--lightA) !important;
+  padding-bottom: 0 !important
 }
 
 .fileuploadsubmissiontime {
   color: var(--lightB) !important;
   font-size: small !important;
   float: none !important;
-  padding-top: 30px !important;
+  padding-top: 30px !important
 }
 
 .coursemenubtn {
-  margin-right: 11px !important;
+  margin-right: 11px !important
 }
 
-.block .block-cards .btn.btn-link.btn-icon:focus {
-  background-color: var(--darkA) !important;
-}
-
-.fa-ellipsis-v:before,
-.fa-ellipsis-h:before {
+.fa-ellipsis-h:before,
+.fa-ellipsis-v:before {
   font-size: 18px !important;
-  content: "⋮" !important;
+  content: "⋮" !important
 }
 
 .form-control:focus {
-  box-shadow: none !important;
+  box-shadow: none !important
 }
 
-.block-timeline>.px-2>.row>.mr-auto.mb-1,
-.block-timeline>.px-2>.row>.me-auto.mb-1 {
+.block-timeline>.px-2>.row>.me-auto.mb-1,
+.block-timeline>.px-2>.row>.mr-auto.mb-1 {
   margin-right: 8px !important
 }
 
+.dropdown-menu-right#user-action-menu,
 .text-muted.mt-1 {
-  margin-top: 15px !important;
+  margin-top: 15px !important
 }
 
 .container-fluid.mb-4 {
   padding-top: 5px !important;
-  padding-bottom: 10px !important;
+  padding-bottom: 10px !important
 }
 
-.container-fluid.mb-4:has(> .row) {
-  display: none !important;
+.activity-wrapper:has(>.activity-item>.description>.activity-altcontent>.description-inner>.no-overflow>.no-overflow>h5:empty),
+.container-fluid.mb-4:has(>.row),
+.expanded-icon-container:has(>i.fa-caret-down),
+div[role=main]>h2:has(~.container-fluid.p-sm-0) {
+  display: none !important
 }
 
-.container-fluid.mb-4:has(> .row > .col-xs-6) {
-  display: flex !important;
+.container-fluid.mb-4:has(>.row>.col-xs-6) {
+  display: flex !important
 }
 
 .box.plugincontentsummary.py-3 {
-  padding-top: 0px !important;
+  padding-top: 0 !important
 }
 
 .path-mod-assign .submissionsummarytable {
-  margin-top: 0px !important;
+  margin-top: 0 !important
 }
 
 .mform fieldset {
-  margin-bottom: 0px !important;
-  border-bottom: none !important;
+  margin-bottom: 0 !important;
+  border-bottom: none !important
 }
 
-.box.editsubmissionform.py-3 {
-  padding-bottom: 0px !important;
+.box.editsubmissionform.py-3,
+td.lastcol>.plugincontentsummary {
+  padding-bottom: 0 !important
 }
 
 .d-flex.align-items-center.mb-2:not(.page-context-header) {
-  margin-bottom: 18px !important;
-}
-
-img.userpicture {
-  margin-right: 0px !important;
+  margin-bottom: 18px !important
 }
 
 .page-context-header:not(.mr-auto, .me-auto) {
-  margin-bottom: 10px !important;
+  margin-bottom: 10px !important
 }
 
 #page-site-index .page-context-header:not(.mr-auto, .me-auto) {
-  margin-bottom: 15px !important;
+  margin-bottom: 15px !important
 }
 
-@media (min-width: 576px){
+@media (min-width:576px) {
   #page.drawers .main-inner {
-    margin-top: 0px !important;
+    margin-top: 0 !important
   }
-}
-
-div[role="main"]>h2:has(~ .container-fluid.p-sm-0) {
-  display: none !important;
 }
 
 .card:not(section) {
   background-color: var(--darkB) !important;
   border: 1.5px solid var(--darkA) !important;
-  border-radius: .75rem !important;
+  border-radius: .75rem !important
 }
 
 .container-fluid.p-sm-0>.row {
   background-color: var(--darkC) !important;
-  outline: 10px solid var(--darkC) !important;
+  outline: 10px solid var(--darkC) !important
 }
 
-@media (min-width: 768px){
+@media (min-width:768px) {
   .col-md-4 {
     flex: 100% !important;
-    max-width: 100% !important;
+    max-width: 100% !important
   }
 }
 
-.container-fluid.p-sm-0>.row> :nth-last-child(1),
-.container-fluid.p-sm-0>.row> :nth-last-child(2),
-.container-fluid.p-sm-0>.row> :nth-last-child(3) {
-  display: none !important;
+.container-fluid.p-sm-0>.row>:nth-last-child(1),
+.container-fluid.p-sm-0>.row>:nth-last-child(2),
+.container-fluid.p-sm-0>.row>:nth-last-child(3) {
+  display: none !important
 }
 
 .col-md-4 {
-  padding-right: 0px !important;
+  padding-right: 0 !important
 }
 
 .card-text>div {
-  padding-top: 5px !important;
+  padding-top: 5px !important
 }
 
-@media (min-width: 768px){
+@media (min-width:768px) {
   #page-mod-quiz-attempt #page.drawers .main-inner {
-    max-width: 100% !important;
+    max-width: 100% !important
   }
-}
 
-@media (min-width: 768px){
-  body:not(#page-mod-quiz-attempt) #page.drawers div[role="main"]:has(> form:not(.tableform):not(.questionflagsaveform):not(.horizontal)) {
-    padding: 30px !important;
-    /* review!! */
+  body:not(#page-mod-quiz-attempt) #page.drawers div[role=main]:has(>form:not(.tableform):not(.questionflagsaveform):not(.horizontal)) {
+    padding: 30px !important
   }
-}
 
-@media (min-width: 768px){
-  #page.drawers div[role="main"] {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
+  #page.drawers div[role=main] {
+    padding-left: 0 !important;
+    padding-right: 0 !important
   }
-}
 
-@media (min-width: 768px){
-  #page.drawers div[role="main"]:has(> .header > h3[aria-describedby="subscription_details_table"]) {
-    padding: 35px !important;
-    padding-top: 30px !important;
+  #page.drawers div[role=main]:has(>.header>h3[aria-describedby=subscription_details_table]) {
+    padding: 30px 35px 35px !important
   }
 }
 
 .col-md-9.d-flex.flex-column {
-  gap: 8px !important;
+  gap: 8px !important
 }
 
+.cell.c1.lastcol>:first-child:not(.plugincontentsummary),
 .expandsummaryicon,
 .icon.spacer,
-.cell.c1.lastcol> :first-child:not(.plugincontentsummary),
 .search-icon,
 div.py-3:not(.box) {
-  display: none !important;
+  display: none !important
 }
 
-.cell.c1.lastcol> :nth-child(2):not(:empty) {
+.cell.c1.lastcol>:nth-child(2):not(:empty) {
   display: block !important;
   visibility: visible !important;
   padding: 15px !important;
   background-color: #122e3b !important;
   border: 1.5px solid #116891 !important;
-  border-radius: .75rem !important;
-
-  a {
-    color: #53bef0 !important;
-  }
-
-  .fileuploadsubmissiontime {
-    color: #52bef0d3 !important;
-  }
-
-  img.icon {
-    filter: invert(0.75) hue-rotate(180deg) saturate(50) !important;
-  }
+  border-radius: .75rem !important
 }
 
-td.cell.c1.lastcol> :nth-child(2)> :is(p),
-td.cell.c1.lastcol> :nth-child(2)>ul>li>p {
-  color: #7cb6d1 !important;
+td.cell.c1.lastcol>:nth-child(2)>:is(p),
+td.cell.c1.lastcol>:nth-child(2)>ul>li>p {
+  color: #7cb6d1 !important
 }
 
-.generaltable.table-bordered .cell.c1.lastcol:has(> :nth-child(2):not(:empty)) {
-  padding: 0 !important;
-}
-
+#calendarviewdropdown,
 input,
-textarea,
-select {
-  color: var(--lightB) !important;
+select,
+textarea {
   background-color: #32323b !important;
-  border: none !important;
+  border: 0 !important;
   border-radius: .9rem !important;
-  height: 45px !important;
-  padding-left: 16px !important;
-  padding-right: 40px !important;
-}
-
-#calendarviewdropdown {
-  color: var(--lightB) !important;
-  background-color: #32323b !important;
-  border: none !important;
-  border-radius: .9rem !important;
-  height: 45px !important;
-  padding: 10px 16px !important;
-}
-
-input:disabled {
-  color: #74747e !important;
-}
-
-.custom-select {
-  background: #32323b url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23a7a7b1' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") right .75rem center / 8px 10px no-repeat !important;
-  border: none !important;
-  border-radius: .9rem !important;
-  height: 45px !important;
-  padding-left: 16px !important;
-  padding-right: 40px !important;
-}
-
-#searchform-navbar {
-  background: linear-gradient(to bottom, var(--darkC), transparent) !important;
-}
-
-.simplesearchform .btn-close {
-  top: 11px !important;
-  right: 8px !important;
-  font-size: 16px !important;
-  line-height: inherit !important;
-  text-shadow: none !important
-}
-
-.btn-close>span {
-  top: 0 !important;
-  color: var(--lightB) !important;
-  line-height: inherit !important;
-  text-shadow: none !important
-}
-
-.toast-message,
-.toast-body {
-  color: var(--lightA) !important;
-}
-
-.toast-body::before {
-  position: relative !important;
-  top: 3px !important;
-}
-
-.alert-dismissible .btn-close {
-  padding-top: 10px !important;
-  padding-right: 15px !important;
-}
-
-.btn.btn-clear {
-  padding-top: 5px !important;
-  right: 0.8rem !important;
-}
-
-.input-group-append>.btn.btn-submit {
-  display: none !important;
+  height: 45px !important
 }
 
 input,
 select,
 textarea {
-  color: var(--lightB) !important;
+  padding-left: 16px !important;
+  padding-right: 40px !important
 }
 
-.fa-remove:before,
+#calendarviewdropdown {
+  color: var(--lightB) !important;
+  padding: 10px 16px !important
+}
+
+input:disabled {
+  color: #74747e !important
+}
+
+.custom-select {
+  background: #32323b url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23a7a7b1' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e")right .75rem center/8px 10px no-repeat !important;
+  border: 0 !important;
+  border-radius: .9rem !important;
+  height: 45px !important;
+  padding-left: 16px !important;
+  padding-right: 40px !important
+}
+
+#searchform-navbar {
+  background: linear-gradient(to bottom, var(--darkC), transparent) !important
+}
+
+.btn-close>span,
+.simplesearchform .btn-close {
+  line-height: inherit !important;
+  text-shadow: none !important
+}
+
+.simplesearchform .btn-close {
+  top: 11px !important;
+  right: 8px !important;
+  font-size: 16px !important
+}
+
+.btn-close>span {
+  top: 0 !important
+}
+
+.toast-body,
+.toast-message,
+th.topic>div>div>a {
+  color: var(--lightA) !important
+}
+
+.toast-body::before {
+  position: relative !important;
+  top: 3px !important
+}
+
+.alert-dismissible .btn-close {
+  padding-top: 10px !important;
+  padding-right: 15px !important
+}
+
+.btn.btn-clear {
+  padding-top: 5px !important;
+  right: .8rem !important
+}
+
+.input-group-append>.btn.btn-submit {
+  display: none !important
+}
+
+.btn-close>span,
+.btn-group.header-button-group>.btn>i,
+.notification-area .content-area .header a,
+input,
+select,
+td,
+textarea,
+th.header,
+th.text-center {
+  color: var(--lightB) !important
+}
+
 .fa-close:before,
-.fa-times:before,
+.fa-remove:before,
 .fa-times-rectangle:before,
+.fa-times:before,
 .fa-window-close:before {
   font-weight: 100 !important;
   content: "⨯" !important;
-  font-size: 20pt !important;
+  font-size: 20pt !important
 }
 
 .tertiary-navigation .navitem,
 .tertiary-navigation .navitem-divider {
-  margin-bottom: 0px !important;
+  margin-bottom: 0 !important
 }
 
 .tertiary-navigation .row .navitem .btn-secondary {
-  margin-left: 15px !important;
+  margin-left: 15px !important
 }
 
-@media (min-width: 768px){
+@media (min-width:768px) {
   .header-maxwidth {
-    margin: 0 0 !important;
+    margin: 0 !important
   }
 }
 
@@ -1377,22 +1328,12 @@ textarea {
   margin-top: 15px !important;
   border-radius: .9rem !important;
   background-color: var(--darkC) !important;
-  box-shadow: 0px 5px 20px 15px var(--darkC) !important;
+  box-shadow: 0 5px 20px 15px var(--darkC) !important
 }
-
-/* .container-fluid.tertiary-navigation {
-  padding-top: 10px !important;
-  padding-bottom: 20px !important;
-} */
 
 .dropdown-menu {
   margin-top: 10px !important;
-  box-shadow: 8px 16px 32px 4px rgba(0, 0, 0, 0.85);
-  padding: 12px 10px !important;
-}
-
-.dropdown-menu-right#user-action-menu {
-  margin-top: 15px !important;
+  padding: 12px 10px !important
 }
 
 .drawer.bg-white {
@@ -1403,369 +1344,319 @@ textarea {
   margin-right: 25px !important;
   background-color: var(--darkB) !important;
   border: 1.5px solid var(--darkA) !important;
-  border-radius: 0.75rem !important;
+  border-radius: .75rem !important;
   padding: 8px 16px !important;
-  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4) !important;
-  width: 300px !important;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, .4) !important;
+  width: 300px !important
 }
 
-@media (max-width: 767.98px){
+@media (max-width:767.98px) {
   [data-region=right-hand-drawer].drawer {
     top: 60px !important;
-    height: 70% !important;
+    height: 70% !important
   }
-}
-
-.expanded-icon-container:has(> i.fa-caret-down) {
-  display: none !important;
 }
 
 .message-app {
   padding: 10px !important;
-  background-color: transparent !important;
+  background-color: transparent !important
 }
 
-div[data-region="view-overview"]>a,
-.see-all-link {
+.see-all-link,
+div[data-region=view-overview]>a {
   display: block !important;
   justify-self: center !important;
   background-color: var(--darkA) !important;
   height: 42px !important;
-  padding: 0px 25px !important;
+  padding: 0 25px !important;
   align-content: center;
-  border-radius: .9rem !important;
+  border-radius: .9rem !important
 }
 
-div[data-region="view-overview"]>a:hover,
-.see-all-link:hover {
+.see-all-link:hover,
+div[data-region=view-overview]>a:hover {
   filter: brightness(1.1);
-  text-decoration: none !important;
+  text-decoration: none !important
 }
 
 .section .activity.indented .activity-item {
-  margin-left: 0px !important;
+  margin-left: 0 !important
 }
 
 .section .activity {
-  padding: 5px 0px !important;
+  padding: 5px 0 !important
 }
 
 ul {
-  padding-inline-start: 0px !important;
+  padding-inline-start: 0 !important
 }
 
 .no-overflow>.no-overflow>ul:not(.img-text),
-li>ul,
-.post-content-container>ul {
+.post-content-container>ul,
+li>ul {
   padding-inline-start: 22px !important;
-  margin-top: 8px !important;
+  margin-top: 8px !important
 }
 
+.description-content>ol>li,
 .no-overflow>.no-overflow>ul>li,
 .post-content-container>ul>li,
-.description-content>ol>li {
+ol>li>ul>li {
   list-style-type: disc !important;
-  margin-bottom: 5px !important;
+  margin-bottom: 5px !important
 }
 
 ol>li>ul>li {
   margin-top: 10px !important;
   margin-left: 12px !important;
-  list-style-type: disc !important;
   margin-bottom: 8px !important;
-  font-size: 14px !important;
+  font-size: 14px !important
 }
 
 .description-content>ol {
-  padding-left: 0px !important;
+  padding-left: 0 !important
 }
 
 strong {
-  -webkit-text-stroke: 0.09px currentColor !important;
-  /* Temporal? (Bold text looks... weird...) */
+  -webkit-text-stroke: .09px currentColor !important
 }
 
 .no-overflow>ol {
-  margin-left: 25px !important;
+  margin-left: 25px !important
 }
 
 .no-overflow>ol>li {
   list-style-type: decimal !important;
-  margin-bottom: 15px !important;
+  margin-bottom: 15px !important
 }
 
 .bg-light:not(.a) {
-  background-color: var(--darkB) !important;
+  background-color: var(--darkB) !important
 }
 
 .border:not(.a) {
-  border: 1.5px solid var(--darkA) !important;
+  border: 1.5px solid var(--darkA) !important
 }
 
-.filter-group,
-.initialbar:not(.a),
-.buttons>.d-flex.flex-wrap.align-items-center,
-.usercheckbox,
 #select-all-participants,
-th>i.fa-arrow-up-short-wide,
-.paging.paging-morelink {
-  display: none !important;
+.buttons>.d-flex.flex-wrap.align-items-center,
+.filter-group,
+.fitem>.col-md-3.col-form-label.d-flex.pb-0.pe-md-0:not(:has(>label)),
+.initialbar:not(.a),
+.moodle-dialogue-hd:not(:has(>h3)),
+.paging.paging-morelink,
+.usercheckbox,
+th>i.fa-arrow-up-short-wide {
+  display: none !important
 }
 
-/* Temporal hide, FIX */
-
-a[data-action="showcount"] {
+a[data-action=showcount] {
   display: block !important;
-  padding: 28px 0px 5px 0px !important;
+  padding: 28px 0 5px !important;
   text-align: center !important;
-  font-size: 10pt !important;
+  font-size: 10pt !important
 }
 
 .page-item.active .page-link {
   color: #fff;
   background-color: var(--darkA) !important;
-  border-color: none !important;
+  border-color: none !important
 }
 
 .page-link {
   color: #0f6cbf;
   background-color: var(--darkB) !important;
-  border: 1.5px solid var(--darkA) !important;
+  border: 1.5px solid var(--darkA) !important
 }
 
 .pagination-centered {
-  padding-top: 15px !important;
+  padding-top: 15px !important
 }
 
 .userlist table#participants th {
-  padding: 20px 5px !important;
+  padding: 20px 5px !important
 }
 
 .d-inline-block.aabtn>img,
-.d-inline-block.aabtn>span {
-  margin-right: 10px !important;
+.d-inline-block.aabtn>span,
+.fitem>.col-md-3.col-form-label.d-flex.pb-0.pe-md-0>label,
+tr.discussion>td.align-middle.fit-content.limit-width.px-3>.d-flex>div.p-0 {
+  margin-right: 10px !important
 }
 
-div[data-table-handler="participants"]>nav:nth-of-type(1),
-p[data-region="participant-count"],
 .activity-header:empty,
+.btn.btn-link.p-0,
 .lastpost,
-.btn.btn-link.p-0 {
-  display: none !important;
+div[data-table-handler=participants]>nav:nth-of-type(1),
+p[data-region=participant-count] {
+  display: none !important
 }
 
 #action_bar~h2:not(:empty) {
   padding-top: 15px !important;
-  padding-left: 35px !important;
-}
-
-th.header,
-th.text-center,
-td {
-  color: var(--lightB) !important;
-}
-
-th.topic>div>div>a {
-  color: var(--lightA) !important;
+  padding-left: 35px !important
 }
 
 .modal-content {
-  background-color: var(--darkB) !important;
-  border-radius: .75rem !important;
+  border-radius: .75rem !important
 }
 
+.cell,
+.modal-content,
 .user-report-container,
-.cell {
-  background-color: var(--darkB) !important;
+th.header {
+  background-color: var(--darkB) !important
 }
 
 .activity-description>div:not(:empty) {
-  margin-bottom: 15px !important;
+  margin-bottom: 15px !important
 }
 
 .fileuploadsubmissiontime {
-  margin-bottom: 25px !important;
+  margin-bottom: 25px !important
 }
-
-td.lastcol>.plugincontentsummary {
-  padding-bottom: 0px !important;
-}
-
-/* Temporary removal 
-
-#ygtvcontentel5 > div > .fileuploadsubmissiontime {
-  margin-bottom: 0px !important;
-}    
-
-#ygtvcontentel5 > div > .fileuploadsubmission > a {
-  color: var(--lightB) !important;
-}*/
 
 .feedbacktable>.table-responsive>.generaltable>tbody>tr>.c0 {
-  padding-left: 0px !important;
-  width: 285px !important;
+  padding-left: 0 !important;
+  width: 285px !important
 }
 
 .fcontainer {
-  display: block !important;
+  display: block !important
 }
 
 .dropdown-item.active,
 .dropdown-item:active,
-.dropdown-item:hover,
 .dropdown-item:focus,
-.dropdown-item:focus-within {
-  background-color: var(--darkA) !important;
+.dropdown-item:focus-within,
+.dropdown-item:hover {
+  background-color: var(--darkA) !important
 }
 
-*:focus,
-*.focus {
-  box-shadow: none !important;
+.focus,
+:focus {
+  box-shadow: none !important
 }
 
-@media (min-width: 768px){
+@media (min-width:768px) {
   .mform fieldset .fcontainer.collapseable .col-form-label {
-    padding-left: 0px !important;
+    padding-left: 0 !important
   }
 }
 
-.fitem>.col-md-3.col-form-label.d-flex.pb-0.pe-md-0:not(:has(> label)) {
-  display: none !important;
-}
-
-.fitem>.col-md-3.col-form-label.d-flex.pb-0.pe-md-0:has(> label) {
+.fitem>.col-md-3.col-form-label.d-flex.pb-0.pe-md-0:has(>label) {
   padding-left: 3px !important;
   font-size: 11pt !important;
-  color: var(--lightB) !important;
-}
-
-.fitem>.col-md-3.col-form-label.d-flex.pb-0.pe-md-0>label {
-  margin-right: 10px !important;
+  color: var(--lightB) !important
 }
 
 .atto_info {
   margin-top: 10px !important;
   background-color: #1b77a12a !important;
   border: 1.5px solid #23556d77 !important;
-  border-radius: .95rem !important;
+  border-radius: .95rem !important
 }
 
-@media (min-width: 768px){
+@media (min-width:768px) {
   .col-md-3 {
     flex: 0 0 max-content !important;
-    max-width: 100% !important;
+    max-width: 100% !important
   }
 }
 
 .alert-info {
   color: var(--lightB) !important;
   background-color: var(--darkA) !important;
-  border: none !important;
+  border: 0 !important
 }
 
 .alert {
-  border: none !important;
+  border: 0 !important;
   border-radius: .75rem !important;
-  margin-bottom: 0px !important;
+  margin-bottom: 0 !important
 }
 
 .card.mb-3>.card-body {
-  padding: 30px !important;
+  padding: 30px !important
 }
 
 .form-group:not(#fgroup_id_buttonar) {
-  margin-bottom: 0px !important;
+  margin-bottom: 0 !important
 }
 
+.form-group.row.fitem:not(.femptylabel),
 .form-group:not(.fitem) {
-  padding-bottom: 15px !important;
+  padding-bottom: 15px !important
 }
 
-.modal-header,
-.modal-bottom {
-  border: none !important;
+.modal-bottom,
+.modal-header {
+  border: 0 !important
 }
 
 .fp-saveas {
-  padding-top: 25px !important;
+  padding-top: 25px !important
 }
 
+.filemanager:not(.a),
 .fp-thumbnail,
-.fp-thumbnail>img,
-.filemanager:not(.a) {
-  border: none !important;
+.fp-thumbnail>img {
+  border: 0 !important;
   background-color: var(--darkB) !important;
-  margin: 0px !important;
+  margin: 0 !important
 }
 
 .fp-fileinfo {
-  margin-top: 20px !important;
+  margin-top: 20px !important
 }
 
 .yui3-datatable-header:not(.a) {
-  border: none !important;
+  border: 0 !important;
   background: var(--darkB) !important;
-  color: var(--lightB) !important;
+  color: var(--lightB) !important
 }
 
 .filemanager .yui3-datatable-header:not(.a),
 .yui3-datatable-cell:not(.a) {
   background: var(--darkC) !important;
-  border: none !important;
+  border: 0 !important;
   color: var(--lightB) !important;
-  height: 20px !important;
-
-  div {
-    padding-bottom: 8px !important;
-    align-content: center !important;
-  }
+  height: 20px !important
 }
 
 label#fp-mkdir-dlg-title {
   margin-bottom: 30px !important;
   font-size: 14pt !important;
-  font-weight: bold !important;
-}
-
-.moodle-dialogue-hd:not(:has(> h3)) {
-  display: none !important;
+  font-weight: 700 !important
 }
 
 .maincalendar {
-  padding: 35px !important;
+  padding: 35px !important
 }
 
 .clickable:hover {
-  background-color: var(--darkA) !important;
-}
-
-.form-group.row.fitem:not(.femptylabel) {
-  padding-bottom: 15px !important;
+  background-color: var(--darkA) !important
 }
 
 .btn-group.header-button-group {
   padding-left: 25px !important;
-  padding-top: 5px !important;
+  padding-top: 5px !important
 }
 
 .btn-group.header-button-group>.btn {
-  padding-right: 25px !important;
+  padding-right: 25px !important
 }
 
 .header-button-title {
-  padding-left: 10px !important;
-}
-
-.btn-group.header-button-group>.btn>i {
-  color: var(--lightB) !important;
+  padding-left: 10px !important
 }
 
 .fa-bell-o:before {
-  padding-left: 3px !important;
+  padding-left: 3px !important
 }
 
 .fa-comment-o:before {
-  padding-left: 2px !important;
+  padding-left: 2px !important
 }
 
 .popover-region-container {
@@ -1776,20 +1667,20 @@ label#fp-mkdir-dlg-title {
   height: fit-content !important;
   background-color: var(--darkB) !important;
   border: 1.5px solid var(--darkA) !important;
-  border-radius: 0.75rem !important;
+  border-radius: .75rem !important;
   padding: 8px 16px !important;
-  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4) !important;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, .4) !important
 }
 
-.popover-region-container[aria-hidden="true"] {
-  display: none !important;
+.popover-region-container[aria-hidden=true] {
+  display: none !important
 }
 
-.popover-region-container:has(> a.see-all-link) {
+.popover-region-container:has(>a.see-all-link) {
   padding: 20px !important;
   right: -150px !important;
   width: 280px !important;
-  overflow: hidden !important;
+  overflow: hidden !important
 }
 
 .popover-region-notifications .popover-region-content-container {
@@ -1798,184 +1689,158 @@ label#fp-mkdir-dlg-title {
   overflow-y: scroll !important;
   margin-bottom: 10px !important;
   padding-right: 5px !important;
-  border-radius: .75rem !important;
+  border-radius: .75rem !important
 }
 
 .notification-area .control-area {
   padding-right: 10px !important;
-  border-radius: .75rem !important;
+  border-radius: .75rem !important
 }
 
 .notification-area .navbar {
-  display: none !important;
+  display: none !important
 }
 
 .notification-area .content .forumpost {
   margin-top: 0 !important;
   border-width: 1.5px !important;
   border-style: solid !important;
-  border-color: rgba(99, 99, 110, 0.625) !important;
-  background-color: rgba(74, 74, 82, 0.397) !important;
+  border-color: rgba(99, 99, 110, .625) !important;
+  background-color: rgba(74, 74, 82, .397) !important;
   box-shadow: none !important;
-  border-radius: 0.75rem !important;
-  padding: 20px !important;
-  padding-top: 15px !important;
+  border-radius: .75rem !important;
+  padding: 15px 20px 20px !important
 }
 
 .notification-area .content-area .header {
-  border-bottom: none !important;
+  border-bottom: none !important
 }
 
 .header .subject {
-  color: var(--lightA) !important;
+  color: var(--lightA) !important
 }
 
-.header .author {
-  font-size: 12px !important;
+.header .author,
+label.custom-control-label.ml-2 {
+  font-size: 12px !important
 }
 
 .notification-area .forumpost .picture img {
-  margin: 0 !important;
-  margin-top: 7px !important;
-  margin-right: 5px !important;
-}
-
-.notification-area .content-area .header a {
-  color: var(--lightB) !important;
+  margin: 7px 5px 0 0 !important
 }
 
 .notification-area .forumpost .content {
-  padding-top: 15px !important;
+  padding-top: 15px !important
 }
 
 .notification-area .content-area {
-  padding-bottom: 0 !important;
+  padding-bottom: 0 !important
 }
 
+.notification-area .content-area .footer,
 .notification-area .forumpost .content .commands,
-.notification-area .content-area .footer {
-  display: none !important;
+.popover-region-toggle::after,
+.popover-region-toggle::before {
+  display: none !important
 }
 
 .notification-area .content .unsubscribelink {
-  margin-top: 25px !important;
+  margin-top: 25px !important
 }
 
 .notification-area .forumpost .content .link {
   padding: 8px 12px !important;
-  background-color: rgba(139, 139, 154, 0.216) !important;
+  background-color: rgba(139, 139, 154, .216) !important;
   border-radius: .75rem !important;
   width: fit-content !important;
-  margin-top: 20px !important;
-
-  a {
-    color: var(--lightB) !important;
-  }
-
-  &:hover {
-    filter: brightness(1.1);
-
-    a {
-      text-decoration: none !important;
-    }
-  }
+  margin-top: 20px !important
 }
 
 .notification-area .content-area .content ul li a:not(.autolink) {
   padding: 8px 12px !important;
-  background-color: rgba(86, 86, 102, 0.452) !important;
+  background-color: rgba(86, 86, 102, .452) !important;
   border-radius: .75rem !important;
   display: block !important;
   width: fit-content !important;
   margin-top: 20px !important;
-  color: var(--lightB) !important;
-
-  &:hover {
-    filter: brightness(1.1);
-    text-decoration: none !important;
-  }
+  color: var(--lightB) !important
 }
 
 .autolink {
-  color: var(--link) !important;
+  color: var(--link) !important
 }
 
 .content-item-container:hover {
   color: inherit !important;
-  filter: brightness(1.25) !important;
+  filter: brightness(1.25) !important
 }
 
 .content-item-container {
-  transition: 0.25s ease-in-out !important;
+  transition: .25s ease-in-out !important
 }
 
-@media (max-width: 480px){
+@media (max-width:480px) {
   .navbar .popover-region .popover-region-container {
     position: absolute !important;
-    left: auto !important;
+    left: auto !important
   }
 }
 
-.popover-region-toggle::before,
-.popover-region-toggle::after {
-  display: none !important;
-}
-
 .closewidget>a.btn-link {
-  padding: 0px !important;
+  padding: 0 !important;
   position: absolute !important;
   opacity: 0 !important;
   top: -70px !important;
   right: -5px !important;
   width: 270px !important;
-  height: 60px !important;
+  height: 60px !important
 }
 
 .editprofile {
   margin-top: 15px !important;
   margin-bottom: 15px !important;
-  justify-self: start !important;
+  justify-self: start !important
 }
 
-ol,
-ul,
+dd,
 dl,
-dd {
-  margin-bottom: 0px !important;
+ol,
+ul {
+  margin-bottom: 0 !important
 }
 
 .btn.btn-primary.mt-2 {
-  margin-top: 0px !important;
-  margin-bottom: 15px !important;
+  margin-top: 0 !important;
+  margin-bottom: 15px !important
 }
 
 .mediaplugin {
   margin-top: 25px !important;
-  margin-bottom: 25px !important;
+  margin-bottom: 25px !important
 }
 
 .mediaplugin>div {
-  margin: 0px !important;
+  margin: 0 !important
 }
 
-p:empty:not(> br),
+p:empty:not(>br),
 p>br:empty {
-  display: none !important;
+  display: none !important
 }
 
 .activity-altcontent.course-description-item {
   margin-top: -32px !important;
   margin-left: 25px !important;
   padding-top: 35px !important;
-  padding-bottom: 0px !important;
+  padding-bottom: 0 !important;
   background-color: transparent !important;
   color: var(--lightB) !important;
-  font-weight: 500 !important;
+  font-weight: 500 !important
 }
 
 .activity-basis {
   z-index: 10 !important;
-  position: relative !important;
+  position: relative !important
 }
 
 .instancename {
@@ -1984,121 +1849,98 @@ p>br:empty {
 }
 
 .generaltable.table-bordered>tbody>tr>.c0 {
-  padding-left: 0px !important;
-  width: 280px !important;
+  padding-left: 0 !important;
+  width: 280px !important
 }
 
 .submissionstatustable,
 .submissionstatustable>h3 {
-  margin-bottom: 0px !important;
-}
-
-.feedback {
-  margin-top: 25px !important;
+  margin-bottom: 0 !important
 }
 
 .activity-item.activityinline {
   padding-top: 3px !important;
-  padding-bottom: 5px !important;
+  padding-bottom: 5px !important
 }
 
-.activity-item.activityinline:has(> .description > .activity-altcontent > .description-inner > .no-overflow > .no-overflow > a) {
-  padding-bottom: 0px !important;
+.activity-item.activityinline:has(>.description>.activity-altcontent>.description-inner>.no-overflow>.no-overflow>a) {
+  padding-bottom: 0 !important
 }
 
-.activity-wrapper:has(>.activity-item > .description > .activity-altcontent > .description-inner > .no-overflow > .no-overflow > h5:empty) {
-  display: none !important;
-}
-
-.activity-item.activityinline:has(> .description > .activity-altcontent > .description-inner > .no-overflow > .no-overflow > p:not(:empty)) {
-  padding-top: 0px !important;
+.activity-item.activityinline:has(>.description>.activity-altcontent>.description-inner>.no-overflow>.no-overflow>p:not(:empty)),
+pre:has(code[class="language-c#"]) {
+  padding-top: 0 !important
 }
 
 .description-inner>.no-overflow>.no-overflow>p:not(:empty)>a {
-  color: var(--link) !important;
+  color: var(--link) !important
 }
 
 .activity.activity-wrapper:not(:first-child)>.activity-item>.description>.activity-altcontent>.description-inner>.no-overflow>.no-overflow>h3 {
-  margin-top: 16px !important;
+  margin-top: 16px !important
 }
 
-.activity.activity-wrapper>.activity-item>.description>.activity-altcontent>.description-inner>.no-overflow>.no-overflow>p:empty,
-.activity.activity-wrapper>.activity-item>.description>.activity-altcontent>.description-inner>.no-overflow>.no-overflow>br:empty {
-  display: none !important;
+.activity.activity-wrapper>.activity-item>.description>.activity-altcontent>.description-inner>.no-overflow>.no-overflow>br:empty,
+.activity.activity-wrapper>.activity-item>.description>.activity-altcontent>.description-inner>.no-overflow>.no-overflow>p:empty {
+  display: none !important
 }
 
 .activity.activity-wrapper>.activity-item>.description>.activity-altcontent>.description-inner>.no-overflow>.no-overflow>p,
 .description-inner>.no-overflow>.no-overflow>h3:only-child {
-  margin-bottom: 0px !important;
+  margin-bottom: 0 !important
 }
 
 .description-inner>.no-overflow,
 .description-inner>.no-overflow>.no-overflow {
-  overflow: visible !important;
+  overflow: visible !important
 }
 
 li {
-  list-style-type: none !important;
+  list-style-type: none !important
 }
 
 .course-section-header>.justify-content-end {
-  margin-right: 0px !important;
+  margin-right: 0 !important
 }
 
-.course-section-header:has(> .sectionbadges:only-child) {
-  display: none !important;
+.activity-wrapper:has(>.activity-item>.description>.contentwithoutlink>.description-inner>.no-overflow>.no-overflow>hr:empty),
+.course-section-header:has(>.sectionbadges:only-child) {
+  display: none !important
 }
 
 .topics>li.section#section-0 {
-  padding-top: 1.5rem !important;
+  padding-top: 1.5rem !important
 }
 
 .single-section .topics>li.section#section-0 {
   padding-top: 0 !important;
-  margin-top: 0 !important;
+  margin-top: 0 !important
 }
 
 li.section:last-child {
-  padding-bottom: 0px !important;
-}
-
-.activity-wrapper:has(>.activity-item > .description > .contentwithoutlink > .description-inner > .no-overflow > .no-overflow > hr:empty) {
-  display: none !important;
+  padding-bottom: 0 !important
 }
 
 iframe:not(.vjs-tech) {
-  width: 740px !important;
+  width: 740px !important
 }
 
+.card-footer>.ms-auto.dropdown>button.coursemenubtn,
 .ygtvcell.ygtvtn {
-  display: none !important;
+  display: none !important
 }
-
-/* .description-inner > .no-overflow > .no-overflow > div[style="padding: 1em; font-family: Arial, Helvetica; border: 1px solid #3498db; display: inline-block; float: left; margin: 1em;"] {
-  color: var(--lightA) !important;
-  background-color: #44495062 !important;
-  border: 1.5px solid #5960699a !important;
-  border-radius: .9rem !important;
-  padding: 20px !important;
-  width: 105% !important;
-  margin-left: -4px !important;
-}*/
-
-/* li[style="display: inline; padding: 0.5em; color: #ffffff; background-color: #3498db; font-weight: normal;"] {
-  background-color: transparent !important;
-}*/
 
 .path-mod .activity-description .no-overflow p:last-child {
-  margin-bottom: 25px !important;
+  margin-bottom: 25px !important
 }
 
 #intro.activity-description {
   font-size: 12pt !important;
-  font-weight: 500 !important;
+  font-weight: 500 !important
 }
 
 .card-grid {
-  align-items: center !important;
+  align-items: center !important
 }
 
 .card.course-card {
@@ -2106,28 +1948,24 @@ iframe:not(.vjs-tech) {
   align-items: normal !important;
   margin-bottom: 10px !important;
   overflow: hidden !important;
-  padding: 4px 10px !important;
+  padding: 4px 10px !important
 }
 
 .course-card.mx-1 {
-  margin-left: 0px !important;
-  margin-right: 8px !important;
+  margin-left: 0 !important;
+  margin-right: 8px !important
 }
 
 .card-grid>.mb-2 {
-  margin-bottom: 0 !important;
+  margin-bottom: 0 !important
 }
 
 .card.course-card:hover .card-img-top {
-  opacity: 1 !important;
+  opacity: 1 !important
 }
 
 .card.course-card>.course-info-container {
-  padding-right: 0.8rem !important;
-}
-
-.card-footer>.ms-auto.dropdown>button.coursemenubtn {
-  display: none !important;
+  padding-right: .8rem !important
 }
 
 .card-img-top {
@@ -2136,87 +1974,89 @@ iframe:not(.vjs-tech) {
   height: 100% !important;
   position: absolute !important;
   margin-top: 100px !important;
-  opacity: 0.6 !important;
-  transition: opacity 0.25s ease-in-out !important;
+  opacity: .6 !important;
+  transition: opacity .25s ease-in-out !important
 }
 
 .aalink.coursename.me-2.mb-1:hover {
-  text-decoration: none !important;
+  text-decoration: none !important
 }
 
 .card.course-card>a[tabindex="-1"] {
   position: absolute !important;
-  top: 0px !important;
+  top: 0 !important;
   left: 1px !important;
   width: 100% !important;
-  height: 140px !important;
+  height: 140px !important
 }
 
 .tableform {
-  text-align: start !important;
+  text-align: start !important
 }
 
 .path-mod-choicegroup #yourselection {
   color: #5dff9bf1 !important;
   font-weight: 500 !important;
   font-size: 11pt !important;
-  padding: 0px !important;
-  padding-bottom: 10px !important;
+  padding: 0 0 10px !important
 }
 
 .choicegroup-descriptionshow.ml-1,
 .choicegroup-membershow.ml-1 {
-  margin-left: 30px !important;
+  margin-left: 30px !important
 }
 
 .bg-pulse-grey {
   border-radius: .75rem !important;
-  background-color: var(--darkB) !important;
+  background-color: var(--darkB) !important
 }
 
 .block:not(.block_myoverview)>.card-body {
   background-color: var(--darkB) !important;
   border-radius: .75rem !important;
-  border: 1.5px solid var(--darkA) !important;
+  border: 1.5px solid var(--darkA) !important
 }
 
 .block_myoverview.mb-3 {
-  margin-bottom: 0px !important;
+  margin-bottom: 0 !important
 }
 
 .block_myoverview>.card-body.p-3 {
-  padding-bottom: 0px !important;
+  padding-bottom: 0 !important
 }
 
-.card.mb-3>.card-body>.card-title {
-  color: var(--lightA) !important;
+.card-body.p-3.px-xl-4>.d-sm-flex.mb-n1>.d-flex.mb-3.mb-sm-0>.mt-1>a,
+.card.mb-3>.card-body>.card-title,
+.course-section-header>h3.h4.sectionname>a,
+.local-mail-message-users.d-flex.mb-n2>.d-flex.flex-column>div>a {
+  color: var(--lightA) !important
 }
 
 .block-timeline>div:first-child>div.row {
   box-shadow: none !important;
   background-color: transparent !important;
   margin-bottom: 25px !important;
-  margin-left: -10px !important;
+  margin-left: -10px !important
 }
 
 .block-timeline>div:first-child>div.row>.mb-1>.mb-1>.btn-outline-secondary.dropdown-toggle:not(#calendarviewdropdown),
 .block-timeline>div:first-child>div.row>.mb-1>.w-100>.simplesearchform>.searchbar>.rounded:not(a) {
-  background-color: var(--darkA) !important;
+  background-color: var(--darkA) !important
 }
 
 .list-group-item-action.btn.btn-outline-secondary.btn-sm.text-nowrap {
   background-color: var(--darkA) !important;
   padding: 5px 15px !important;
-  border: none !important;
-  border-radius: .75rem !important;
+  border: 0 !important;
+  border-radius: .75rem !important
 }
 
 .border-bottom:not(.a) {
-  border-bottom: none !important;
+  border-bottom: none !important
 }
 
 .modal-footer {
-  border-top: none !important;
+  border-top: none !important
 }
 
 .editor_atto_toolbar {
@@ -2224,11 +2064,11 @@ iframe:not(.vjs-tech) {
   border: 1.5px solid var(--darkA) !important;
   border-bottom: none !important;
   border-top-left-radius: .75rem !important;
-  border-top-right-radius: .75rem !important;
+  border-top-right-radius: .75rem !important
 }
 
 .editor_atto_toolbar .atto_toolbar_row {
-  margin: 10px 0 -3px 10px !important;
+  margin: 10px 0-3px 10px !important
 }
 
 .editor_atto_content.form-control {
@@ -2237,166 +2077,171 @@ iframe:not(.vjs-tech) {
   border: 1.5px solid var(--darkA) !important;
   border-bottom-left-radius: .75rem !important;
   border-bottom-right-radius: .75rem !important;
-  border-top: none !important;
+  border-top: none !important
 }
 
-.editor_atto_content_wrap {
-  background-color: transparent !important;
+.calendarmonth>thead>tr>th.header,
+.editor_atto_content_wrap,
+td.day.clickable:hover {
+  background-color: transparent !important
 }
 
 .editor_atto_toolbar div.atto_group {
   border: 1.5px solid var(--darkA) !important;
   border-radius: .75rem !important;
-  background: var(--darkB) !important;
+  background: var(--darkB) !important
 }
 
-div.editor_atto_toolbar button+button,
-div.editor_atto_toolbar .menuplaceholder+button {
-  border-left: none !important;
+div.editor_atto_toolbar .menuplaceholder+button,
+div.editor_atto_toolbar button+button {
+  border-left: none !important
 }
 
 div.editor_atto_toolbar button {
-  padding: 8px 12px !important;
+  padding: 8px 12px !important
 }
 
 .editor_atto_toolbar button:hover {
   background-image: none !important;
-  background-color: unset !important;
+  background-color: unset !important
 }
 
-body.pagelayout-popup {
+body.pagelayout-popup,
+span[style*=background-color] {
   color: var(--lightA) !important;
-  background-color: transparent !important;
+  background-color: transparent !important
 }
 
 #page {
-  margin-top: 0px !important;
+  margin-top: 0 !important
 }
 
 .profile_tree>.node_category:nth-child(2),
-div:has(> a[href="https://cvdof.ucm.es/moodle/message/notificationpreferences.php?userid=75624"]),
-div:has(> a[href="https://cvdof.ucm.es/moodle/message/edit.php?id=75624"]),
-li:has(> span > a[href="https://cvdof.ucm.es/moodle/report/usersessions/user.php"]),
-li:has(> span > a[href="https://cvdof.ucm.es/moodle/admin/tool/lp/plans.php?userid=75624"]),
-li:has(> span > a[href="https://cvdof.ucm.es/moodle/mod/customcert/my_certificates.php?userid=75624"]) {
-  display: none !important;
+div:has(>a[href="https://cvdof.ucm.es/moodle/message/edit.php?id=75624"]),
+div:has(>a[href="https://cvdof.ucm.es/moodle/message/notificationpreferences.php?userid=75624"]),
+li:has(>span>a[href="https://cvdof.ucm.es/moodle/admin/tool/lp/plans.php?userid=75624"]),
+li:has(>span>a[href="https://cvdof.ucm.es/moodle/mod/customcert/my_certificates.php?userid=75624"]),
+li:has(>span>a[href="https://cvdof.ucm.es/moodle/report/usersessions/user.php"]) {
+  display: none !important
 }
 
 .popover-region-footer-container {
   border-top: none !important;
-  background-color: transparent !important;
+  background-color: transparent !important
 }
 
 .popover-region-header-container {
-  border-bottom: none !important;
+  border-bottom: none !important
 }
 
 .empty-message {
   color: var(--lightB) !important;
-  padding: 75px 15px !important;
+  padding: 75px 15px !important
 }
 
 .border-top:not(.a) {
-  border-top: none !important;
+  border-top: none !important
 }
 
 .timeline-event-list-item:not(.a) {
-  padding-top: 20px !important;
+  padding-top: 20px !important
 }
 
 .local-mail-navbar-popover {
   padding: 10px !important;
-  width: 260px !important;
+  width: 260px !important
 }
 
 .local-mail-navbar-popover>.justify-content-between>.btn-secondary:not(.px-2.px-sm-3) {
   background-color: transparent !important;
-  border: none !important;
+  border: 0 !important
 }
 
 .local-mail-navbar-popover>.justify-content-between>.btn-secondary:not(.px-2.px-sm-3)>i {
-  color: var(--lightB) !important;
+  color: var(--lightB) !important
 }
 
 .local-mail-menu-item:not(.a) {
   color: var(--lightB) !important;
   border-radius: .75rem !important;
-  padding: 10px 10px !important;
+  padding: 10px !important;
   height: 45px !important;
-  border: none !important;
+  border: 0 !important
 }
 
 .local-mail-menu-item:hover {
-  background-color: var(--darkA) !important;
+  background-color: var(--darkA) !important
 }
 
 .local-mail-menu-item>i::before {
   color: var(--lightB) !important;
-  font-size: 17px !important;
+  font-size: 17px !important
 }
 
+.d-inline-block.mt-1.align-top>img.icon,
 .fa-edit,
-.d-inline-block.mt-1.align-top>img.icon {
-  filter: invert(0.9) !important;
+.popover-body>div>img {
+  filter: invert(.9) !important
 }
 
-.local-mail-combo-box-left-icon,
-.local-mail-combo-box {
-  display: none !important;
+.local-mail-combo-box,
+.local-mail-combo-box-left-icon {
+  display: none !important
 }
 
 .local-mail-navbar-popover>.justify-content-between {
-  padding: 8px !important;
-  padding-right: 0px !important;
+  padding: 8px 0 8px 8px !important
 }
 
 .badge {
-  padding: 1px 5px 3px 5px !important;
+  padding: 1px 5px 3px !important;
   background-color: var(--lightB) !important;
   color: var(--darkB) !important;
   border-radius: 1.5rem !important;
   font-size: 12px !important;
   align-content: center !important;
-  font-weight: 800 !important;
+  font-weight: 800 !important
 }
 
 .list-group>.local-mail-combo-box.svelte-1sayswp>.form-control.svelte-1sayswp:not(.a) {
-  padding-left: 12px !important;
+  padding-left: 12px !important
 }
 
-.tertiary-navigation.full-width-bottom-border,
-.user-heading:not(.a),
 .btn-icon.mr-1.toggle-category,
-.icon.fa-square-o.fa-fw.icon.itemicon {
-  display: none !important;
+.icon.fa-square-o.fa-fw.icon.itemicon,
+.tertiary-navigation.full-width-bottom-border,
+.user-heading:not(.a) {
+  display: none !important
 }
 
 .user-report-container {
   padding-left: 20px !important;
-  margin-top: 15px !important;
+  margin-top: 15px !important
 }
 
 .level2.item.b1b.column-itemname.cell {
-  padding-left: 0px !important;
+  padding-left: 0 !important
 }
 
 .dimmed_text,
+.onetopic-tab-body .fp-filename-icon>a:not(.a),
+.onetopic-tab-body .fp-filename>a:not(.a),
 .rowtitle,
 .text-muted:not(.a) {
-  color: var(--lightB) !important;
+  color: var(--lightB) !important
 }
 
 .text-muted:not(.a) {
-  font-size: 14px !important;
+  font-size: 14px !important
 }
 
 .path-grade-report-user .user-grade .column-contributiontocoursetotal {
-  min-width: 220px !important;
+  min-width: 220px !important
 }
 
 .fp-repo-area.nav-pills {
   gap: 10px !important;
-  padding-right: 25px !important;
+  padding-right: 25px !important
 }
 
 .nav-pills .nav-link {
@@ -2405,59 +2250,54 @@ li:has(> span > a[href="https://cvdof.ucm.es/moodle/mod/customcert/my_certificat
   min-height: 50px !important;
   height: max-content !important;
   padding: 15px !important;
-  border-radius: .9rem !important;
+  border-radius: .9rem !important
 }
 
-@media (max-width: 767.98px){
+@media (max-width:767.98px) {
 
-  .nav-tabs:not(.more-nav) .nav-link,
+  .nav-pills,
   .nav-pills .nav-link,
-  .nav-pills {
-    margin: 0px !important;
-    background-color: transparent !important;
+  .nav-tabs:not(.more-nav) .nav-link {
+    margin: 0 !important;
+    background-color: transparent !important
   }
 }
 
 .fp-repo-name {
   padding-left: 10px !important;
-  font-size: 14px !important;
+  font-size: 14px !important
 }
 
 .fp-navbar.bg-faded.border-bottom.icon-no-spacing,
 .fp-setlicense.form-group,
 fieldset.form-group.row.flex-column {
-  display: none !important;
+  display: none !important
 }
 
 .fp-filename {
-  background: none !important;
-}
-
-.onetopic-tab-body .fp-filename>a:not(.a),
-.onetopic-tab-body .fp-filename-icon>a:not(.a) {
-  color: var(--lightB) !important;
+  background: 0 0 !important
 }
 
 .fp-repo-items.card {
-  border-color: var(--darkB) !important;
+  border-color: var(--darkB) !important
 }
 
 .fp-file>.px-3 {
   background-color: none !important;
-  padding-left: 0px !important;
-  padding-right: 0px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important
 }
 
 .fp-file>.px-3>input {
   padding-top: 8px !important;
   padding-left: 10px !important;
-  width: 100% !important;
+  width: 100% !important
 }
 
 .notification-area {
-  border: none !important;
+  border: 0 !important;
   display: flex !important;
-  flex-direction: row !important;
+  flex-direction: row !important
 }
 
 .control-area {
@@ -2465,12 +2305,11 @@ fieldset.form-group.row.flex-column {
   padding-top: 15px !important;
   color: var(--lightB);
   margin-right: 30px !important;
-  width: 400px !important;
+  width: 400px !important
 }
 
-div[role="main"]:not(:has(> form.horizontal)):not(:has(> .generalbox)):has(> .notification-area, .addbloglink, .user-content, .alert-block) {
-  margin: 40px !important;
-  margin-bottom: 60px !important;
+div[role=main]:not(:has(>form.horizontal)):not(:has(>.generalbox)):has(>.notification-area, .addbloglink, .user-content, .alert-block) {
+  margin: 40px 40px 60px !important
 }
 
 li.option {
@@ -2483,333 +2322,291 @@ li.option {
   border-radius: 2rem !important;
   width: fit-content !important;
   display: flex !important;
-  align-items: center !important;
+  align-items: center !important
 }
 
 li.option>label {
   margin-bottom: 2px !important;
-  margin-left: 7px !important;
+  margin-left: 7px !important
 }
 
 .choices.list-unstyled.unstyled {
   margin-bottom: 20px !important;
-  margin-top: 15px !important;
+  margin-top: 15px !important
 }
 
-#intro.activity-description>.no-overflow>p[dir="ltr"]:has(br:only-child),
+#intro.activity-description>.no-overflow>br:empty,
 #intro.activity-description>.no-overflow>p:empty:last-child,
-#intro.activity-description>.no-overflow>br:empty {
-  display: none !important;
+#intro.activity-description>.no-overflow>p[dir=ltr]:has(br:only-child) {
+  display: none !important
 }
 
 .message-app.main {
   padding: 40px 30px !important;
-  border: none !important;
-  background-color: none !important;
+  border: 0 !important;
+  background-color: none !important
 }
 
 .border-right:not(.a) {
-  border-right: none !important;
+  border-right: none !important
 }
 
-div[data-region="view-overview-group-messages"],
-div[data-region="view-overview-messages"],
-div[data-region="view-overview-favourites"] {
+div[data-region=view-overview-favourites],
+div[data-region=view-overview-group-messages],
+div[data-region=view-overview-messages] {
   margin-bottom: 10px !important;
-  background-color: var(--darkA) !important;
+  background-color: var(--darkA) !important
 }
 
+.activity-description .no-overflow br,
+.alert.alert-danger.alert-block.fade.in.alert-dismissible>button.close,
 .loading-icon,
-a[href="https://cvdof.ucm.es/moodle/message/notificationpreferences.php"],
-.alert.alert-danger.alert-block.fade.in.alert-dismissible>button.close {
-  display: none !important;
+.message-app>.footer-container.position-relative>div[data-region=view-overview],
+a[href="https://cvdof.ucm.es/moodle/message/notificationpreferences.php"] {
+  display: none !important
 }
 
 .alert.alert-danger.alert-block.fade.in.alert-dismissible {
-  margin-top: 25px !important;
+  margin-top: 25px !important
 }
 
-h2.main.mt-4.mb-4,
-.page-context-header:not(.mr-auto, .me-auto):has(~ .grade-report-user) {
-  display: none !important;
+.page-context-header:not(.mr-auto, .me-auto):has(~.grade-report-user),
+h2.main.mt-4.mb-4 {
+  display: none !important
 }
 
 .header-container>.border-bottom.p-1.px-sm-2 {
-  padding: 0px !important;
-  margin-bottom: 10px !important;
+  padding: 0 !important;
+  margin-bottom: 10px !important
 }
 
-a[data-route="view-contacts"] {
-  font-size: 0 !important;
+a[data-route=view-contacts] {
+  font-size: 0 !important
 }
 
 .header-container>.border-bottom.p-1.px-sm-2>.text-end.mt-sm-3 {
-  margin-top: 0px !important;
+  margin-top: 0 !important;
   position: absolute !important;
   top: 12px !important;
-  right: 35px !important;
+  right: 35px !important
 }
 
 .header-container>.border-bottom.p-1.px-sm-2>.d-flex.align-items-center>.input-group.simplesearchform {
-  margin-right: 45px !important;
-}
-
-.message-app>.footer-container.position-relative>div[data-region="view-overview"] {
-  display: none !important;
-  /*Full message app is broken atm, hide button*/
+  margin-right: 45px !important
 }
 
 .header-container>.border-bottom.p-1.px-sm-2>.d-flex.align-items-center {
   height: 45px !important;
   font-size: 17px !important;
-  font-weight: 500 !important;
+  font-weight: 500 !important
 }
 
 .header-container>.border-bottom.p-1.px-sm-2>.d-flex.align-items-center>.ml-auto {
   margin-right: 10px !important;
-  margin-top: 2px !important;
+  margin-top: 2px !important
 }
 
 .icon-back-in-drawer>.dir-rtl-hide {
   padding-top: 5px !important;
-  margin-right: 15px !important;
+  margin-right: 15px !important
 }
 
-div[data-region="content-container"]>.p-3[data-region="settings"] {
-  padding: 10px !important;
+div[data-region=content-container]>.p-3[data-region=settings] {
+  padding: 10px !important
 }
 
-label.custom-control-label.ml-2 {
-  font-size: 12px !important;
-}
-
-.p-3[data-region="settings"]>*:is(h3),
+.p-3[data-region=settings]>:is(h3),
 h3:not(.mb-0, .h5, .sectionname, .lead) {
   font-size: 17px !important;
   padding-bottom: 25px !important;
-  margin-bottom: 0 !important;
+  margin-bottom: 0 !important
 }
 
 .submissionstatustable>h3 {
-  padding-bottom: 0 !important;
+  padding-bottom: 0 !important
 }
 
 .wiki-toc {
-  border: 1.5px solid rgba(89, 96, 105, 0.604) !important;
+  border: 1.5px solid rgba(89, 96, 105, .604) !important;
   border-radius: .75rem !important;
   background: var(--darkA) !important;
-  margin: 0 !important;
-  margin-bottom: 25px !important;
+  margin: 0 0 25px !important;
   padding: 20px !important;
-  background-color: rgba(68, 73, 80, 0.384) !important;
+  background-color: rgba(68, 73, 80, .384) !important
 }
 
 .wiki-toc-section {
   margin-bottom: 10px !important;
+  font-size: 0 !important
 }
 
 .wiki-toc-section:last-child {
-  margin-bottom: 0px !important;
-}
-
-.wiki-toc-section {
-  font-size: 0 !important;
-
-  a {
-    font-size: 14px !important;
-    font-weight: 500 !important;
-  }
-}
-
-.activity-description .no-overflow br {
-  display: none !important;
+  margin-bottom: 0 !important
 }
 
 .feedback,
 .feedbacktable {
-  margin-top: 0 !important;
+  margin-top: 0 !important
 }
 
 .feedback>h3:first-of-type {
-  display: none !important;
-}
-
-span[style*="background-color"] {
-  color: var(--lightA) !important;
-  background-color: transparent !important;
-
-  a {
-    background-color: transparent !important;
-  }
-
-  span {
-    color: var(--link) !important;
-  }
+  display: none !important
 }
 
 .wiki-toc-title {
-  display: none !important;
+  display: none !important
 }
 
 .wiki-toc a:not(.wiki_edit_section) {
-  color: var(--lightA) !important;
+  color: var(--lightA) !important
 }
 
+.button-text,
+.text-primary:not(.a),
 .wiki_edit_section:not(.a) {
-  color: var(--lightB) !important;
+  color: var(--lightB) !important
 }
 
 .onetopic-tab-body ul li {
-  margin-bottom: 10px !important;
+  margin-bottom: 10px !important
 }
 
 .onetopic-tab-body h3:not(.sectionname) {
-  font-size: 20px !important;
+  font-size: 20px !important
 }
 
-.onetopic-tab-body h3:not(.sectionname):not(:has(> span > strong)) {
-  margin-top: 30px !important;
-}
-
-.course-section-header>h3.h4.sectionname>a {
-  color: var(--lightA) !important;
+.onetopic-tab-body h3:not(.sectionname):not(:has(>span>strong)) {
+  margin-top: 30px !important
 }
 
 .activity-description a,
 .onetopic-tab-body a:not(.aalink, .comment-link, .btn) {
-  color: var(--link) !important;
+  color: var(--link) !important
 }
 
-.text-primary:not(.a),
-.button-text {
-  color: var(--lightB) !important;
+.navbar-brand.d-flex,
+.text-primary[data-region=favourite-icon-container],
+footer.footer-popover.bg-white {
+  display: none !important
 }
 
-.text-primary[data-region="favourite-icon-container"],
-footer.footer-popover.bg-white,
-.navbar-brand.d-flex {
-  display: none !important;
-}
-
-.filepicker-filelist .dndupload-target,
-.filemanager-container .dndupload-target {
-  background: transparent !important;
-  font-size: 13pt !important;
+.filemanager-container .dndupload-target,
+.filepicker-filelist .dndupload-target {
+  background: 0 0 !important;
+  font-size: 13pt !important
 }
 
 .message-app .message.send {
-  background-color: var(--darkA) !important;
+  background-color: var(--darkA) !important
 }
 
-div[data-region="content-messages-footer-container"]>.d-flex.mt-sm-1 {
+div[data-region=content-messages-footer-container]>.d-flex.mt-sm-1 {
   background-color: var(--darkA) !important;
   border-radius: .75rem !important;
   padding: 5px !important;
-  border: 1.5px solid var(--darkA) !important;
+  border: 1.5px solid var(--darkA) !important
 }
 
 .form-control.bg-light {
   background-color: transparent !important;
-  height: 100% !important;
+  height: 100% !important
 }
 
-@media (min-width: 576px){
-  .p-sm-2[data-region="content-messages-footer-container"] {
-    padding: 0px !important;
+@media (min-width:576px) {
+  .p-sm-2[data-region=content-messages-footer-container] {
+    padding: 0 !important
   }
 }
 
 .message.clickable>.d-flex.align-items-center,
-.small[data-region="last-message-date"] {
-  display: none !important;
+.small[data-region=last-message-date] {
+  display: none !important
 }
 
 .tail.position-absolute {
-  border-bottom-color: var(--darkA) !important;
+  border-bottom-color: var(--darkA) !important
 }
 
 .custom-control-input:checked~.custom-control-label::before {
   border-color: #26bbff !important;
-  background-color: #26bbff !important;
+  background-color: #26bbff !important
 }
 
 .custom-radio .custom-control-input:checked~.custom-control-label::after {
-  filter: invert(0.9) !important;
+  filter: invert(.9) !important
 }
 
 .custom-control-label::after {
   left: -1.7rem !important;
-  top: 1.4px !important;
+  top: 1.4px !important
 }
 
 .custom-switch .custom-control-input:checked~.custom-control-label::after {
-  background-color: var(--darkB) !important;
+  background-color: var(--darkB) !important
 }
 
 .custom-switch .custom-control-label::after {
-  top: calc(0.078125rem + 4.5px) !important;
-  left: calc(0.078125rem - 40px) !important;
+  top: calc(.078125rem + 4.5px) !important;
+  left: calc(.078125rem - 40px) !important;
   width: calc(1.25rem - 9px) !important;
-  height: calc(1.25rem - 9px) !important;
+  height: calc(1.25rem - 9px) !important
 }
 
 .custom-control-label::before {
   background-color: var(--darkB) !important;
-  border: 1.5px solid #74747e !important;
+  border: 1.5px solid #74747e !important
 }
 
 .custom-control.custom-switch {
-  margin-bottom: 10px !important;
+  margin-bottom: 10px !important
 }
 
 .custom-control-input:focus~.custom-control-label::before {
-  box-shadow: none !important;
+  box-shadow: none !important
 }
 
 .flex-grow-1 {
-  color: var(--lightB) !important;
+  color: var(--lightB) !important
 }
 
 #local-mail-view {
-  margin: 50px !important;
   background-color: var(--darkC) !important;
-  margin-top: 0px !important;
+  margin: 0 50px 50px !important;
   border-radius: .75rem !important;
-  padding: 0px !important;
+  padding: 0 !important;
   box-shadow: 0 0 0 90px var(--darkC) !important;
-  overflow: visible !important;
+  overflow: visible !important
 }
 
 .local-mail-view.container-fluid {
   margin-top: 48px !important;
-  padding: 0px !important;
+  padding: 0 !important
 }
 
 h1.h2.local-mail-view-side-column.text-truncate {
   color: var(--lightA) !important;
-  font-size: 20px !important;
+  font-size: 20px !important
 }
 
-.local-mail-view-side-column {
-  padding-left: 0px !important;
+.local-mail-view-side-column,
+.no-overflow>ol {
+  padding-left: 0 !important
 }
 
-.local-mail-view-side-column>.list-group,
-.local-mail-view-main-column:not(.mb-4) {
+.local-mail-view-main-column:not(.mb-4),
+.local-mail-view-side-column>.list-group {
   background-color: var(--darkB) !important;
   border-radius: .75rem !important;
   border: 1.5px solid var(--darkA) !important;
   border-top: none !important;
-  border-top-left-radius: 0px !important;
-  border-top-right-radius: 0px !important;
-  padding: 15px !important;
-  padding-top: 8px !important;
-  padding-bottom: 20px !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  padding: 8px 15px 20px !important
 }
 
 .local-mail.local-mail-view.container-fluid>div:nth-child(2) {
-  margin-bottom: 0px !important;
-  flex-wrap: nowrap !important;
+  margin-bottom: 0 !important;
+  flex-wrap: nowrap !important
 }
 
 .local-mail.local-mail-view.container-fluid>div:nth-child(2)>div:first-child {
@@ -2819,10 +2616,9 @@ h1.h2.local-mail-view-side-column.text-truncate {
   border-radius: .75rem !important;
   border: 1.5px solid var(--darkA) !important;
   border-bottom: none !important;
-  border-bottom-left-radius: 0px !important;
-  border-bottom-right-radius: 0px !important;
-  padding: 20px !important;
-  padding-bottom: 0px !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  padding: 20px 20px 0 !important
 }
 
 .local-mail.local-mail-view.container-fluid>div:nth-child(2)>div:nth-child(2) {
@@ -2830,112 +2626,109 @@ h1.h2.local-mail-view-side-column.text-truncate {
   border-radius: .75rem !important;
   border: 1.5px solid var(--darkA) !important;
   border-bottom: none !important;
-  border-bottom-left-radius: 0px !important;
-  border-bottom-right-radius: 0px !important;
-  padding: 20px !important;
-  padding-bottom: 0px !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  padding: 20px 20px 0 !important
 }
 
 .local-mail.local-mail-view.container-fluid>div:nth-child(2)>div:first-child>button {
-  width: 100% !important;
+  width: 100% !important
 }
 
 .local-mail-view>div:nth-child(3)>div:last-child {
-  padding: 20px !important;
-  padding-bottom: 0px !important;
+  padding: 20px 20px 0 !important;
   display: flex !important;
-  flex-direction: column !important;
+  flex-direction: column !important
 }
 
 .local-mail-view-main-column>.form-inline {
   margin-top: auto !important;
-  color: var(--lightB) !important;
+  color: var(--lightB) !important
 }
 
+.box>table,
 .list-group-item {
-  border: none !important;
+  border: 0 !important
 }
 
 .local-mail-list-message {
-  margin-bottom: 20px !important;
+  margin-bottom: 20px !important
 }
 
-.local-mail-list-message-time {
-  color: var(--lightB) !important;
+.local-mail-list-message-time,
+small.text-dark {
+  color: var(--lightB) !important
 }
 
 .text-danger:not(.a) {
-  color: var(--link) !important;
+  color: var(--link) !important
 }
 
-.addbloglink {
-  margin-top: 50px !important;
+.addbloglink,
+dd>img {
+  margin-top: 50px !important
 }
 
 .addbloglink>a {
   background-color: var(--darkA) !important;
   border-radius: .75rem !important;
-  padding: 10px 20px !important;
+  padding: 10px 20px !important
 }
 
 .addbloglink>a:hover {
   text-decoration: none !important;
-  filter: brightness(1.1);
+  filter: brightness(1.1)
 }
 
 .forumpost:not(.a) {
   margin-top: 30px !important;
   border-radius: .75rem !important;
-  background-color: #2d2d38 !important;
+  background-color: #32323b !important;
   padding: 20px !important;
-  box-shadow: #19191fa2 0px 5px 25px !important;
+  box-shadow: #19191fa2 0 5px 25px !important
 }
 
 .forum-post-container:focus>.focus-target {
-  outline: none !important;
+  outline: 0 !important
 }
 
 .discussion-nav {
-  margin-top: 30px !important;
+  margin-top: 30px !important
 }
 
 .post-content-container {
-  padding-bottom: 15px !important;
-}
-
-th.header {
-  background-color: var(--darkB) !important;
+  padding-bottom: 15px !important
 }
 
 .calendar_event_course {
   margin-bottom: 2px !important;
   background-color: #50341a57 !important;
-  border: 1.5px solid #9e5f17a8 !important;
+  border: 1.5px solid #9e5f17a8 !important
 }
 
 .calendar_event_course.modal-header {
   background-color: #ff57033a !important;
-  border: none !important;
+  border: 0 !important
 }
 
 .calendar_event_course>.modal-title {
-  color: #ffd9c5ea !important;
+  color: #ffd9c5ea !important
 }
 
 .calendar_event_course.card-header {
   padding-top: 17px !important;
-  padding-bottom: 0px !important;
-  border-width: 1.5px !important;
+  padding-bottom: 0 !important;
+  border-width: 1.5px !important
 }
 
 .event>.card {
   background-color: #2d2d38ee !important;
-  padding: 0px 0px !important;
-  box-shadow: #19191fa2 0px 5px 25px !important;
+  padding: 0 !important;
+  box-shadow: #19191fa2 0 5px 25px !important
 }
 
-.modal-dialog:has(> .modal-content > .calendar_event_course) {
-  border: none !important;
+.modal-dialog:has(>.modal-content>.calendar_event_course) {
+  border: 0 !important
 }
 
 td.day>.d-md-block {
@@ -2943,105 +2736,101 @@ td.day>.d-md-block {
   border-radius: .75rem !important;
   background-color: #2d2d38a2 !important;
   border: 1.5px solid #62627a63 !important;
-  max-height: 7rem !important;
+  max-height: 7rem !important
 }
 
 td.day>.d-md-block:hover {
-  background-color: #6a6a8338 !important;
-}
-
-td.day.clickable:hover {
-  background-color: transparent !important;
+  background-color: #6a6a8338 !important
 }
 
 td.today .day-number-circle {
   color: var(--lightA) !important;
-  background-color: transparent !important;
+  background-color: transparent !important
 }
 
 td.today>.d-md-block {
   background-color: #26baff15 !important;
-  border: 1.5px solid #26baff57 !important;
+  border: 1.5px solid #26baff57 !important
 }
 
 td.today>.d-md-block:hover {
-  background-color: #26baff25 !important;
+  background-color: #26baff25 !important
 }
 
 .maincalendar>.bottom {
-  margin-top: 40px !important;
+  margin-top: 40px !important
 }
 
-.fdescription.required {
-  margin-top: 15px !important;
+.fdescription.required,
+.flex-column>div[data-content=inpage-reply-content],
+pre[style="white-space: pre-wrap; margin-left: 1em;"]+p[style="text-align: justify;"] {
+  margin-top: 15px !important
 }
 
 #fitem_id_currentpicture {
   margin-top: 30px !important;
-  padding-bottom: 0px !important;
-  height: 40px !important;
+  padding-bottom: 0 !important;
+  height: 40px !important
 }
 
-#fitem_id_imagealt {
-  display: none !important;
+#fitem_id_imagealt,
+#fitem_id_moodlenetprofile,
+#id_moodle_picturecontainer>.form-group>.col-md-3,
+.clearfix#id_tagshdr,
+.forumpost.focus-target::before,
+.item.b1b.feedbacktext.column-feedback>p,
+.justify-content-end>.btn.mr-3.mb-3.disabled.btn-secondary,
+option[value=adaptable],
+option[value=boost],
+option[value=classic],
+td.gradefail>i.icon.text-danger {
+  display: none !important
 }
 
 .clearfix.collapsible {
-  padding-bottom: 30px !important;
+  padding-bottom: 30px !important
 }
 
 .fcontainer.collapseable {
-  border-bottom: 1.5px solid var(--darkA) !important;
-}
-
-small.text-dark {
-  color: var(--lightB) !important;
-}
-
-#id_moodle_picturecontainer>.form-group>.col-md-3,
-#fitem_id_moodlenetprofile {
-  display: none !important;
+  border-bottom: 1.5px solid var(--darkA) !important
 }
 
 .form-control-static>a>img.userpicture {
   height: 70px !important;
-  width: 70px !important;
+  width: 70px !important
 }
 
 #id_moodle_picturecontainer>.form-group:nth-child(2) {
   padding-left: 70px !important;
-  padding-bottom: 0px !important;
+  padding-bottom: 0 !important
 }
 
 #id_moodle_picturecontainer>.form-group:nth-child(2)>.checkbox {
-  padding-top: 0px !important;
+  padding-top: 0 !important
 }
 
 .checkbox>.form-check>input.form-check-input {
   top: -10px !important;
-  margin-top: 0px !important;
+  margin-top: 0 !important
 }
 
 .maincalendar {
-  background: radial-gradient(ellipse 150% 110%, var(--darkC) 0%, transparent 100%);
-}
-
-.calendarmonth>thead>tr>th.header {
-  background-color: transparent !important;
+  background: radial-gradient(ellipse 150% 110%, var(--darkC) 0%, transparent 100%)
 }
 
 .btn-group {
-  gap: 10px !important;
+  gap: 10px !important
 }
 
-.container-fluid.tertiary-navigation>.row>.navitem.ml-auto:has(> form > button) {
-  margin-left: 0px !important;
+.container-fluid.tertiary-navigation>.row>.navitem.ml-auto:has(>form>button) {
+  margin-left: 0 !important
 }
 
 .filemanager>.ygtvitem>.ygtvchildren>.ygtvitem>#ygtvtableel1.ygtvtable.ygtvdepth0.ygtv-expanded.ygtv-highlight0,
-.ygtvrow>.ygtvcell.ygtvblankdepthcell:has(> .ygtvspacer),
-.ygtvrow>.ygtvcell.ygtvln:has(> .ygtvspacer) {
-  display: none !important;
+.specificfeedback>p[style="text-align: left;"]:has(>br:only-child),
+.ygtvrow>.ygtvcell.ygtvblankdepthcell:has(>.ygtvspacer),
+.ygtvrow>.ygtvcell.ygtvln:has(>.ygtvspacer) {
+  display: none !important
 }
 
 .local-mail-view-main-column>.card {
@@ -3049,16 +2838,16 @@ small.text-dark {
   background-color: #2d2d38a2 !important;
   border: 1.5px solid #62627a63 !important;
   border-radius: .75rem !important;
-  box-shadow: rgba(25, 25, 31, 0.635) 0px 5px 25px !important;
+  box-shadow: rgba(25, 25, 31, .635)0 5px 25px !important
 }
 
 .local-mail-message-users.d-flex.mb-n2 {
-  padding-bottom: 15px !important;
+  padding-bottom: 15px !important
 }
 
-.local-mail-message-users.d-flex.mb-n2>.d-flex.flex-column>div,
-.card-body.p-3.px-xl-4>.d-sm-flex.mb-n1 {
-  margin-top: 0px !important;
+.card-body.p-3.px-xl-4>.d-sm-flex.mb-n1,
+.local-mail-message-users.d-flex.mb-n2>.d-flex.flex-column>div {
+  margin-top: 0 !important;
   margin-bottom: 2px !important;
   font-size: 13px !important;
   color: var(--lightB) !important;
@@ -3069,21 +2858,16 @@ small.text-dark {
   -webkit-line-clamp: 2 !important;
   -webkit-box-orient: vertical !important;
   text-overflow: ellipsis !important;
-  white-space: normal !important;
+  white-space: normal !important
 }
 
-.local-mail-message-users.d-flex.mb-n2>.d-flex.flex-column>div>a,
-.card-body.p-3.px-xl-4>.d-sm-flex.mb-n1>.d-flex.mb-3.mb-sm-0>.mt-1>a {
-  color: var(--lightA) !important;
-}
-
-.btn-primary>.fa.fa-reply,
-.btn-primary>.fa.fa-share,
+.btn-primary>.fa-reply-all,
 .btn-primary>.fa-send,
-.btn-primary>.fa-reply-all {
-  filter: invert(0.9) !important;
+.btn-primary>.fa.fa-reply,
+.btn-primary>.fa.fa-share {
+  filter: invert(.9) !important;
   font-size: 15px !important;
-  margin-bottom: 2px !important;
+  margin-bottom: 2px !important
 }
 
 .local-mail-message-content {
@@ -3093,127 +2877,105 @@ small.text-dark {
   font-size: 14px !important;
   background-color: #6f777e27 !important;
   border: 1.5px solid #747f8870 !important;
-  border-radius: .75rem !important;
+  border-radius: .75rem !important
 }
 
 .local-mail-message-content.svelte-18ecame {
-  max-width: 100% !important;
+  max-width: 100% !important
 }
 
 .local-mail-view-main-column>.card>.card-body>.mt-3.justify-content-end {
-  margin-top: 30px !important;
+  margin-top: 30px !important
 }
 
-.h5.card-title.mb-3 {
-  color: var(--lightA) !important;
+.drawer-left>.drawercontent.drag-container>.list-group>.list-group-item.list-group-item-action.active,
+.h5.card-title.mb-3,
+.local-mail-list-message.font-weight-bold>div>.w-100>.flex-grow-1 {
+  color: var(--lightA) !important
 }
 
 .alert.alert-secondary {
   color: #b8b8c48f !important;
   background-color: #4b4b5c54 !important;
   border: 1.5px solid #65657ab7 !important;
-  margin-top: 0px !important;
+  margin-top: 0 !important
 }
 
 .alert.alert-danger {
-  color: #b99696dc !important;
   background-color: #744b4b4d !important;
   border: 1.5px solid #6b5050c0 !important;
-  margin-bottom: 10px !important;
+  margin-bottom: 10px !important
 }
 
+.alert.alert-danger,
 .alert.alert-danger>.fa-exclamation-circle {
-  color: #b99696dc !important;
+  color: #b99696dc !important
 }
 
 form.pt-lg-2.pb-3.px-lg-4.card>div:last-child {
-  margin-top: 20px !important;
+  margin-top: 20px !important
 }
 
-form.pt-lg-2.pb-3.px-lg-4.card,
-.local-mail-view-main-column>.card {
-  margin-bottom: 25px !important;
+.alert.alert-success.alert-block.fade.alert-dismissible,
+.local-mail-view-main-column>.card,
+form.pt-lg-2.pb-3.px-lg-4.card {
+  margin-bottom: 25px !important
 }
 
 .local-mail-paging-buttons>.align-self-center.text-nowrap {
-  color: var(--lightB) !important;
+  color: var(--lightB) !important
 }
 
-.justify-content-end>.btn.mr-3.mb-3.disabled.btn-secondary {
-  display: none !important;
-}
-
-.local-mail-list-message.font-weight-bold>div>.w-100>.flex-grow-1 {
-  color: var(--lightA) !important;
-}
-
-.alert-info.text-truncate:has(> .fa-clock-o),
-.alert-info.text-truncate:has(> .fa-check) {
-  background-color: transparent !important;
+.alert-info.text-truncate:has(>.fa-check),
+.alert-info.text-truncate:has(>.fa-clock-o) {
+  background-color: transparent !important
 }
 
 #local-mail-message-form-subject {
   background-color: var(--darkC) !important;
-  border: 1.5px solid var(--darkA) !important;
+  border: 1.5px solid var(--darkA) !important
 }
 
 #local-mail-message-form-subject::placeholder {
-  color: #6c6c7ce8 !important;
+  color: #6c6c7ce8 !important
 }
 
 .file-picker.fp-generallayout.row {
-  flex-wrap: nowrap !important;
+  flex-wrap: nowrap !important
 }
 
 .file-picker .fp-content {
-  background: transparent !important;
-  height: 500px !important;
+  background: 0 0 !important;
+  height: 500px !important
 }
 
 .moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd {
-  padding-bottom: 0 !important;
+  padding-bottom: 0 !important
 }
 
 :focus-visible {
-  outline: none !important;
+  outline: 0 !important
 }
 
-@media (min-width: 768px){
+@media (min-width:768px) {
   .col-md-9.p-0 {
-    max-width: 60% !important;
+    max-width: 60% !important
   }
-}
-
-option[value="adaptable"],
-option[value="boost"],
-option[value="classic"] {
-  /* only boost theme is supported atm */
-  display: none !important;
-}
-
-.alert.alert-success.alert-block.fade.alert-dismissible {
-  margin-bottom: 25px !important;
 }
 
 textarea#id_description_editor {
   margin-bottom: 15px !important;
-  height: auto !important;
+  height: auto !important
 }
 
 .count-container {
-  padding: 2px 3px 3px 3px !important;
+  padding: 2px 3px 3px !important;
   border-radius: 1rem !important;
   color: var(--lightA) !important;
   font-weight: 500 !important;
   font-size: 9px !important;
   line-height: 8px !important;
-  top: 9px !important;
-}
-
-.content-item-container {
-  padding: 20px !important;
-  background-color: #44495062 !important;
-  border: 1.5px solid #5960699a !important;
+  top: 9px !important
 }
 
 .btn.btn-secondary.btn-sm {
@@ -3223,46 +2985,46 @@ textarea#id_description_editor {
   height: 42px !important;
   width: 42px !important;
   background-color: var(--darkA) !important;
-  border: none !important;
+  border: 0 !important
 }
 
 .btn.btn-secondary.btn-sm>i.icon {
   position: relative !important;
-  top: 0px !important;
-  right: 0px !important;
+  top: 0 !important;
+  right: 0 !important
 }
 
+#ygtvtableel1.ygtvtable.ygtvdepth0.ygtv-expanded.ygtv-highlight0>tbody>tr.ygtvrow:hover,
+.filemanager.w-100.fm-loaded.fm-nomkdir.fm-nofiles,
 .fp-navbar.card.bg-faded.mb-0,
-.filemanager.w-100.fm-loaded.fm-nomkdir.fm-nofiles {
-  background-color: transparent !important;
+.generaltable tbody tr,
+tr.discussion:hover {
+  background-color: transparent !important
 }
 
 #page-mod-folder-view .navitem.ms-auto {
-  margin-left: 0px !important;
-  margin-bottom: 20px !important;
+  margin-left: 0 !important;
+  margin-bottom: 20px !important
 }
 
 .fp-filename-icon .fp-icon {
-  filter: invert(1) !important;
+  filter: invert(1) !important
 }
 
 .fp-filename-icon .fp-filename {
   position: relative !important;
-  bottom: 3px !important;
+  bottom: 3px !important
 }
 
-@media (min-width: 992px){
+@media (min-width:992px) {
   .local-mail-view-side-column.svelte-1uxxomv {
-    flex-basis: 15% !important;
+    flex-basis: 15% !important
   }
 }
 
+#page-mod-assign-view .container-fluid.mb-4:empty,
 .box.plugincontentsummary:empty {
-  display: none !important;
-}
-
-.box>table {
-  border: none !important;
+  display: none !important
 }
 
 div[style*="background-color: #ffcc80"] {
@@ -3270,134 +3032,109 @@ div[style*="background-color: #ffcc80"] {
   border: 1.5px solid #ffcc801f !important;
   border-radius: .9rem !important;
   padding: 30px !important;
-  margin-bottom: 15px !important;
+  margin-bottom: 15px !important
 }
 
-div[style*="background-color: #ffcc80"]> :is(h2, h4, p) {
+div[style*="background-color: #ffcc80"]>:is(h2, h4, p) {
   color: #ffe8c9e3 !important;
   font-size: 15px !important;
-  text-align: start !important;
+  text-align: start !important
 }
 
-a[target="_blank"] {
-  color: var(--link) !important;
+.no-overflow>.no-overflow>ul>li>a,
+a[target=_blank] {
+  color: var(--link) !important
 }
 
 .local-mail-view-side-column.svelte-1uxxomv {
-  min-width: auto !important;
+  min-width: auto !important
 }
 
 .navbar-light .navbar-toggler-icon {
-  filter: invert(1.0) !important;
+  filter: invert(1) !important
+}
+
+.navbar-toggler.aabtn,
+drawerheader>.btn.drawertoggle.icon-no-margin {
+  width: 50px !important;
+  height: 50px !important;
+  background-color: var(--darkB) !important;
+  border: 1.5px solid var(--darkA) !important;
+  border-radius: .75rem !important;
+  box-shadow: 0-5px 20px 15px var(--darkC) !important
 }
 
 .navbar-toggler.aabtn {
   margin-top: 16px !important;
-  width: 50px !important;
-  height: 50px !important;
   margin-left: 5px !important;
-  background-color: var(--darkB) !important;
-  border: 1.5px solid var(--darkA) !important;
-  border-radius: .75rem !important;
-  box-shadow: 0px -5px 20px 15px var(--darkC) !important;
-  padding-left: 6px !important;
+  padding-left: 6px !important
 }
 
+.drawer-left>.drawercontent.drag-container>.list-group>.list-group-item.list-group-item-action:hover,
+.drawerheader>.btn.drawertoggle.icon-no-margin:hover,
 .navbar-toggler.aabtn:hover {
-  background-color: var(--darkA) !important;
+  background-color: var(--darkA) !important
 }
 
 .modal-backdrop.show {
   background-color: #17171dcc !important;
   backdrop-filter: blur(10px) !important;
-  opacity: 1.0 !important;
-  z-index: 1030 !important;
+  opacity: 1 !important;
+  z-index: 1030 !important
 }
 
 drawerheader>.btn.drawertoggle.icon-no-margin {
   margin-top: 25px !important;
-  width: 50px !important;
-  height: 50px !important;
   margin-left: 15px !important;
-  background-color: var(--darkB) !important;
-  border: 1.5px solid var(--darkA) !important;
-  border-radius: .75rem !important;
-  box-shadow: 0px -5px 20px 15px var(--darkC) !important;
   padding-right: 8px !important;
-  padding-bottom: 4px !important;
-}
-
-.drawerheader>.btn.drawertoggle.icon-no-margin:hover {
-  background-color: var(--darkA) !important;
+  padding-bottom: 4px !important
 }
 
 .drawerheader>.btn.drawertoggle.icon-no-margin>.icon.fa.fa-xmark.fa-fw::before {
   position: relative !important;
   top: 3px !important;
   left: 4.5px !important;
-  font-size: 17pt !important;
+  font-size: 17pt !important
 }
 
-@media (max-width: 768px){
+@media (max-width:768px) {
   #page.drawers .main-inner {
-    max-width: 95% !important;
+    max-width: 95% !important
   }
 }
 
 td.gradefail {
-  color: #df5050 !important;
+  color: #df5050 !important
 }
 
-td.gradefail>i.icon.text-danger,
-.item.b1b.feedbacktext.column-feedback>p {
-  display: none !important;
-}
-
-.no-overflow>ol {
-  padding-left: 0px !important;
-}
-
-td.lastcol>.plugincontentsummary:has(~ .box[hidden="hidden"]),
-.no-overflow>p:empty+p[dir="ltr"][style="text-align: left;"] {
-  display: none !important;
+.no-overflow>p:empty+p[dir=ltr][style="text-align: left;"],
+td.lastcol>.plugincontentsummary:has(~.box[hidden=hidden]) {
+  display: none !important
 }
 
 .feedback,
 .gradingsummary {
-  margin-bottom: 0px !important;
+  margin-bottom: 0 !important
 }
 
 .dropdown-item.pl-5 {
-  padding-left: 15px !important;
-}
-
-.no-overflow>.no-overflow>ul>li>a {
-  color: var(--link) !important;
+  padding-left: 15px !important
 }
 
 .autolink:focus {
-  outline: none !important;
-  background-color: transparent !important;
+  outline: 0 !important;
+  background-color: transparent !important
 }
 
-#ygtvtableel1.ygtvtable.ygtvdepth0.ygtv-expanded.ygtv-highlight0>tbody>tr.ygtvrow:hover,
-.generaltable tbody tr {
-  background-color: transparent !important;
+.body-content-container>.no-overflow.w-100.content-alignment-container,
+.position-relative>.no-overflow {
+  overflow: visible !important
 }
 
-tr.discussion>td.align-middle.fit-content.limit-width.px-3>.d-flex>div.p-0 {
-  margin-right: 10px !important;
-}
-
-.position-relative>.no-overflow,
-.body-content-container>.no-overflow.w-100.content-alignment-container {
-  overflow: visible !important;
-}
-
+.discussion>td:nth-child(5):is(.p-0.text-center.align-middle.fit-content.px-2):has(+.text-center.align-middle.fit-content.px-2),
 .post-actions>a[tabindex="0"],
-div[data-container="discussion-tools"],
-.discussion>td:nth-child(5):is(.p-0.text-center.align-middle.fit-content.px-2):has(+ .text-center.align-middle.fit-content.px-2) {
-  display: none !important;
+div[data-container=discussion-tools] {
+  display: none !important
 }
 
 .post-actions>a[tabindex="-1"] {
@@ -3405,80 +3142,67 @@ div[data-container="discussion-tools"],
   display: flex !important;
   align-items: center !important;
   height: 40px !important;
-  padding: 0px 15px !important;
+  padding: 0 15px !important;
   background-color: #52526659 !important;
-  border-radius: .90rem !important;
-  margin-left: 15px !important;
+  border-radius: .9rem !important;
+  margin-left: 15px !important
 }
 
 .post-actions>a[tabindex="-1"]:hover {
   background-color: #525266ab !important;
-  text-decoration: none !important;
+  text-decoration: none !important
 }
 
-.flex-column>div[data-content="inpage-reply-content"] {
-  margin-top: 15px !important;
-}
-
-form[data-content="inpage-reply-form"]>.row.pb-1 {
+form[data-content=inpage-reply-form]>.row.pb-1 {
   margin-top: 5px !important;
-  padding-bottom: 30px !important;
+  padding-bottom: 30px !important
 }
 
-form[data-content="inpage-reply-form"]>.row.pb-1>span>textarea {
-  min-height: 80px !important;
+form[data-content=inpage-reply-form]>.row.pb-1>span>textarea {
+  min-height: 80px !important
 }
 
-button[data-action="forum-advanced-reply"] {
+button[data-action=forum-advanced-reply] {
   color: var(--lightB) !important;
   padding: 10px 20px !important;
   background-color: transparent !important;
-  border-radius: .9rem !important;
+  border-radius: .9rem !important
 }
 
-button[data-action="forum-advanced-reply"]:hover {
+button[data-action=forum-advanced-reply]:hover {
   background-color: var(--darkA) !important;
-  text-decoration: none !important;
+  text-decoration: none !important
 }
 
-button[data-action="forum-inpage-submit"] {
-  margin-right: 5px !important;
-}
-
-.forumpost.focus-target::before,
-.clearfix#id_tagshdr {
-  display: none !important;
+button[data-action=forum-inpage-submit] {
+  margin-right: 5px !important
 }
 
 #id_messageeditable {
-  padding: 25px !important;
+  padding: 25px !important
 }
 
 span.eventname {
-  line-height: 0px !important;
-  font-size: 13px !important;
-}
-
-tr.discussion:hover {
-  background-color: transparent !important;
+  line-height: 0 !important;
+  font-size: 13px !important
 }
 
 footer.footer-dark.bg-dark {
   opacity: 0 !important;
   max-height: 10px !important;
-  overflow: hidden !important;
+  overflow: hidden !important
 }
 
 .toast {
   background-color: #20202c !important;
   border-radius: .75rem !important;
-  border: 1.5px solid #333344 !important;
+  border: 1.5px solid #334 !important;
   padding: 10px !important;
-  box-shadow: 0px -5px 20px 15px var(--darkC) !important;
+  box-shadow: 0-5px 20px 15px var(--darkC) !important
 }
 
 .local-mail-toasts {
-  z-index: 10010 !important;
+  z-index: 10010 !important
 }
 
 .drawer-left>.drawercontent.drag-container>.list-group {
@@ -3488,131 +3212,90 @@ footer.footer-dark.bg-dark {
   margin-left: 15px !important;
   background-color: var(--darkB) !important;
   border: 1.5px solid var(--darkA) !important;
-  border-radius: 0.75rem !important;
-  box-shadow: #19191fa2 0px 5px 25px !important;
+  border-radius: .75rem !important;
+  box-shadow: #19191fa2 0 5px 25px !important
 }
 
 .drawer-left>.drawercontent.drag-container>.list-group>.list-group-item.list-group-item-action {
   height: 50px !important;
   width: 220px !important;
-  border-radius: 0.75rem !important;
+  border-radius: .75rem !important;
   color: var(--lightB) !important;
   padding: 16px !important;
   align-items: center !important;
-  display: flex !important;
-}
-
-.drawer-left>.drawercontent.drag-container>.list-group>.list-group-item.list-group-item-action.active {
-  color: var(--lightA) !important;
-}
-
-.drawer-left>.drawercontent.drag-container>.list-group>.list-group-item.list-group-item-action:hover {
-  background-color: var(--darkA) !important;
+  display: flex !important
 }
 
 .drawer-primary .drawercontent {
   margin-top: 5px !important;
-  padding: .15rem !important;
+  padding: .15rem !important
 }
 
-.d-flex.flex-wrap>.ml-auto>.singlebutton {
-  display: none !important;
+.box.py-3.quizattempt,
+.d-flex.flex-wrap>.ml-auto>.singlebutton,
+.popover-header::before {
+  display: none !important
+}
+
+.popover,
+.popover-header {
+  background-color: var(--darkB) !important
 }
 
 .popover-header {
-  background-color: var(--darkB) !important;
-  border: none !important;
-}
-
-.popover-header::before {
-  display: none !important;
+  border: 0 !important
 }
 
 .popover {
-  background-color: var(--darkB) !important;
   border: 1px solid var(--darkA) !important;
   border-radius: .75rem !important;
-  padding: 15px !important;
+  padding: 15px !important
 }
 
 .popover-body>div {
-  color: var(--lightA) !important;
-}
-
-.popover-body>div>img {
-  filter: invert(0.9) !important;
+  color: var(--lightA) !important
 }
 
 .arrow {
-  filter: invert(0.83) !important;
+  filter: invert(.83) !important
 }
-
-/* TODO: fix popover getting bugged after clicking an entry with it being displayed */
 
 .list-unstyled>li {
-
   flex: auto !important;
-  max-width: 100% !important;
-
-  >.card.h-100 {
-    color: var(--lightA) !important;
-    padding: 15px !important;
-    padding-bottom: 0 !important;
-    background-color: #44495062 !important;
-    border: 1.5px solid #5960699a !important;
-    border-radius: .75rem !important;
-    max-height: min-content !important;
-
-    .card-header {
-      padding-left: 15px !important;
-    }
-
-    .card-body:has(div:empty) {
-      display: none !important;
-    }
-
-    .card-body {
-      padding-bottom: 35px !important;
-    }
-  }
-}
-
-.box.py-3.quizattempt {
-  display: none !important;
+  max-width: 100% !important
 }
 
 .info {
   background-color: transparent !important;
-  border: none !important;
+  border: 0 !important
 }
 
 .que {
   margin-top: 25px !important;
-  gap: 0 !important;
+  gap: 0 !important
 }
 
 .que .questionflagimage {
-  filter: invert(0.6) !important;
-  margin-right: 5px !important;
+  filter: invert(.6) !important;
+  margin-right: 5px !important
 }
 
 .formulation {
   display: flex !important;
   flex-direction: column !important;
   color: var(--lightA) !important;
-  padding: 35px !important;
   background-color: #44495062 !important;
   border: 1.5px solid #5960699a !important;
   border-radius: .75rem !important;
   max-height: min-content !important;
-  border-top-left-radius: 0px !important;
-  border-top-right-radius: 0px !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
   border-top: none !important;
-  padding-top: 22px !important;
+  padding: 22px 35px 35px !important
 }
 
-.qtype_essay_response,
-.qtype_essay_editor {
+.qtype_essay_editor,
+.qtype_essay_response {
   padding: 20px !important;
   font-size: 13px !important;
   color: #b2e5ff !important;
@@ -3622,31 +3305,26 @@ footer.footer-dark.bg-dark {
   max-height: fit-content !important;
   min-height: auto !important;
   margin-right: 15px !important;
-  margin-top: 10px !important;
+  margin-top: 10px !important
 }
 
 .que .ablock:has(label) {
   margin-bottom: 0 !important;
-  margin-top: 20px !important;
+  margin-top: 20px !important
 }
 
-.answer>input,
-.ablock .select {
+.ablock .select,
+.answer>input {
   color: #e2e2e2 !important;
   font-size: 14px !important;
   background-color: #78788b2f !important;
   border-radius: 1rem !important;
   margin-left: 15px !important;
-  margin-right: 10px !important;
+  margin-right: 10px !important
 }
 
 .ablock .select {
-  color: #e2e2e2 !important;
-  font-size: 14px !important;
-  background: #404047 url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23a7a7b1' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") right .75rem center / 8px 10px no-repeat !important;
-  border-radius: 1rem !important;
-  margin-left: 15px !important;
-  margin-right: 10px !important;
+  background: #404047 url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23a7a7b1' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e")right .75rem center/8px 10px no-repeat !important
 }
 
 .comment,
@@ -3655,15 +3333,15 @@ footer.footer-dark.bg-dark {
   padding: 25px !important;
   background-color: #1a502c4b !important;
   border: 1.5px solid #179e4ba1 !important;
-  border-radius: .75rem !important;
+  border-radius: .75rem !important
 }
 
-.formulation:has(fieldset > .answer > .incorrect)~.outcome:not(:has(.numpartscorrect)) {
+.formulation:has(fieldset>.answer>.incorrect)~.outcome:not(:has(.numpartscorrect)) {
   color: #e79494 !important;
   padding: 25px !important;
   background-color: #501e1a4b !important;
   border: 1.5px solid #bd4d3eab !important;
-  border-radius: .75rem !important;
+  border-radius: .75rem !important
 }
 
 .partiallycorrect>.content>.outcome {
@@ -3671,11 +3349,12 @@ footer.footer-dark.bg-dark {
   padding: 25px !important;
   background-color: #50421a4d !important;
   border: 1.5px solid #9e73179a !important;
-  border-radius: .75rem !important;
+  border-radius: .75rem !important
 }
 
 .answer>div {
   align-items: center !important;
+  font-size: 14px !important
 }
 
 .answer>div>.specificfeedback {
@@ -3685,189 +3364,160 @@ footer.footer-dark.bg-dark {
   background-color: #7d97ad27 !important;
   border-radius: 1rem !important;
   margin-left: 10px !important;
-  margin-top: 5px !important;
+  margin-top: 5px !important
 }
 
-.specificfeedback>p[style="text-align: left;"]:has(>br:only-child) {
-  display: none !important;
-}
-
-.specificfeedback>p,
-.qtext {
-  margin: 0px !important;
+.answer>div,
+.qtext,
+.specificfeedback>p {
+  margin: 0 !important
 }
 
 .answer>div.correct>span>i.icon,
 .answer>i.fa-check.icon {
-  color: #75f0ac !important;
+  color: #75f0ac !important
 }
 
 .answer>div.incorrect>span>i.icon,
 .answer>i.fa-remove.icon {
-  color: #f56956 !important;
+  color: #f56956 !important
 }
 
 .qnbutton {
   padding-top: 3px !important;
   height: 30px !important;
-  border-radius: .75rem !important;
+  border-radius: .75rem !important
 }
 
 .qnbutton.notyetanswered {
   color: #adafb1 !important;
-  background-color: #7476804b !important;
+  background-color: #7476804b !important
 }
 
 .qnbutton.notanswered {
   color: #939597 !important;
-  background-color: #6262694b !important;
+  background-color: #6262694b !important
 }
 
 .qnbutton.correct {
   color: #94e7ad !important;
   background-color: #1a502c4b !important;
-  border: 1.5px solid #179e4ba1 !important;
+  border: 1.5px solid #179e4ba1 !important
 }
 
 .qnbutton.incorrect {
   color: #e79494 !important;
   background-color: #501e1a4b !important;
-  border: 1.5px solid #bd4d3eab !important;
+  border: 1.5px solid #bd4d3eab !important
 }
 
+.outcome,
 .qnbutton.partiallycorrect {
   color: #e4ca93 !important;
   background-color: #50421a4d !important;
-  border: 1.5px solid #9e73179a !important;
+  border: 1.5px solid #9e73179a !important
 }
 
-.qnbutton>.trafficlight,
-.qnbutton>.thispageholder {
-  display: none !important;
+.qnbutton>.thispageholder,
+.qnbutton>.trafficlight {
+  display: none !important
 }
 
 .outcome {
   min-height: min-content !important;
-  color: #e4ca93 !important;
   padding: 25px !important;
-  background-color: #50421a4d !important;
-  border: 1.5px solid #9e73179a !important;
-  border-radius: .75rem !important;
+  border-radius: .75rem !important
 }
 
 .outcome>.feedback {
-  margin-top: 0px !important;
-}
-
-.answer>div {
-  margin: 0px !important;
-  font-size: 14px !important;
+  margin-top: 0 !important
 }
 
 .qtext>p>img.img-fluid {
   margin-top: 15px !important;
-  border-radius: .75rem !important;
+  border-radius: .75rem !important
 }
 
 .qtext>p>a {
-  color: #26bbff !important;
+  color: #26bbff !important
 }
 
 .comment:not(:has(p))::after {
-  content: 'N/A';
+  content: "N/A";
   visibility: visible !important;
   font-size: 14px !important;
   margin-top: 2px !important;
-  margin-bottom: 20px !important;
+  margin-bottom: 20px !important
 }
 
 .answer .r0 .text {
-  width: 100% !important;
+  width: 100% !important
 }
 
 pre:has(code),
 pre[style*="white-space: pre-wrap;"] {
   padding: 20px !important;
-  margin-top: 15px !important;
   color: #8dfff0 !important;
   background-color: #318d8134 !important;
   border: 1.5px solid #50b8afa2 !important;
   border-radius: .75rem !important;
   max-height: min-content !important;
-  margin-bottom: 0px !important;
-  margin-right: 20px !important;
-  margin-left: 0px !important;
-
-  span {
-    color: #8dfff0 !important;
-  }
+  margin: 15px 20px 0 0 !important
 }
 
 p:has(code):not(:empty) code {
   padding: 1px !important;
   background-color: #318d8134 !important;
-  color: #8dfff0 !important;
-
-  span {
-    color: #8dfff0 !important;
-  }
-}
-
-pre[style="white-space: pre-wrap; margin-left: 1em;"]+p[style="text-align: justify;"] {
-  margin-top: 15px !important;
-}
-
-pre:has(code[class="language-c#"]) {
-  padding-top: 0px !important;
+  color: #8dfff0 !important
 }
 
 div>.que {
-  display: flex !important;
   flex-direction: column !important;
   margin-left: 15px !important;
-  margin-right: 15px !important;
+  margin-right: 15px !important
 }
 
 .que>.content {
-  margin-left: 0px !important;
-  width: 100% !important;
+  margin-left: 0 !important;
+  width: 100% !important
+}
+
+.que>.info,
+div>.que {
+  display: flex !important
 }
 
 .que>.info {
   width: 100% !important;
-  display: flex !important;
-  margin-bottom: 0px !important;
+  margin-bottom: 0 !important;
   flex-direction: row !important;
-  padding: 35px !important;
-  padding-top: 30px !important;
-  padding-bottom: 5px !important;
+  padding: 30px 35px 5px !important;
   background-color: #44495062 !important;
   border: 1.5px solid #5960699a !important;
   border-radius: .75rem !important;
-  border-bottom-left-radius: 0px !important;
-  border-bottom-right-radius: 0px !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
   border-bottom: none !important;
-  overflow: hidden !important;
+  overflow: hidden !important
 }
 
 .info>.questionflag {
-  margin-left: auto !important;
+  margin-left: auto !important
 }
 
 .info>h3 {
   margin-top: 8px !important;
   text-transform: uppercase !important;
-  color: var(--lightA) !important;
-  margin-right: 20px !important;
+  margin-right: 20px !important
 }
 
 .info>h3>.qno {
-  margin-left: 0px !important;
-  font-size: 17px !important;
+  margin-left: 0 !important;
+  font-size: 17px !important
 }
 
-.info>.state,
-.info>.grade {
+.info>.grade,
+.info>.state {
   padding: 6px 14px !important;
   height: min-content !important;
   font-size: 12px !important;
@@ -3875,23 +3525,23 @@ div>.que {
   background-color: #7d97ad27 !important;
   border-radius: 1rem !important;
   margin-top: 2px !important;
-  margin-right: 10px !important;
+  margin-right: 10px !important
 }
 
-.quizreviewsummary>tbody>tr>th,
-.quizreviewsummary>tbody>tr>td {
+.quizreviewsummary>tbody>tr>td,
+.quizreviewsummary>tbody>tr>th {
   text-align: start !important;
-  background-color: transparent !important;
+  background-color: transparent !important
 }
 
 .quizreviewsummary>tbody>tr>th {
-  padding-bottom: 15px !important;
+  padding-bottom: 15px !important
 }
 
 .quizreviewsummary {
-  padding: 15px 0px !important;
+  padding: 15px 0 !important;
   border-radius: .75rem !important;
-  max-height: min-content !important;
+  max-height: min-content !important
 }
 
 .content-item-container {
@@ -3899,15 +3549,19 @@ div>.que {
   background-color: #44495062 !important;
   border: 1.5px solid #5960699a !important;
   border-radius: .75rem !important;
-  margin-bottom: 15px !important;
+  margin-bottom: 15px !important
 }
 
-.content-item-container>.context-link {
-  color: var(--lightA) !important;
+.content-item-container>.context-link,
+.info>h3,
+.sectionname>a,
+em,
+span[style="color: #000000;"] {
+  color: var(--lightA) !important
 }
 
 .content-item-container>.view-more {
-  display: none !important;
+  display: none !important
 }
 
 .content-area:not(:has(.content:empty)) {
@@ -3917,50 +3571,50 @@ div>.que {
   border: 1.5px solid #5960699a !important;
   border-radius: .75rem !important;
   max-height: min-content !important;
-  overflow: hidden !important;
+  overflow: hidden !important
 }
 
 .empty-text,
 .timestamp {
-  color: var(--lightB) !important;
+  color: var(--lightB) !important
 }
 
 .content-area>.header {
-  border-bottom: none !important;
+  border-bottom: none !important
 }
 
 .content-area>.content {
   max-height: 45dvh !important;
   margin-bottom: 40px !important;
-  margin-top: 15px !important;
+  margin-top: 15px !important
 }
 
 .content-area>.content>p>a,
 .content-area>.footer>a {
-  color: var(--link) !important;
+  color: var(--link) !important
 }
 
 .content-area>.footer {
   margin-left: 15px !important;
-  text-align: start !important;
+  text-align: start !important
 }
 
 .drawer-right>.drawercontent>.d-print-none {
   background-color: transparent !important;
-  border: none !important;
+  border: 0 !important
 }
 
 .drawer-right>.drawercontent>.d-print-none>aside {
-  outline: none !important;
-  background-color: transparent !important;
+  outline: 0 !important;
+  background-color: transparent !important
 }
 
 .drawer-right>.drawerheader {
   position: fixed !important;
   padding-top: 5px !important;
   padding-bottom: 20px !important;
-  bottom: 0px !important;
-  right: 0px !important;
+  bottom: 0 !important;
+  right: 0 !important;
   justify-content: flex-end !important;
   margin-right: 20px !important;
   margin-top: 2px !important;
@@ -3968,122 +3622,104 @@ div>.que {
   height: min-content !important;
   width: 295px !important;
   box-shadow: none !important;
-  z-index: 2000 !important;
+  z-index: 2000 !important
 }
 
-@media (min-width: 992px){
+@media (min-width:992px) {
   .drawer#theme_boost-drawers-blocks:focus-within {
     position: fixed !important;
-    z-index: unset !important;
+    z-index: unset !important
   }
 }
 
 .drawer-right>.drawercontent.drag-container {
-  padding-top: 0px !important;
   margin-top: 20px !important;
   margin-left: 29px !important;
-  padding: 0px !important;
   scrollbar-width: none !important;
   height: 100% !important;
   max-height: calc(100vh - 100px) !important;
-  padding-bottom: 0px !important;
+  padding: 0 !important;
   width: 261px !important;
-  border-radius: .75rem !important;
+  border-radius: .75rem !important
 }
 
+.drawer-right-toggle>button,
 .drawer-right>.drawerheader>.btn.drawertoggle.icon-no-margin {
-  margin-top: 0px !important;
+  margin-top: 0 !important;
   height: 50px !important;
   width: 50px !important;
   border: 1.5px solid var(--darkA) !important;
   border-radius: .75rem !important;
   background-color: var(--darkB) !important;
-  box-shadow: 0px 0px 10px 5px var(--darkC) !important;
-
-  >i.icon.fa.fa-xmark.fa-fw::before {
-    font-size: 24px !important;
-    left: 1px !important;
-    bottom: 12px !important;
-  }
-
-  &:hover {
-    background-color: var(--darkA) !important;
-  }
+  box-shadow: 0 0 10px 5px var(--darkC) !important
 }
 
 .drawer-toggles .drawer-toggler {
   right: 1px !important;
   bottom: 20px !important;
   top: unset !important;
-  z-index: 1500 !important;
+  z-index: 1500 !important
 }
 
 .drawer-right-toggle>button {
   margin-top: 10px !important;
   margin-right: 11px !important;
-  width: 50px !important;
-  height: 50px !important;
-  background-color: var(--darkB) !important;
-  box-shadow: 0px 0px 10px 5px var(--darkC) !important;
   padding-right: 2px !important;
-  padding-top: 3px !important;
-  border: 1.5px solid var(--darkA) !important;
-  border-radius: 0.75rem !important;
+  padding-top: 3px !important
 }
 
 .drawer-right-toggle>.btn:focus {
-  box-shadow: 0px 0px 10px 5px var(--darkC) !important;
+  box-shadow: 0 0 10px 5px var(--darkC) !important
 }
 
 .drawer-right-toggle>button:hover {
-  background-color: var(--darkA) !important;
+  background-color: var(--darkA) !important
 }
 
 .drawer-right-toggle>button>.dir-rtl-hide {
-  filter: none !important;
+  filter: none !important
 }
 
 .drawer-right-toggle>button>.dir-rtl-hide>i {
   color: var(--lightB) !important;
   position: relative !important;
   left: 1px !important;
-  top: 1px !important;
+  top: 1px !important
 }
 
-.drawer-right-toggle:before {
-  background-color: transparent !important;
+.drawer-right-toggle:before,
+.grade-report-user .user-grade td,
+.path-grade-report-user .user-grade td,
+div#region-main {
+  background-color: transparent !important
 }
 
 .drawer.scrolled .drawerheader {
-  box-shadow: none !important;
+  box-shadow: none !important
 }
 
 .tooltip {
-  visibility: hidden !important;
+  visibility: hidden !important
 }
 
 .drawer-right-toggle {
-  margin-right: 13px !important;
+  margin-right: 13px !important
 }
 
 #mod_quiz_navblock>.card-body>.content>#user-picture,
-th.header>.commands,
-.dropdown-item[data-value="summary"] {
-  display: none !important;
+.dropdown-item[data-value=summary],
+th.header>.commands {
+  display: none !important
 }
 
 .local-mail-user-picture-fallback.svelte-1ebin1 {
   background-color: var(--darkA) !important;
   color: var(--lightB) !important;
-  font-weight: 500 !important;
-}
-
-div#region-main {
-  background-color: transparent !important;
+  font-weight: 500 !important
 }
 
 #notice {
-  padding-bottom: 25px !important;
+  padding-bottom: 25px !important
 }
 
 .btn-outline-secondary {
@@ -4091,454 +3727,362 @@ div#region-main {
   border-color: transparent !important;
   background-color: var(--darkA) !important;
   border-radius: .9rem !important;
-  color: var(--lightB) !important;
+  color: var(--lightB) !important
 }
 
-.overlay-icon-container {
-  display: none !important;
+.overlay-icon-container,
+.section_goto {
+  display: none !important
 }
-
-/* new */
 
 .page-mycourses .block_myoverview .block-cards {
   border-top: none !important;
-  padding-top: .5rem;
+  padding-top: .5rem
 }
 
-/* icons fix (temporary) */
-
 .icon.fa.fa-star.fa-fw {
-  width: 13px !important;
+  width: 13px !important
 }
 
 .fa-star::before {
   position: relative !important;
   font-size: 13px !important;
   font-weight: 600 !important;
-  bottom: 1px !important;
+  bottom: 1px !important
 }
 
 .fa-bell::before,
 .fa-message::before,
 .fa.fa-envelope-o:before {
-  font-weight: 500 !important;
-}
-
-.section_goto {
-  display: none !important;
+  font-weight: 500 !important
 }
 
 .section-item {
   padding: 0 !important;
-  border: none !important;
+  border: 0 !important
 }
 
-.course-section-header:has(+ .content.collapse:not(.show)) {
-  border-bottom: none !important;
+.course-section-header:has(+.content.collapse:not(.show)) {
+  border-bottom: none !important
 }
 
 .course-section-header:has(.position-relative) {
   border-bottom: 1.5px solid var(--darkA) !important;
-  padding-bottom: 15px !important;
+  padding-bottom: 15px !important
 }
 
-.section-summary>.section-item:has(> .course-section-header > .section_goto):has(> div[class="content "]) {
+.section-summary>.section-item:has(>.course-section-header>.section_goto):has(>div[class="content "]) {
   padding: 20px !important;
-  background-color: rgba(68, 73, 80, 0.384) !important;
-  border: solid 1.5px rgba(89, 96, 105, 0.604) !important;
-  border-radius: 0.75rem !important;
-
-  .course-section-header {
-
-    padding-bottom: 0 !important;
-    border-bottom: none !important;
-
-    .sectionname {
-      font-size: 16px !important;
-    }
-
-    .section_goto {
-
-      display: block !important;
-
-      a>span>i {
-        color: var(--lightA) !important;
-      }
-    }
-  }
-}
-
-.sectionname>a {
-  color: var(--lightA) !important;
+  background-color: rgba(68, 73, 80, .384) !important;
+  border: solid 1.5px rgba(89, 96, 105, .604) !important;
+  border-radius: .75rem !important
 }
 
 .activity,
 .activity-altcontent.activity-description {
-  border-top: none !important;
+  border-top: none !important
 }
 
+.activitybadge.rounded-pill,
+.alert.alert-success.alert-block.fade.alert-dismissible,
 .course-section.hidden .section-item,
-.course-section.orphaned .section-item,
-.activitybadge.rounded-pill {
-  display: none !important;
-  /* hides orphan/hidden courses, EXPERIMENTAL */
+.course-section.orphaned .section-item {
+  display: none !important
 }
 
 .activity-description:not(#intro) {
   margin-top: 3px !important;
   font-weight: 600 !important;
-  color: var(--lightB) !important;
+  color: var(--lightB) !important
 }
 
 .activityiconcontainer.me-2 {
   width: 25px !important;
   height: 25px !important;
   border-radius: 4px !important;
-  margin-right: 1rem !important;
+  margin-right: 1rem !important
 }
 
 .activityiconcontainer .activityicon,
-.activityiconcontainer .icon,
-.activityiconcontainer .activityicon,
 .activityiconcontainer .icon {
   height: 17px !important;
-  width: 17px !important;
+  width: 17px !important
 }
 
 .icon-size-6 .icon:not(.a) {
   height: 16px !important;
-  width: 16px !important;
+  width: 16px !important
 }
 
 .activityiconcontainer.collaboration {
-  background-color: #f7634d !important;
+  background-color: #f7634d !important
 }
 
 .activityiconcontainer.administration {
-  background-color: #5d63f6 !important;
+  background-color: #5d63f6 !important
 }
 
 .activityiconcontainer.assessment {
-  background-color: #eb66a2 !important;
+  background-color: #eb66a2 !important
 }
 
 .activityiconcontainer.communication {
-  background-color: #11a676 !important;
+  background-color: #11a676 !important
 }
 
 .activityiconcontainer.content {
-  background-color: #399be2 !important;
+  background-color: #399be2 !important
 }
 
 .activityiconcontainer.interface {
-  background-color: #a378ff !important;
+  background-color: #a378ff !important
 }
 
 .activityicon:not(.nofilter),
 .activityiconcontainer.collaboration .icon:not(.nofilter) {
-  filter: brightness(0) invert(1) !important;
+  filter: brightness(0) invert(1) !important
 }
 
 .course-section .availabilityinfo {
   margin-top: 0 !important;
-  padding-left: 0px !important;
+  padding-left: 0 !important;
   background-color: transparent !important;
-  font-size: 14px !important;
-
-  i {
-    display: none !important;
-  }
+  font-size: 14px !important
 }
 
-.form-check:has(> input),
 .category-content>.btn.toggle-category,
+.form-check:has(>input),
 tr.cat_6519:not(.spacer) {
-  display: none !important;
+  display: none !important
 }
 
-tr.cat_6519:not(.spacer):has(> th):not(:empty) {
-  display: table-row !important;
-}
-
-.path-grade-report-user .user-grade td,
-.grade-report-user .user-grade td {
-  background-color: transparent !important
+tr.cat_6519:not(.spacer):has(>th):not(:empty) {
+  display: table-row !important
 }
 
 .forumnodiscuss.alert-info {
-  margin-top: 15px !important;
+  margin-top: 15px !important
 }
 
 .local-mail-draft-form-recipients-user.svelte-orcw73.svelte-orcw73:not(.alert-danger) {
-  background-color: var(--darkA) !important;
-
-  img {
-    margin-left: 5px !important;
-    margin-right: 2px !important;
-    height: 22px !important;
-    width: 22px !important;
-  }
-}
-
-.alert.alert-success.alert-block.fade.alert-dismissible {
-  display: none !important;
+  background-color: var(--darkA) !important
 }
 
 .me-auto h1.h2.mb-0 {
-  margin-bottom: 5px !important;
+  margin-bottom: 5px !important
 }
 
 .page-header-headings>h1.h2.mb-0 {
-  margin-bottom: 0 !important;
+  margin-bottom: 0 !important
 }
 
 .modal-dialog[tabindex="0"]:focus .modal-content {
-  box-shadow: none !important;
+  box-shadow: none !important
 }
 
 .badges-heading {
   padding-left: 40px !important;
-  padding-top: 30px !important;
+  padding-top: 30px !important
 }
 
 .reportbuilder-report {
-  padding: 30px !important;
-  padding-top: 0px !important;
+  padding: 0 30px 30px !important
 }
 
+.format-onetopic.cm-type-page table h1.h2.mb-0,
 .reportbuilder-report .dropdown {
-  display: none !important;
+  display: none !important
 }
 
 .path-badges #action_bar {
   padding-left: 35px !important;
   padding-top: 35px !important;
-  padding-bottom: 20px !important;
+  padding-bottom: 20px !important
 }
 
 #badge-overview {
-  padding: 40px !important;
-  padding-bottom: 0 !important;
+  padding: 40px 40px 0 !important;
   display: flex !important;
   flex-direction: column !important;
-  font-size: 0 !important;
-
-  h3 {
-    display: none !important
-  }
+  font-size: 0 !important
 }
 
 #badge-overview>dl:last-of-type,
 #badge-overview>dl>dt:nth-last-of-type(-n+5) {
-  display: none !important;
+  display: none !important
 }
 
 dl {
-  font-size: 15px !important;
+  font-size: 15px !important
 }
 
 dd {
   padding-bottom: 20px !important;
-  color: var(--lightB) !important;
-}
-
-dd>img {
-  margin-top: 50px !important;
+  color: var(--lightB) !important
 }
 
 .activatebadge {
   margin-left: 5px !important;
-  margin-right: 15px !important;
+  margin-right: 15px !important
 }
 
 .reportbuilder-table img {
-  margin-right: 10px !important;
+  margin-right: 10px !important
 }
 
-.activity-wrapper h4 {
+.activity-wrapper h4,
+h5 strong {
   color: var(--lightA) !important;
-  font-size: 16px !important;
+  font-size: 16px !important
 }
 
 .message-app .fa-chevron-right {
-  color: #000000 !important;
+  color: #000 !important;
+  font-size: 14px !important
 }
 
-.message-app .fa-chevron-right,
 .message-app .fa-chevron-down,
 .notification-image .icon {
-  font-size: 14px !important;
+  font-size: 14px !important
 }
 
 h5 strong {
-  margin-top: 5px !important;
-  font-size: 16px !important;
-  color: var(--lightA) !important;
+  margin-top: 5px !important
 }
 
 .content:not(.course-content-item-content) .summarytext h3 {
   text-align: start !important;
-  border-bottom: 1.5px solid var(--darkA) !important;
-
-  strong {
-    font-size: 18px !important;
-  }
+  border-bottom: 1.5px solid var(--darkA) !important
 }
 
 .activity-wrapper.indented .activity-item .activity-altcontent {
-  margin-top: 10px !important;
+  margin-top: 10px !important
 }
 
 .activity-wrapper:has(hr:empty),
-.course-content-item-content .summarytext p:empty,
 .course-content-item-content .summarytext br:empty,
-.course-content-item-content .summarytext h3:empty {
-  display: none !important;
+.course-content-item-content .summarytext h3:empty,
+.course-content-item-content .summarytext p:empty {
+  display: none !important
 }
 
 .course-content-item-content .summarytext div[style="text-align: center;"] {
   text-align: start !important;
-  margin-top: 20px !important;
+  margin-top: 20px !important
 }
 
 .moodle-dialogue-base .closebutton {
   top: -25px !important;
   right: -20px !important;
   position: absolute !important;
-  font-size: 30px !important;
-
-  &:hover {
-    opacity: 1 !important;
-  }
+  font-size: 30px !important
 }
 
-table:not(.a),
 table:not(.a) {
   background-color: transparent !important;
-  border: none !important;
-}
-
-em,
-span[style="color: #000000;"] {
-  color: var(--lightA) !important;
+  border: 0 !important
 }
 
 h3>span>strong>em {
-  font-size: 20px !important;
+  font-size: 20px !important
 }
 
 #page-mod-page-view .generalbox li,
 .activity-description li {
   list-style-type: disc !important;
-  margin-top: 12px !important;
+  margin-top: 12px !important
 }
 
-.format-onetopic.cm-type-page table h1.h2.mb-0 {
-  display: none !important;
-}
-
-.format-onetopic.cm-type-page .onetopic-tab-body table th,
-.format-onetopic.cm-type-page .onetopic-tab-body table td {
+.format-onetopic.cm-type-page .onetopic-tab-body table td,
+.format-onetopic.cm-type-page .onetopic-tab-body table th {
   background-color: transparent !important;
-  border: none !important;
-  text-align: center !important;
+  border: 0 !important;
+  text-align: center !important
 }
 
+#page-my-index .me-auto.d-flex.flex-column>div>.mb-2>.h2,
 .comment-link img {
-  display: none !important;
+  display: none !important
 }
 
 .fileuploadsubmission img.icon {
-  filter: invert(0.8) !important;
+  filter: invert(.8) !important;
   height: 20px !important;
   width: 20px !important;
   margin-right: 0 !important;
-  margin-bottom: 2px !important;
+  margin-bottom: 2px !important
 }
 
-.fileuploadsubmission a[target="_blank"] {
-  color: var(--lightB) !important;
+.fileuploadsubmission a[target=_blank] {
+  color: var(--lightB) !important
 }
 
 body.limitedwidth #page.drawers .main-inner {
-  max-width: 830px !important;
+  max-width: 830px !important
 }
 
 .content .summarytext h4 {
   font-size: 16px !important;
   font-weight: 900 !important;
   color: var(--lightA) !important;
-  margin-bottom: 30px !important;
-
-  &:not(:first-of-type) {
-    margin-top: 30px !important;
-  }
+  margin-bottom: 30px !important
 }
 
-.content .summarytext section[style="margin: 1em 0 2em 1em;"],
-.content .summarytext section[style="margin: 1em 0 1em 1em;"] {
-  margin: 0 !important;
-  margin-top: 15px !important;
+.content .summarytext section[style="margin:1em 0 1em 1em;"],
+.content .summarytext section[style="margin:1em 0 2em 1em;"] {
+  margin: 15px 0 0 !important
 }
 
 .activityinsummarytpl.activityinline .activity-icon.activityiconcontainer.smaller.courseicon.align-self-start {
   display: flex !important;
   margin-right: 15px !important;
   width: 25px !important;
-  height: 25px !important;
+  height: 25px !important
 }
 
 .summarytext .cmnameinline.position-relative {
   display: flex !important;
   align-items: center !important;
-  margin-bottom: 15px !important;
+  margin-bottom: 15px !important
 }
 
 .content .cvheader {
   flex-direction: column !important;
-  gap: 5px !important;
+  gap: 5px !important
 }
 
 #coursecontentcollapse0 ul.section:not(.img-text) {
   margin-top: 30px !important;
   margin-bottom: 30px !important;
-  margin-left: 35px !important;
+  margin-left: 35px !important
 }
 
 .content .cvheader figure {
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
-  gap: 15px !important;
-
-  &:hover {
-    text-decoration: underline !important;
-  }
+  gap: 15px !important
 }
 
 li.activity {
   padding: 0 !important;
-  margin-bottom: 10px !important;
+  margin-bottom: 10px !important
 }
 
 .content .cvheader figure>div {
   width: 25px !important;
   height: 25px !important;
-  font-size: 14px !important;
+  font-size: 14px !important
 }
 
 .content .cvheader figure>figcaption {
   font-weight: 500 !important;
   color: #ffffffd5 !important;
-  text-align: start !important;
-
-  >br {
-    display: none !important;
-  }
+  text-align: start !important
 }
 
 .single-section.general-section+.defaulttabs.hastopictabs .tabs-wrapper {
-  padding-top: 0 !important;
+  padding-top: 0 !important
 }
 
 .diag.diag-fatalerror {
@@ -4547,122 +4091,91 @@ li.activity {
   border-color: #df5050 !important;
   background-color: #8825253f !important;
   color: #df5050 !important;
-  font-size: 14px !important;
-
-  .location {
-    font-size: 12px !important;
-    color: #df5050 !important;
-  }
-
-  code {
-    margin-right: 2px !important;
-    font-size: 14px !important;
-    color: #df5050 !important;
-  }
-
-  pre {
-    border-left: none !important;
-    color: #df5050 !important;
-    margin-bottom: 0 !important;
-  }
-
+  font-size: 14px !important
 }
 
 .activity-description .img-fluid {
   border-radius: .75rem !important;
-  margin-bottom: 10px !important;
-}
-
-#page-my-index .me-auto.d-flex.flex-column>div>.mb-2>.h2 {
-  display: none !important;
+  margin-bottom: 10px !important
 }
 
 .fp-thumbnail>img {
   background-color: transparent !important;
-  filter: invert(0.9) !important;
+  filter: invert(.9) !important
 }
 
 #page-message-output-popup-notifications #region-main {
   max-height: 75dvh !important;
-  overflow: hidden !important;
+  overflow: hidden !important
 }
 
 #page-message-output-popup-notifications .main-inner {
-  margin-bottom: 0 !important;
+  margin-bottom: 0 !important
 }
 
 #page-message-output-popup-notifications .notification-area {
-  height: calc(75dvh - 120px) !important;
+  height: calc(75dvh - 120px) !important
 }
 
 .me-1>.icon.itemicon {
-  filter: brightness(0) invert(0.7) !important;
+  filter: brightness(0) invert(.7) !important;
   min-width: 22px !important;
-  min-height: 22px !important;
+  min-height: 22px !important
 }
 
 .diagnostic-warning,
-div[style*="border: 1px solid red;"],
-div[style*="background-color: orange;"] {
+div[style*="background-color: aquamarine;"],
+div[style*="background-color: orange;"],
+div[style*="border: 1px solid red;"] {
   color: #e79494 !important;
   background-color: #501e1a3a !important;
   border: 1.5px solid #bd4d3eab !important;
   border-radius: .75rem !important;
-  margin-top: 10px !important;
+  margin-top: 10px !important
 }
 
 div[style*="background-color: aquamarine;"] {
   color: #94e7d2 !important;
   background-color: #1a50443a !important;
-  border: 1.5px solid #3ebdb2ab !important;
-  border-radius: .75rem !important;
-  margin-top: 10px !important;
+  border: 1.5px solid #3ebdb2ab !important
 }
 
 #tpv1-diagnostics>h4 {
   color: var(--lightA) !important;
   margin-top: 20px !important;
   margin-bottom: 15px !important;
-  font-size: 18px !important;
+  font-size: 18px !important
 }
 
 .feedbacktable .boxaligncenter:not(.plugincontentsummary) {
-  color: rgb(124, 182, 209) !important;
+  color: #7cb6d1 !important
 }
 
 .path-mod-forum a:not(.btn) {
-  color: var(--lightB) !important;
+  color: var(--lightB) !important
+}
+
+#ac-banner,
+#descarga-btn {
+  color: var(--lightB) !important
 }
 
 #descarga-btn {
-  color: var(--lightB) !important;
-  margin-left: 20px !important;
-
-  &:hover {
-    text-decoration: underline !important;
-  }
+  margin-left: 20px !important
 }
 
 .diagnostic-location {
-  color: #df5050 !important;
-}
-
-#page-mod-assign-view .container-fluid.mb-4:empty {
-  display: none !important;
+  color: #df5050 !important
 }
 
 .forumpost a>i {
   font-size: 15px !important;
-  color: var(--link) !important;
-
-  &:hover {
-    text-decoration: underline !important;
-  }
+  color: var(--link) !important
 }
 
 .forumpost pre,
 .forumpost pre span {
-  color: rgb(141, 255, 240) !important;
+  color: #8dfff0 !important
 }
 
 #ac-banner {
@@ -4672,40 +4185,35 @@ div[style*="background-color: aquamarine;"] {
   width: 50px !important;
   height: 50px !important;
   background-color: var(--darkB) !important;
-  box-shadow: 0px 0px 10px 5px var(--darkC) !important;
+  box-shadow: 0 0 10px 5px var(--darkC) !important;
   padding-left: 13px !important;
   padding-top: 12px !important;
   border: 1.5px solid var(--darkA) !important;
-  border-radius: 0.75rem !important;
+  border-radius: .75rem !important;
   text-align: center !important;
   font-family: "Font Awesome 6 Free" !important;
-  font-size: 20px !important;
-  color: var(--lightB) !important;
-
-  &:hover {
-    background-color: var(--darkA) !important;
-  }
+  font-size: 20px !important
 }
 
-#ac-banner[aria-expanded="false"]:after {
-  content: "\f06e" !important;
+#ac-banner[aria-expanded=false]:after {
+  content: "" !important
 }
 
-#ac-banner[aria-expanded="true"]:after {
-  content: "\f00d" !important;
+#ac-banner[aria-expanded=true]:after {
+  content: "" !important;
   font-weight: 600 !important;
   padding-left: 1.5px !important;
-  font-size: 25px !important;
+  font-size: 25px !important
 }
 
 #ac-banner:focus {
-  outline: none !important;
+  outline: 0 !important
 }
 
 #ac-panel {
   background-color: var(--darkB) !important;
   border: 1.5px solid var(--darkA) !important;
-  padding: 30px !important;
+  padding: 30px !important
 }
 
 #ac-panel-title {
@@ -4713,11 +4221,11 @@ div[style*="background-color: aquamarine;"] {
   font-size: 20px !important;
   padding-bottom: 30px !important;
   border-bottom: 1.5px solid var(--darkA) !important;
-  text-align: left !important;
+  text-align: left !important
 }
 
 .ac-section {
-  margin-top: 35px !important;
+  margin-top: 35px !important
 }
 
 .ac-actions>button,
@@ -4727,73 +4235,70 @@ div[style*="background-color: aquamarine;"] {
   width: 50px !important;
   height: 50px !important;
   background-color: var(--darkA) !important;
-  border: none !important;
+  border: 0 !important;
   padding-left: 10px !important;
   padding-top: 12px !important;
   color: var(--lightB) !important;
   font-size: 15px !important;
-  border-radius: 0.75rem !important;
-
-  &:hover {
-    filter: brightness(1.2) !important;
-  }
+  border-radius: .75rem !important
 }
 
 .ac-text-slider-container {
-  color: var(--lightB) !important;
+  color: var(--lightB) !important
 }
 
 input[type=range] {
-  height: 5px !important;
+  height: 5px !important
 }
 
 input[type=range]::-webkit-slider-thumb {
-  background: var(--link) !important;
+  background: var(--link) !important
 }
 
 #ac-close-panel {
   font-family: "Font Awesome 6 Free" !important;
   position: absolute !important;
-  top: 0px !important;
+  top: 0 !important;
   right: 10px !important;
   font-size: 0 !important;
   font-weight: 600 !important;
   background-color: transparent !important;
-  border: none !important;
+  border: 0 !important
 }
 
 #ac-close-panel:after {
-  content: "\f00d" !important;
-  font-size: 22px !important;
+  content: "" !important;
+  font-size: 20px !important
 }
 
 .ac-section:has(#ac-font-select),
 .ac-section:has(.ac-layout-control) {
-  display: none !important;
+  display: none !important
 }
 
 .format-onetopic .onetopic-withsectionbg .course-section,
 .onetopic-withsectionbg {
-  background: transparent !important;
+  background: 0 0 !important
 }
 
-button,
-.nav-link {
-  transition: background-color 0.25s ease-in-out !important;
+.nav-link,
+button {
+  transition: background-color .25s ease-in-out !important
 }
 
+#module-1286659,
+#module-1357088,
 .ac-banner-block,
-.ac-gear,
-#module-1286659, #module-1357088 {
-  display: none !important;
+.ac-gear {
+  display: none !important
 }
 
-.description-inner > .no-overflow > .no-overflow > h3:only-child {
-  padding-bottom: 0 !important;
+.description-inner>.no-overflow>.no-overflow>h3:only-child {
+  padding-bottom: 0 !important
 }
 
-.stateready > .single-section.general-section {
+.stateready>.single-section.general-section {
   padding-left: 35px !important;
   padding-top: 20px !important;
-  padding-bottom: 10px !important;
+  padding-bottom: 10px !important
 }
