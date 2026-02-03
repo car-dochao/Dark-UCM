@@ -1,23 +1,20 @@
 {
     "manifest_version": 3,
-    "name": "Dark-UCM",
-    "description": "Dark theme for the UCM Virtual Campus",
+    "name": "Dark-VCS",
+    "description": "Dark theme for Moodle Virtual Campuses (UCM, UPM)",
     "icons": { "96" : "icon.png" },
     "version": "0.8",
     "author": "Carlos Dochao",
-    "homepage_url": "https://github.com/car-dochao/Dark-UCM",
-    "browser_specific_settings": {
-        "gecko": {
-            "id": "{7c8d7a8f-36c2-4e6a-9d8f-9f7f2a5d8f4a}",
-            "data_collection_permissions": {
-                "required": ["none"]
-            }
-        }
-    },
-    "host_permissions": ["https://cvdof.ucm.es/*", "https://cvex1.ucm.es/*", "https://cvmix.ucm.es/*"],
+    "homepage_url": "https://github.com/car-dochao/Dark-VCS",
+    "browser_specific_settings": { "gecko": { "id": "{7c8d7a8f-36c2-4e6a-9d8f-9f7f2a5d8f4a}", "data_collection_permissions": { "required": ["none"] } } },
+    "host_permissions": [
+        "https://cvdof.ucm.es/*", "https://cvex1.ucm.es/*", "https://cvmix.ucm.es/*",
+        "https://moodle.upm.es/*" ],
     "content_scripts": [{
-        "matches": ["https://cvdof.ucm.es/*", "https://cvex1.ucm.es/*", "https://cvmix.ucm.es/*"],
-        "exclude_globs": ["*login/index.php*", "*wooclap/*"],
-        "css": ["main.css"]
+        "matches": [ 
+            "https://cvdof.ucm.es/*", "https://cvex1.ucm.es/*", "https://cvmix.ucm.es/*",
+            "https://moodle.upm.es/*" ],
+        "exclude_globs": [ "*login/index.php*" , "*wooclap/*", "*login/login.php*" ],
+        "css": [ "main.css" ]
     }]
 }

@@ -254,6 +254,7 @@ ul.teachers>li>span {
 .langbutton,
 .modal-backdrop.in.show[style="z-index: 1039;"],
 .open-nav,
+.drawer-left,
 .portfolio-add-link,
 .summary,
 a[href="https://cvdof.ucm.es/moodle/reportbuilder/index.php"],
@@ -4301,4 +4302,32 @@ button {
   padding-left: 35px !important;
   padding-top: 20px !important;
   padding-bottom: 10px !important
+}
+
+#page.drawers.show-drawer-left {
+  margin-left: 0 !important;
+}
+
+.breadcrumb {
+  background-color: transparent !important;
+}
+
+#page-course-index-category #region-main {
+  padding: 30px !important;
+}
+
+.tertiary-navigation .row {
+  gap: 10px !important;
+}
+
+.course_category_tree .category.with_children.collapsed>.info>.categoryname {
+  background-image: none !important;
+}
+
+.dropdown-toggle.nav-link {
+  display: none !important;
+}
+
+.nav-link {
+  font-size: 15px !important;
 }

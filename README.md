@@ -1,8 +1,8 @@
-# Dark-Theme for the UCM Virtual Campus
+# Dark-Theme for Moodle Virtual Campuses (UCM, UPM)
 
 <img src="icon.png" align="left" width="118"/>
-CSS Reskin for the Moodle Virtual Campus webpage (UCM) 
-<br/>https://cvdof.ucm.es/moodle/<br/><br/>
+CSS Reskin for the Moodle Virtual Campus (UCM/UPM) 
+<br/>https://cvdof.ucm.es/moodle/  / https://moodle.upm.es/<br/><br/>
 <a href="https://chromewebstore.google.com/detail/dark-ucm/jdbdmkdbcnpgkkememicijnpekceibpd"><img src="https://i.imgur.com/RaSa0Db.png" width="150"/></a>
 <a href="https://microsoftedge.microsoft.com/addons/detail/darkucm/dnaefoomipomafgdbjphnenmlflacenc"><img src="https://i.imgur.com/R7dP0Dd.png" width="150"/></a>
 <a href="https://addons.mozilla.org/firefox/addon/dark-ucm/"><img src="https://i.imgur.com/8LkyjRH.png" width="150"/></a>
@@ -12,10 +12,15 @@ CSS Reskin for the Moodle Virtual Campus webpage (UCM)
 > [!NOTE]  
 > Functionality or readability may be affected.
 
+### Supported virtual campuses:
+- UCM (Universidad Complutense de Madrid): https://cvdof.ucm.es/moodle/
+- UPM (Universidad Politécnica de Madrid): https://moodle.upm.es/
+- (More to be added)
+
 ## Manual Installation:
-- [Download](https://codeload.github.com/car-dochao/Dark-UCM/zip/refs/heads/main) (or git clone) this repo and extract it somewhere safe
+- [Download](https://codeload.github.com/car-dochao/Dark-VCS/zip/refs/heads/main) (or git clone) this repo and extract it somewhere safe
 - On your browser, navigate to ```chrome://extensions``` and enable **Developer Mode** there
-- Click **Load Unpacked** and select the folder that contains the extension files *(Dark-UCM-main)*
+- Click **Load Unpacked** and select the folder that contains the extension files *(Dark-VCS-main)*
 - That's it! (reload the virtual campus page if necessary)
 
 > [!WARNING]  
