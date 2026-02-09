@@ -3,9 +3,9 @@
 <img src="icon.png" align="left" width="118"/>
 CSS Reskin for the Moodle Virtual Campus (UCM/UPM) 
 <br/>https://cvdof.ucm.es/moodle/  / https://moodle.upm.es/<br/><br/>
-<a href="https://chromewebstore.google.com/detail/dark-ucm/jdbdmkdbcnpgkkememicijnpekceibpd"><img src="https://i.imgur.com/RaSa0Db.png" width="150"/></a>
-<a href="https://microsoftedge.microsoft.com/addons/detail/darkucm/dnaefoomipomafgdbjphnenmlflacenc"><img src="https://i.imgur.com/R7dP0Dd.png" width="150"/></a>
-<a href="https://addons.mozilla.org/firefox/addon/dark-ucm/"><img src="https://i.imgur.com/8LkyjRH.png" width="150"/></a>
+<a href="https://chromewebstore.google.com/detail/dark-vcs/jdbdmkdbcnpgkkememicijnpekceibpd"><img src="https://i.imgur.com/RaSa0Db.png" width="150"/></a>
+<a href="https://microsoftedge.microsoft.com/addons/detail/darkvcs/dnaefoomipomafgdbjphnenmlflacenc"><img src="https://i.imgur.com/R7dP0Dd.png" width="150"/></a>
+<a href="https://addons.mozilla.org/firefox/addon/dark-vcs/"><img src="https://i.imgur.com/8LkyjRH.png" width="150"/></a>
 <br/>
 <br clear="left"/>
 

@@ -3,7 +3,7 @@
     "name": "Dark-VCS",
     "description": "Dark theme for Moodle Virtual Campuses (UCM, UPM)",
     "icons": { "96" : "icon.png" },
-    "version": "0.8",
+    "version": "0.8.2",
     "author": "Carlos Dochao",
     "homepage_url": "https://github.com/car-dochao/Dark-VCS",
     "browser_specific_settings": { "gecko": { "id": "{7c8d7a8f-36c2-4e6a-9d8f-9f7f2a5d8f4a}", "data_collection_permissions": { "required": ["none"] } } },
