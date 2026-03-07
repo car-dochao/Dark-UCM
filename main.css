@@ -1204,8 +1204,10 @@ div.py-3:not(.box) {
 }
 
 td.cell.c1.lastcol>:nth-child(2)>:is(p),
-td.cell.c1.lastcol>:nth-child(2)>ul>li>p {
-  color: #7cb6d1 !important
+td.cell.c1.lastcol>:nth-child(2)>ul>li>p,
+td.cell.c1.lastcol>:nth-child(2) strong {
+  color: #7cb6d1 !important;
+  -webkit-text-stroke: 0 #7cb6d1 !important;
 }
 
 #calendarviewdropdown,
@@ -3094,7 +3096,7 @@ drawerheader>.btn.drawertoggle.icon-no-margin {
 .drawerheader>.btn.drawertoggle.icon-no-margin>.icon.fa.fa-xmark.fa-fw::before {
   position: relative !important;
   top: 3px !important;
-  left: 4.5px !important;
+  left: 1px !important;
   font-size: 17pt !important
 }
 
@@ -4230,7 +4232,8 @@ div[style*="background-color: aquamarine;"] {
 #ac-panel {
   background-color: var(--darkB) !important;
   border: 1.5px solid var(--darkA) !important;
-  padding: 30px !important
+  padding: 30px !important;
+  box-shadow: none !important;
 }
 
 #ac-panel-title {
@@ -4342,7 +4345,7 @@ button {
   font-size: 15px !important;
 }
 
-.path-course .onetopic #section-0.section.course-section.main.clearfix {
+.path-course .course-content-header .general-section .onetopic #section-0.section.course-section.main.clearfix {
   padding-left: 35px !important;
   padding-top: 5px !important;
   padding-bottom: 10px !important
